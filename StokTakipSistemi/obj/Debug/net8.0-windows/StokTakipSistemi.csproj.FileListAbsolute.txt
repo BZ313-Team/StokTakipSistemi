@@ -1,0 +1,16 @@
+D:\projects\visual studio\StokTakipSistemi\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\StokTakipSistemi.exe
+D:\projects\visual studio\StokTakipSistemi\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\StokTakipSistemi.deps.json
+D:\projects\visual studio\StokTakipSistemi\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\StokTakipSistemi.runtimeconfig.json
+D:\projects\visual studio\StokTakipSistemi\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\StokTakipSistemi.dll
+D:\projects\visual studio\StokTakipSistemi\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\StokTakipSistemi.pdb
+D:\projects\visual studio\StokTakipSistemi\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.Form1.resources
+D:\projects\visual studio\StokTakipSistemi\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.csproj.GenerateResource.cache
+D:\projects\visual studio\StokTakipSistemi\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.GeneratedMSBuildEditorConfig.editorconfig
+D:\projects\visual studio\StokTakipSistemi\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.AssemblyInfoInputs.cache
+D:\projects\visual studio\StokTakipSistemi\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.AssemblyInfo.cs
+D:\projects\visual studio\StokTakipSistemi\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.csproj.CoreCompileInputs.cache
+D:\projects\visual studio\StokTakipSistemi\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.dll
+D:\projects\visual studio\StokTakipSistemi\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\refint\StokTakipSistemi.dll
+D:\projects\visual studio\StokTakipSistemi\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.pdb
+D:\projects\visual studio\StokTakipSistemi\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.genruntimeconfig.cache
+D:\projects\visual studio\StokTakipSistemi\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\ref\StokTakipSistemi.dll
