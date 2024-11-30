@@ -14,3 +14,21 @@ D:\projects\visual studio\StokTakipSistemi\StokTakipSistemi\StokTakipSistemi\obj
 D:\projects\visual studio\StokTakipSistemi\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.pdb
 D:\projects\visual studio\StokTakipSistemi\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.genruntimeconfig.cache
 D:\projects\visual studio\StokTakipSistemi\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\ref\StokTakipSistemi.dll
+C:\Users\sasss\Desktop\ProjeArayüz-Kısım-1\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\StokTakipSistemi.exe
+C:\Users\sasss\Desktop\ProjeArayüz-Kısım-1\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\StokTakipSistemi.deps.json
+C:\Users\sasss\Desktop\ProjeArayüz-Kısım-1\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\StokTakipSistemi.runtimeconfig.json
+C:\Users\sasss\Desktop\ProjeArayüz-Kısım-1\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\StokTakipSistemi.dll
+C:\Users\sasss\Desktop\ProjeArayüz-Kısım-1\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\StokTakipSistemi.pdb
+C:\Users\sasss\Desktop\ProjeArayüz-Kısım-1\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.Form1.resources
+C:\Users\sasss\Desktop\ProjeArayüz-Kısım-1\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.csproj.GenerateResource.cache
+C:\Users\sasss\Desktop\ProjeArayüz-Kısım-1\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sasss\Desktop\ProjeArayüz-Kısım-1\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.AssemblyInfoInputs.cache
+C:\Users\sasss\Desktop\ProjeArayüz-Kısım-1\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.AssemblyInfo.cs
+C:\Users\sasss\Desktop\ProjeArayüz-Kısım-1\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.csproj.CoreCompileInputs.cache
+C:\Users\sasss\Desktop\ProjeArayüz-Kısım-1\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.sourcelink.json
+C:\Users\sasss\Desktop\ProjeArayüz-Kısım-1\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.dll
+C:\Users\sasss\Desktop\ProjeArayüz-Kısım-1\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\refint\StokTakipSistemi.dll
+C:\Users\sasss\Desktop\ProjeArayüz-Kısım-1\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.pdb
+C:\Users\sasss\Desktop\ProjeArayüz-Kısım-1\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.genruntimeconfig.cache
+C:\Users\sasss\Desktop\ProjeArayüz-Kısım-1\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\ref\StokTakipSistemi.dll
+C:\Users\sasss\Desktop\ProjeArayüz-Kısım-1\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\Resources\Inter-VariableFont_opsz,wght.ttf
