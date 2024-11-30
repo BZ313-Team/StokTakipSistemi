@@ -1,14 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\sasss\\Desktop\\ProjeAray\u00FCz-K\u0131s\u0131m-1\\StokTakipSistemi\\",
+  "WorkspaceRootPath": "C:\\Users\\hentc\\OneDrive\\Masa\u00FCst\u00FC\\StokTakipSistemi\\StokTakipSistemi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|c:\\users\\sasss\\desktop\\projearay\u00FCz-k\u0131s\u0131m-1\\stoktakipsistemi\\stoktakipsistemi\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|solutionrelative:stoktakipsistemi\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|c:\\users\\sasss\\desktop\\projearay\u00FCz-k\u0131s\u0131m-1\\stoktakipsistemi\\stoktakipsistemi\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|solutionrelative:stoktakipsistemi\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5E88940F-A90B-4E9B-88CD-AA33A46FB54B}|StokTakipSistemi\\StokTakipSistemi.csproj|c:\\users\\hentc\\onedrive\\masa\u00FCst\u00FC\\stoktakipsistemi\\stoktakipsistemi\\stoktakipsistemi\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5E88940F-A90B-4E9B-88CD-AA33A46FB54B}|StokTakipSistemi\\StokTakipSistemi.csproj|solutionrelative:stoktakipsistemi\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,35 +14,18 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\sasss\\Desktop\\ProjeAray\u00FCz-K\u0131s\u0131m-1\\StokTakipSistemi\\StokTakipSistemi\\Form1.cs",
-              "RelativeDocumentMoniker": "StokTakipSistemi\\Form1.cs",
-              "ToolTip": "C:\\Users\\sasss\\Desktop\\ProjeAray\u00FCz-K\u0131s\u0131m-1\\StokTakipSistemi\\StokTakipSistemi\\Form1.cs",
-              "RelativeToolTip": "StokTakipSistemi\\Form1.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAwwDkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T10:41:38.791Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\sasss\\Desktop\\ProjeAray\u00FCz-K\u0131s\u0131m-1\\StokTakipSistemi\\StokTakipSistemi\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\hentc\\OneDrive\\Masa\u00FCst\u00FC\\StokTakipSistemi\\StokTakipSistemi\\StokTakipSistemi\\Form1.cs",
               "RelativeDocumentMoniker": "StokTakipSistemi\\Form1.cs",
-              "ToolTip": "C:\\Users\\sasss\\Desktop\\ProjeAray\u00FCz-K\u0131s\u0131m-1\\StokTakipSistemi\\StokTakipSistemi\\Form1.cs [Design]",
+              "ToolTip": "C:\\Users\\hentc\\OneDrive\\Masa\u00FCst\u00FC\\StokTakipSistemi\\StokTakipSistemi\\StokTakipSistemi\\Form1.cs [Design]",
               "RelativeToolTip": "StokTakipSistemi\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T12:30:17.707Z",
+              "WhenOpened": "2024-11-30T15:33:31.48Z",
               "EditorCaption": " [Design]"
             }
           ]

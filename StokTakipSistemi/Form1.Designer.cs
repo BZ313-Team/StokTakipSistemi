@@ -28,49 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            button1 = new Button();
-            SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            label1.Location = new Point(530, 104);
-            label1.Name = "label1";
-            label1.Size = new Size(126, 38);
-            label1.TabIndex = 1;
-            label1.Text = "deneme ";
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.IndianRed;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Location = new Point(243, 275);
-            button1.Name = "button1";
-            button1.Size = new Size(218, 113);
-            button1.TabIndex = 0;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = false;
-            // 
-            // Form1
-            // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(label1);
-            Controls.Add(button1);
-            Name = "Form1";
-            Text = "Giris";
-            Load += Form1_Load;
-            ResumeLayout(false);
-            PerformLayout();
+            this.components = new System.ComponentModel.Container();
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "Form1";
         }
 
         #endregion
-
-        private Label label1;
-        private Button button1;
     }
 }

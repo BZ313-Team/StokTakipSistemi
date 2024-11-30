@@ -8,14 +8,4 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="Resources\Inter-VariableFont_opsz,wght.ttf" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="Resources\Inter-VariableFont_opsz,wght.ttf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
-
 </Project>
