@@ -36,11 +36,25 @@ namespace StokTakipSistemi
         private void Form1_Load(object sender, EventArgs e)
         {
             PrivateFontCollection pfc = new PrivateFontCollection();
-            pfc.AddFontFile(@"C:\Users\sasss\Desktop\ProjeArayüz-Kýsým-1\StokTakipSistemi\StokTakipSistemi\Resources\Inter-VariableFont_opsz,wght.ttf");
-            foreach (Control c in this.Controls)
+
+            // Proje dizinindeki font dosyasýnýn yolunu alýn
+            string fontPath = Path.Combine(Application.StartupPath, "Resources", "Inter-VariableFont_opsz,wght.ttf");
+
+            if (File.Exists(fontPath))
             {
-                c.Font = new Font(pfc.Families[0], 20, FontStyle.Regular);
+                pfc.AddFontFile(fontPath);
+
+                // Fontu tüm kontrollerde uygula
+                foreach (Control c in this.Controls)
+                {
+                    c.Font = new Font(pfc.Families[0], 20, FontStyle.Regular);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Font dosyasý bulunamadý!");
             }
         }
+
     }
 }
