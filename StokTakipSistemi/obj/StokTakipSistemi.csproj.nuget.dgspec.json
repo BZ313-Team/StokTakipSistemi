@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hentc\\OneDrive\\Masaüstü\\StokTakipSistemi\\StokTakipSistemi\\StokTakipSistemi\\StokTakipSistemi.csproj": {}
+    "C:\\Users\\mikas\\Desktop\\Yeni klasör (2)\\StokTakipSistemi\\StokTakipSistemi\\StokTakipSistemi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\hentc\\OneDrive\\Masaüstü\\StokTakipSistemi\\StokTakipSistemi\\StokTakipSistemi\\StokTakipSistemi.csproj": {
+    "C:\\Users\\mikas\\Desktop\\Yeni klasör (2)\\StokTakipSistemi\\StokTakipSistemi\\StokTakipSistemi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\hentc\\OneDrive\\Masaüstü\\StokTakipSistemi\\StokTakipSistemi\\StokTakipSistemi\\StokTakipSistemi.csproj",
+        "projectUniqueName": "C:\\Users\\mikas\\Desktop\\Yeni klasör (2)\\StokTakipSistemi\\StokTakipSistemi\\StokTakipSistemi.csproj",
         "projectName": "StokTakipSistemi",
-        "projectPath": "C:\\Users\\hentc\\OneDrive\\Masaüstü\\StokTakipSistemi\\StokTakipSistemi\\StokTakipSistemi\\StokTakipSistemi.csproj",
-        "packagesPath": "C:\\Users\\hentc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\hentc\\OneDrive\\Masaüstü\\StokTakipSistemi\\StokTakipSistemi\\StokTakipSistemi\\obj\\",
+        "projectPath": "C:\\Users\\mikas\\Desktop\\Yeni klasör (2)\\StokTakipSistemi\\StokTakipSistemi\\StokTakipSistemi.csproj",
+        "packagesPath": "C:\\Users\\mikas\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mikas\\Desktop\\Yeni klasör (2)\\StokTakipSistemi\\StokTakipSistemi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\hentc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mikas\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
