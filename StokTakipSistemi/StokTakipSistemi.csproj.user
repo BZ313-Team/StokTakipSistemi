@@ -4,7 +4,10 @@
     <Compile Update="CustomPanel.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Update="Form1.cs">
+    <Compile Update="Istatistik2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Sayfalar.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Giris.cs">

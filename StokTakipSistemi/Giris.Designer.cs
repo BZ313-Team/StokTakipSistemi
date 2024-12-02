@@ -29,54 +29,57 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Giris));
-            pnlkAdi = new CustomPanel();
-            txtboxkAdi = new TextBox();
-            pboxkAdi = new PictureBox();
+            pnlKAdi = new CustomPanel();
+            txtBoxKAdi = new TextBox();
+            pBoxKAdi = new PictureBox();
             pnlSifre = new CustomPanel();
-            txtboxSifre = new TextBox();
-            pboxSifre = new PictureBox();
+            txtBoxSifre = new TextBox();
+            pBoxSifre = new PictureBox();
             btnLogin = new Button();
-            pboxLoginAna = new PictureBox();
+            pBoxLoginAna = new PictureBox();
             btnSifremiUnuttum = new Button();
-            pnlkAdi.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pboxkAdi).BeginInit();
+            pnlKAdi.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pBoxKAdi).BeginInit();
             pnlSifre.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pboxSifre).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pboxLoginAna).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pBoxSifre).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pBoxLoginAna).BeginInit();
             SuspendLayout();
             // 
-            // pnlkAdi
+            // pnlKAdi
             // 
-            pnlkAdi.Anchor = AnchorStyles.None;
-            pnlkAdi.BackColor = Color.White;
-            pnlkAdi.BorderColorHtml = "#80818B";
-            pnlkAdi.BorderWidth = 1;
-            pnlkAdi.Controls.Add(txtboxkAdi);
-            pnlkAdi.Controls.Add(pboxkAdi);
-            pnlkAdi.Location = new Point(45, 227);
-            pnlkAdi.Name = "pnlkAdi";
-            pnlkAdi.Size = new Size(250, 40);
-            pnlkAdi.TabIndex = 0;
+            pnlKAdi.Anchor = AnchorStyles.None;
+            pnlKAdi.BackColor = Color.White;
+            pnlKAdi.BorderColorHtml = "#80818B";
+            pnlKAdi.BorderWidth = 1;
+            pnlKAdi.Controls.Add(txtBoxKAdi);
+            pnlKAdi.Controls.Add(pBoxKAdi);
+            pnlKAdi.Location = new Point(47, 254);
+            pnlKAdi.Margin = new Padding(3, 4, 3, 4);
+            pnlKAdi.Name = "pnlKAdi";
+            pnlKAdi.Size = new Size(286, 53);
+            pnlKAdi.TabIndex = 0;
             // 
-            // txtboxkAdi
+            // txtBoxKAdi
             // 
-            txtboxkAdi.Anchor = AnchorStyles.None;
-            txtboxkAdi.BorderStyle = BorderStyle.None;
-            txtboxkAdi.Location = new Point(70, 10);
-            txtboxkAdi.Name = "txtboxkAdi";
-            txtboxkAdi.Size = new Size(162, 16);
-            txtboxkAdi.TabIndex = 0;
+            txtBoxKAdi.Anchor = AnchorStyles.None;
+            txtBoxKAdi.BorderStyle = BorderStyle.None;
+            txtBoxKAdi.Location = new Point(80, 13);
+            txtBoxKAdi.Margin = new Padding(3, 4, 3, 4);
+            txtBoxKAdi.Name = "txtBoxKAdi";
+            txtBoxKAdi.Size = new Size(185, 20);
+            txtBoxKAdi.TabIndex = 0;
             // 
-            // pboxkAdi
+            // pBoxKAdi
             // 
-            pboxkAdi.Anchor = AnchorStyles.None;
-            pboxkAdi.Image = (Image)resources.GetObject("pboxkAdi.Image");
-            pboxkAdi.Location = new Point(11, 4);
-            pboxkAdi.Name = "pboxkAdi";
-            pboxkAdi.Size = new Size(30, 30);
-            pboxkAdi.SizeMode = PictureBoxSizeMode.Zoom;
-            pboxkAdi.TabIndex = 0;
-            pboxkAdi.TabStop = false;
+            pBoxKAdi.Anchor = AnchorStyles.None;
+            pBoxKAdi.Image = (Image)resources.GetObject("pBoxKAdi.Image");
+            pBoxKAdi.Location = new Point(13, 5);
+            pBoxKAdi.Margin = new Padding(3, 4, 3, 4);
+            pBoxKAdi.Name = "pBoxKAdi";
+            pBoxKAdi.Size = new Size(34, 40);
+            pBoxKAdi.SizeMode = PictureBoxSizeMode.Zoom;
+            pBoxKAdi.TabIndex = 0;
+            pBoxKAdi.TabStop = false;
             // 
             // pnlSifre
             // 
@@ -84,32 +87,35 @@
             pnlSifre.BackColor = Color.White;
             pnlSifre.BorderColorHtml = "#80818B";
             pnlSifre.BorderWidth = 1;
-            pnlSifre.Controls.Add(txtboxSifre);
-            pnlSifre.Controls.Add(pboxSifre);
-            pnlSifre.Location = new Point(45, 287);
+            pnlSifre.Controls.Add(txtBoxSifre);
+            pnlSifre.Controls.Add(pBoxSifre);
+            pnlSifre.Location = new Point(47, 334);
+            pnlSifre.Margin = new Padding(3, 4, 3, 4);
             pnlSifre.Name = "pnlSifre";
-            pnlSifre.Size = new Size(250, 40);
+            pnlSifre.Size = new Size(286, 53);
             pnlSifre.TabIndex = 1;
             // 
-            // txtboxSifre
+            // txtBoxSifre
             // 
-            txtboxSifre.Anchor = AnchorStyles.None;
-            txtboxSifre.BorderStyle = BorderStyle.None;
-            txtboxSifre.Location = new Point(70, 10);
-            txtboxSifre.Name = "txtboxSifre";
-            txtboxSifre.Size = new Size(162, 16);
-            txtboxSifre.TabIndex = 0;
+            txtBoxSifre.Anchor = AnchorStyles.None;
+            txtBoxSifre.BorderStyle = BorderStyle.None;
+            txtBoxSifre.Location = new Point(80, 13);
+            txtBoxSifre.Margin = new Padding(3, 4, 3, 4);
+            txtBoxSifre.Name = "txtBoxSifre";
+            txtBoxSifre.Size = new Size(185, 20);
+            txtBoxSifre.TabIndex = 0;
             // 
-            // pboxSifre
+            // pBoxSifre
             // 
-            pboxSifre.Anchor = AnchorStyles.None;
-            pboxSifre.Image = (Image)resources.GetObject("pboxSifre.Image");
-            pboxSifre.Location = new Point(12, 4);
-            pboxSifre.Name = "pboxSifre";
-            pboxSifre.Size = new Size(30, 30);
-            pboxSifre.SizeMode = PictureBoxSizeMode.Zoom;
-            pboxSifre.TabIndex = 2;
-            pboxSifre.TabStop = false;
+            pBoxSifre.Anchor = AnchorStyles.None;
+            pBoxSifre.Image = (Image)resources.GetObject("pBoxSifre.Image");
+            pBoxSifre.Location = new Point(14, 5);
+            pBoxSifre.Margin = new Padding(3, 4, 3, 4);
+            pBoxSifre.Name = "pBoxSifre";
+            pBoxSifre.Size = new Size(34, 40);
+            pBoxSifre.SizeMode = PictureBoxSizeMode.Zoom;
+            pBoxSifre.TabIndex = 2;
+            pBoxSifre.TabStop = false;
             // 
             // btnLogin
             // 
@@ -118,23 +124,26 @@
             btnLogin.FlatAppearance.BorderSize = 0;
             btnLogin.FlatStyle = FlatStyle.Flat;
             btnLogin.ForeColor = Color.White;
-            btnLogin.Location = new Point(45, 353);
+            btnLogin.Location = new Point(47, 422);
+            btnLogin.Margin = new Padding(3, 4, 3, 4);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(100, 40);
+            btnLogin.Size = new Size(114, 53);
             btnLogin.TabIndex = 3;
             btnLogin.Text = "Giriş Yap";
             btnLogin.UseVisualStyleBackColor = false;
+            btnLogin.Click += btnLogin_Click;
             // 
-            // pboxLoginAna
+            // pBoxLoginAna
             // 
-            pboxLoginAna.Anchor = AnchorStyles.None;
-            pboxLoginAna.Image = (Image)resources.GetObject("pboxLoginAna.Image");
-            pboxLoginAna.Location = new Point(95, 79);
-            pboxLoginAna.Name = "pboxLoginAna";
-            pboxLoginAna.Size = new Size(125, 102);
-            pboxLoginAna.SizeMode = PictureBoxSizeMode.StretchImage;
-            pboxLoginAna.TabIndex = 4;
-            pboxLoginAna.TabStop = false;
+            pBoxLoginAna.Anchor = AnchorStyles.None;
+            pBoxLoginAna.Image = (Image)resources.GetObject("pBoxLoginAna.Image");
+            pBoxLoginAna.Location = new Point(105, 56);
+            pBoxLoginAna.Margin = new Padding(3, 4, 3, 4);
+            pBoxLoginAna.Name = "pBoxLoginAna";
+            pBoxLoginAna.Size = new Size(143, 136);
+            pBoxLoginAna.SizeMode = PictureBoxSizeMode.StretchImage;
+            pBoxLoginAna.TabIndex = 4;
+            pBoxLoginAna.TabStop = false;
             // 
             // btnSifremiUnuttum
             // 
@@ -143,47 +152,49 @@
             btnSifremiUnuttum.FlatAppearance.BorderSize = 0;
             btnSifremiUnuttum.FlatStyle = FlatStyle.Flat;
             btnSifremiUnuttum.ForeColor = Color.White;
-            btnSifremiUnuttum.Location = new Point(195, 353);
+            btnSifremiUnuttum.Location = new Point(219, 422);
+            btnSifremiUnuttum.Margin = new Padding(3, 4, 3, 4);
             btnSifremiUnuttum.Name = "btnSifremiUnuttum";
-            btnSifremiUnuttum.Size = new Size(100, 40);
+            btnSifremiUnuttum.Size = new Size(114, 53);
             btnSifremiUnuttum.TabIndex = 6;
             btnSifremiUnuttum.Text = "Şifremi Unuttum";
             btnSifremiUnuttum.UseVisualStyleBackColor = false;
             // 
             // Giris
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(334, 461);
+            ClientSize = new Size(374, 516);
             Controls.Add(btnSifremiUnuttum);
-            Controls.Add(pboxLoginAna);
+            Controls.Add(pBoxLoginAna);
             Controls.Add(btnLogin);
             Controls.Add(pnlSifre);
-            Controls.Add(pnlkAdi);
+            Controls.Add(pnlKAdi);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Giris";
             Text = "Giris";
             Load += LoginNew_Load;
             Shown += LoginNew_Shown;
-            pnlkAdi.ResumeLayout(false);
-            pnlkAdi.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pboxkAdi).EndInit();
+            pnlKAdi.ResumeLayout(false);
+            pnlKAdi.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pBoxKAdi).EndInit();
             pnlSifre.ResumeLayout(false);
             pnlSifre.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pboxSifre).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pboxLoginAna).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pBoxSifre).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pBoxLoginAna).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
-        private CustomPanel pnlkAdi;
+        private CustomPanel pnlKAdi;
         private CustomPanel pnlSifre;
-        private PictureBox pboxkAdi;
-        private PictureBox pboxSifre;
+        private PictureBox pBoxKAdi;
+        private PictureBox pBoxSifre;
         private Button btnLogin;
-        private TextBox txtboxkAdi;
-        private TextBox txtboxSifre;
-        private PictureBox pboxLoginAna;
+        private TextBox txtBoxKAdi;
+        private TextBox txtBoxSifre;
+        private PictureBox pBoxLoginAna;
         private Button btnSifremiUnuttum;
     }
 }

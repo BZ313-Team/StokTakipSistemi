@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StokTakipSistemi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+641cb5e32a6ea31cbf7a85125a68187f866fe74f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c20492debf5838ff34b1d69351dab4f5a0e65221")]
 [assembly: System.Reflection.AssemblyProductAttribute("StokTakipSistemi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StokTakipSistemi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
