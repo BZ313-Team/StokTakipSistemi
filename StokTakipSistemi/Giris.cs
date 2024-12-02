@@ -38,51 +38,51 @@ namespace StokTakipSistemi
             string secilmisYaziRengi = "#1D212E";
             string btnMavi = "#005EFC";
 
-            txtboxkAdi.Text = "Kullanıcı Adı";
-            txtboxSifre.Text = "Şifre";
-            txtboxkAdi.ForeColor = ColorTranslator.FromHtml(secilmemisYaziRengi);
-            txtboxSifre.ForeColor = ColorTranslator.FromHtml(secilmemisYaziRengi);
+            txtBoxKAdi.Text = "Kullanıcı Adı";
+            txtBoxSifre.Text = "Şifre";
+            txtBoxKAdi.ForeColor = ColorTranslator.FromHtml(secilmemisYaziRengi);
+            txtBoxSifre.ForeColor = ColorTranslator.FromHtml(secilmemisYaziRengi);
 
             //textboxkAdi focus olayı
-            txtboxkAdi.GotFocus += (s, e) =>
+            txtBoxKAdi.GotFocus += (s, e) =>
             {
-                if (txtboxkAdi.Text == "Kullanıcı Adı")
+                if (txtBoxKAdi.Text == "Kullanıcı Adı")
                 {
-                    txtboxkAdi.Text = "";
-                    txtboxkAdi.ForeColor = ColorTranslator.FromHtml(secilmisYaziRengi);
+                    txtBoxKAdi.Text = "";
+                    txtBoxKAdi.ForeColor = ColorTranslator.FromHtml(secilmisYaziRengi);
                 }
             };
 
             // TextBoxSifre Focus Olayı
-            txtboxSifre.GotFocus += (s, e) =>
+            txtBoxSifre.GotFocus += (s, e) =>
             {
-                if (txtboxSifre.Text == "Şifre")
+                if (txtBoxSifre.Text == "Şifre")
                 {
-                    txtboxSifre.Text = "";
-                    txtboxSifre.ForeColor = ColorTranslator.FromHtml(secilmisYaziRengi);
-                    txtboxSifre.UseSystemPasswordChar = true; // Şifreyi gizle
+                    txtBoxSifre.Text = "";
+                    txtBoxSifre.ForeColor = ColorTranslator.FromHtml(secilmisYaziRengi);
+                    txtBoxSifre.UseSystemPasswordChar = true; // Şifreyi gizle
                 }
             };
 
             // TextBoxkAdi Leave (Kaybetme) Olayı
-            txtboxkAdi.LostFocus += (s, e) =>
+            txtBoxKAdi.LostFocus += (s, e) =>
             {
-                if (string.IsNullOrWhiteSpace(txtboxkAdi.Text))
+                if (string.IsNullOrWhiteSpace(txtBoxKAdi.Text))
                 {
-                    txtboxkAdi.Text = "Kullanıcı Adı";
-                    txtboxkAdi.ForeColor = ColorTranslator.FromHtml(secilmemisYaziRengi);
+                    txtBoxKAdi.Text = "Kullanıcı Adı";
+                    txtBoxKAdi.ForeColor = ColorTranslator.FromHtml(secilmemisYaziRengi);
 
                 }
             };
 
             // TextBoxSifre Leave (Kaybetme) Olayı
-            txtboxSifre.LostFocus += (s, e) =>
+            txtBoxSifre.LostFocus += (s, e) =>
             {
-                if (string.IsNullOrWhiteSpace(txtboxSifre.Text))
+                if (string.IsNullOrWhiteSpace(txtBoxSifre.Text))
                 {
-                    txtboxSifre.Text = "Şifre";
-                    txtboxSifre.ForeColor = ColorTranslator.FromHtml(secilmemisYaziRengi);
-                    txtboxSifre.UseSystemPasswordChar = false; // Gizlemeyi kaldır
+                    txtBoxSifre.Text = "Şifre";
+                    txtBoxSifre.ForeColor = ColorTranslator.FromHtml(secilmemisYaziRengi);
+                    txtBoxSifre.UseSystemPasswordChar = false; // Gizlemeyi kaldır
                 }
             };
 
@@ -142,10 +142,10 @@ namespace StokTakipSistemi
                 pfc.AddFontFile(fontFilePath);
 
                 btnLogin.Font = new Font(pfc.Families[0], 9, FontStyle.Regular);
-                btnSifremiUnuttum.Font = new Font(pfc.Families[0],8,FontStyle.Regular);
+                btnSifremiUnuttum.Font = new Font(pfc.Families[0], 8, FontStyle.Regular);
 
-                txtboxkAdi.Font = new Font(pfc.Families[0], 10, FontStyle.Regular);
-                txtboxSifre.Font = new Font(pfc.Families[0], 10, FontStyle.Regular);
+                txtBoxKAdi.Font = new Font(pfc.Families[0], 10, FontStyle.Regular);
+                txtBoxSifre.Font = new Font(pfc.Families[0], 10, FontStyle.Regular);
 
                 /* foreach (Control c in this.Controls)
                  {
@@ -161,6 +161,16 @@ namespace StokTakipSistemi
         private void LoginNew_Shown(object sender, EventArgs e)
         {
             this.ActiveControl = null;
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            if (txtBoxKAdi.Text == "bz313"&&txtBoxSifre.Text=="123q")
+            {
+                Sayfalar sayfalar = new Sayfalar();
+                sayfalar.Show();
+                this.Hide();
+            }
         }
     }
 

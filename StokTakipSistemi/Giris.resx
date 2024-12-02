@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="pboxkAdi.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pBoxKAdi.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAKIxJREFUeF7t
         1st2HLm2ZNHz6VXt+9FVmXnsSklxkYyHAQ7A1xzDWqLc4MBGRPxH0tr+z//9n/+3Y7J8SZL0J/rivFOy
@@ -297,7 +297,7 @@
         qQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="pboxSifre.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pBoxSifre.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAG6ZJREFUeF7t
         1duy7EhWRNH+dHjmo4EGb6MAr65zcSlDqTHM5lvVCuXZS6G/AfD9/uVf/+3fP1UeAQC4SvsAn1oeGQD4
@@ -421,7 +421,7 @@
         AAAASUVORK5CYII=
 </value>
   </data>
-  <data name="pboxLoginAna.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pBoxLoginAna.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         R0lGODlh9AHrAPYAADUQEk4QEUcQKlIaPCcSQ0kXT2sXVVQhVW8lU0MbaW4bZkkgf1MlcGYwdHY8eJBG
         eFUpjWo1inctnVo0qFo5tWMvoG84pmM2rWU4tnM5uF5Dj3lGknlfmGxCq3lKqHtSpWlDuXVGunpUv39s
