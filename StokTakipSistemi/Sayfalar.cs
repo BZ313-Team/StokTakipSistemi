@@ -101,7 +101,7 @@ namespace StokTakipSistemi
 
 
 
-// buttonlarýn renk ayarlarý
+        // buttonlarýn renk ayarlarý
 
         private void panelButtons_Paint(object sender, PaintEventArgs e)
         {
@@ -193,7 +193,7 @@ namespace StokTakipSistemi
         {
             Istatistik2 istatistik2 = new Istatistik2();
             istatistik2.Show();
-            this.Hide();
+            
 
         }
 

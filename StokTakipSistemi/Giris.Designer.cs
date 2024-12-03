@@ -172,6 +172,7 @@
             Controls.Add(pnlKAdi);
             Margin = new Padding(3, 4, 3, 4);
             Name = "Giris";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Giris";
             Load += LoginNew_Load;
             Shown += LoginNew_Shown;
