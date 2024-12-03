@@ -26,5 +26,11 @@ namespace StokTakipSistemi
             this.StartPosition = FormStartPosition.Manual;
             this.Location = new Point(xPosition, yPosition);
         }
+
+        private void btnGeri_Click(object sender, EventArgs e)
+        {
+               
+            this.Hide();
+        }
     }
 }

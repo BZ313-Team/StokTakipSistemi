@@ -43,6 +43,7 @@ namespace StokTakipSistemi
             txtBoxKAdi.ForeColor = ColorTranslator.FromHtml(secilmemisYaziRengi);
             txtBoxSifre.ForeColor = ColorTranslator.FromHtml(secilmemisYaziRengi);
 
+
             //textboxkAdi focus olayı
             txtBoxKAdi.GotFocus += (s, e) =>
             {
@@ -61,6 +62,7 @@ namespace StokTakipSistemi
                     txtBoxSifre.Text = "";
                     txtBoxSifre.ForeColor = ColorTranslator.FromHtml(secilmisYaziRengi);
                     txtBoxSifre.UseSystemPasswordChar = true; // Şifreyi gizle
+                    txtBoxSifre.PasswordChar = '*';
                 }
             };
 
@@ -165,13 +167,15 @@ namespace StokTakipSistemi
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            if (txtBoxKAdi.Text == "bz313"&&txtBoxSifre.Text=="123q")
+            if (txtBoxKAdi.Text == "bz313" && txtBoxSifre.Text == "123q")
             {
                 Sayfalar sayfalar = new Sayfalar();
                 sayfalar.Show();
                 this.Hide();
             }
         }
+
+      
     }
 
 }

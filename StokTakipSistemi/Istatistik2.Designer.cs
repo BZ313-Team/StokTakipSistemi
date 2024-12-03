@@ -34,7 +34,8 @@
             tLayoutKarZarar = new TableLayoutPanel();
             tLayoutKarZararGraf = new TableLayoutPanel();
             chartKarZarar = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            panel1 = new Panel();
+            pnlIstatistikSag = new Panel();
+            btnGeri = new Button();
             lblKar = new Label();
             lblCiro = new Label();
             txtBoxKar = new TextBox();
@@ -45,7 +46,7 @@
             tLayoutKarZarar.SuspendLayout();
             tLayoutKarZararGraf.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)chartKarZarar).BeginInit();
-            panel1.SuspendLayout();
+            pnlIstatistikSag.SuspendLayout();
             tLayoutKarZararUst.SuspendLayout();
             SuspendLayout();
             // 
@@ -70,7 +71,7 @@
             tLayoutKarZararGraf.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 75F));
             tLayoutKarZararGraf.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
             tLayoutKarZararGraf.Controls.Add(chartKarZarar, 0, 0);
-            tLayoutKarZararGraf.Controls.Add(panel1, 1, 0);
+            tLayoutKarZararGraf.Controls.Add(pnlIstatistikSag, 1, 0);
             tLayoutKarZararGraf.Dock = DockStyle.Fill;
             tLayoutKarZararGraf.Location = new Point(3, 57);
             tLayoutKarZararGraf.Name = "tLayoutKarZararGraf";
@@ -97,17 +98,28 @@
             chartKarZarar.TabIndex = 1;
             chartKarZarar.Text = "chart1";
             // 
-            // panel1
+            // pnlIstatistikSag
             // 
-            panel1.Controls.Add(lblKar);
-            panel1.Controls.Add(lblCiro);
-            panel1.Controls.Add(txtBoxKar);
-            panel1.Controls.Add(txtBoxCiro);
-            panel1.Dock = DockStyle.Fill;
-            panel1.Location = new Point(834, 3);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(272, 480);
-            panel1.TabIndex = 2;
+            pnlIstatistikSag.Controls.Add(btnGeri);
+            pnlIstatistikSag.Controls.Add(lblKar);
+            pnlIstatistikSag.Controls.Add(lblCiro);
+            pnlIstatistikSag.Controls.Add(txtBoxKar);
+            pnlIstatistikSag.Controls.Add(txtBoxCiro);
+            pnlIstatistikSag.Dock = DockStyle.Fill;
+            pnlIstatistikSag.Location = new Point(834, 3);
+            pnlIstatistikSag.Name = "pnlIstatistikSag";
+            pnlIstatistikSag.Size = new Size(272, 480);
+            pnlIstatistikSag.TabIndex = 2;
+            // 
+            // btnGeri
+            // 
+            btnGeri.Location = new Point(94, 378);
+            btnGeri.Name = "btnGeri";
+            btnGeri.Size = new Size(84, 40);
+            btnGeri.TabIndex = 4;
+            btnGeri.Text = "Geri";
+            btnGeri.UseVisualStyleBackColor = true;
+            btnGeri.Click += btnGeri_Click;
             // 
             // lblKar
             // 
@@ -183,13 +195,14 @@
             ClientSize = new Size(1115, 546);
             Controls.Add(tLayoutKarZarar);
             Name = "Istatistik2";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Istatistik2";
             Load += Istatistik2_Load;
             tLayoutKarZarar.ResumeLayout(false);
             tLayoutKarZararGraf.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)chartKarZarar).EndInit();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
+            pnlIstatistikSag.ResumeLayout(false);
+            pnlIstatistikSag.PerformLayout();
             tLayoutKarZararUst.ResumeLayout(false);
             tLayoutKarZararUst.PerformLayout();
             ResumeLayout(false);
@@ -203,10 +216,11 @@
         private Label lblUrunBazindaKarZarar;
         private ComboBox cmbBoxKarZararFiltre;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartKarZarar;
-        private Panel panel1;
+        private Panel pnlIstatistikSag;
         private Label lblKar;
         private Label lblCiro;
         private TextBox txtBoxKar;
         private TextBox txtBoxCiro;
+        private Button btnGeri;
     }
 }
