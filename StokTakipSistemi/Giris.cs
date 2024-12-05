@@ -30,6 +30,14 @@ namespace StokTakipSistemi
         public Giris()
         {
             InitializeComponent();
+            // Enter basınca giriş yapmasını sağlıyor
+            txtBoxSifre.KeyDown += (s, e) =>
+            {
+                if (e.KeyCode == Keys.Enter)
+                {
+                    btnLogin.PerformClick();
+                }
+            };
 
             string arkaPlanBeyaz = "#FFFFFF";
             string arkaPlanAcikGri = "#F8F8FA";
@@ -175,7 +183,11 @@ namespace StokTakipSistemi
             }
         }
 
-      
+        private void btnSifremiUnuttum_Click(object sender, EventArgs e)
+        {
+            SifremiUnuttum sifregoster = new SifremiUnuttum();
+            sifregoster.Show();
+        }
     }
 
 }

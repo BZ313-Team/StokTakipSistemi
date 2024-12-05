@@ -42,7 +42,7 @@
             txtBoxCiro = new TextBox();
             tLayoutKarZararUst = new TableLayoutPanel();
             lblUrunBazindaKarZarar = new Label();
-            cmbBoxKarZararFiltre = new ComboBox();
+            cmbBoxIstSFiltre = new ComboBox();
             tLayoutKarZarar.SuspendLayout();
             tLayoutKarZararGraf.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)chartKarZarar).BeginInit();
@@ -91,6 +91,7 @@
             chartKarZarar.Location = new Point(3, 3);
             chartKarZarar.Name = "chartKarZarar";
             series1.ChartArea = "ChartArea1";
+            series1.CustomProperties = "PointWidth=0.3";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             chartKarZarar.Series.Add(series1);
@@ -159,7 +160,7 @@
             tLayoutKarZararUst.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 75F));
             tLayoutKarZararUst.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 25F));
             tLayoutKarZararUst.Controls.Add(lblUrunBazindaKarZarar, 0, 0);
-            tLayoutKarZararUst.Controls.Add(cmbBoxKarZararFiltre, 1, 0);
+            tLayoutKarZararUst.Controls.Add(cmbBoxIstSFiltre, 1, 0);
             tLayoutKarZararUst.Dock = DockStyle.Fill;
             tLayoutKarZararUst.Location = new Point(3, 3);
             tLayoutKarZararUst.Name = "tLayoutKarZararUst";
@@ -178,15 +179,15 @@
             lblUrunBazindaKarZarar.TabIndex = 0;
             lblUrunBazindaKarZarar.Text = "Ürün Bazında Kar Oranı ";
             // 
-            // cmbBoxKarZararFiltre
+            // cmbBoxIstSFiltre
             // 
-            cmbBoxKarZararFiltre.Anchor = AnchorStyles.None;
-            cmbBoxKarZararFiltre.FormattingEnabled = true;
-            cmbBoxKarZararFiltre.Items.AddRange(new object[] { "Günluk ", "Haftalık", "Aylık " });
-            cmbBoxKarZararFiltre.Location = new Point(894, 10);
-            cmbBoxKarZararFiltre.Name = "cmbBoxKarZararFiltre";
-            cmbBoxKarZararFiltre.Size = new Size(151, 28);
-            cmbBoxKarZararFiltre.TabIndex = 1;
+            cmbBoxIstSFiltre.Anchor = AnchorStyles.None;
+            cmbBoxIstSFiltre.FormattingEnabled = true;
+            cmbBoxIstSFiltre.Items.AddRange(new object[] { "Günlük", "Haftalık", "Aylık" });
+            cmbBoxIstSFiltre.Location = new Point(894, 10);
+            cmbBoxIstSFiltre.Name = "cmbBoxIstSFiltre";
+            cmbBoxIstSFiltre.Size = new Size(151, 28);
+            cmbBoxIstSFiltre.TabIndex = 1;
             // 
             // Istatistik2
             // 
@@ -214,7 +215,6 @@
         private TableLayoutPanel tLayoutKarZararGraf;
         private TableLayoutPanel tLayoutKarZararUst;
         private Label lblUrunBazindaKarZarar;
-        private ComboBox cmbBoxKarZararFiltre;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartKarZarar;
         private Panel pnlIstatistikSag;
         private Label lblKar;
@@ -222,5 +222,6 @@
         private TextBox txtBoxKar;
         private TextBox txtBoxCiro;
         private Button btnGeri;
+        private ComboBox cmbBoxIstSFiltre;
     }
 }

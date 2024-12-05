@@ -159,6 +159,7 @@
             btnSifremiUnuttum.TabIndex = 6;
             btnSifremiUnuttum.Text = "Şifremi Unuttum";
             btnSifremiUnuttum.UseVisualStyleBackColor = false;
+            btnSifremiUnuttum.Click += btnSifremiUnuttum_Click;
             // 
             // Giris
             // 
