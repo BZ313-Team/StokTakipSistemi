@@ -105,3 +105,4 @@ C:\Users\sasss\Desktop\StokTakipSistemi\StokTakipSistemi\StokTakipSistemi\bin\De
 C:\Users\sasss\Desktop\StokTakipSistemi\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTaki.1EEE37DF.Up2Date
 C:\Users\sasss\Desktop\StokTakipSistemi\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.genruntimeconfig.cache
 C:\Users\sasss\Desktop\StokTakipSistemi\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\ref\StokTakipSistemi.dll
+C:\Users\HP\Desktop\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.SifremiUnuttum.resources

@@ -26,6 +26,28 @@ namespace StokTakipSistemi
         public Sayfalar()
         {
             InitializeComponent();
+            cmbBoxUrunSFiltre.Text = "Günlük";
+            cmbBoxStokSFiltre.Text = "Günlük";
+            cmbBoxGecmisSFiltre.Text = "Günlük";
+            cmbBoxIstFiltre.Text = "Günlük";
+
+            cmbBoxUrunSFiltre.ForeColor = ColorTranslator.FromHtml("#80818B");
+            cmbBoxStokSFiltre.ForeColor = ColorTranslator.FromHtml("#80818B");
+            cmbBoxGecmisSFiltre.ForeColor = ColorTranslator.FromHtml("#80818B");
+            cmbBoxIstFiltre.ForeColor = ColorTranslator.FromHtml("#80818B");
+
+            // Fontu tüm kontrolleri için uygulamak:
+            string fontFamilyName = "Inter"; // Kendi font isminizi buraya yazýn
+            float fontSize = 10; // Ýstediðiniz font boyutunu buraya yazýn
+
+            // Utility sýnýfýndan font uygulama metodunu çaðýrýn
+            FontUtility.ApplyCustomFontToAllControls(this, fontFamilyName, fontSize);
+            btnDEL.Font = new Font(btnUrun.Font.FontFamily, 9f);
+            lblTutar.Font = new Font(btnUrun.Font.FontFamily, 11f);
+            lblBileme.Font = new Font(btnUrun.Font.FontFamily, 11f);
+            lblIndirimTL.Font = new Font(btnUrun.Font.FontFamily, 11f);
+            lblIndirimYuzde.Font = new Font(btnUrun.Font.FontFamily, 11f);
+            lblToplamTutar.Font = new Font(btnUrun.Font.FontFamily, 11f);
 
             //Buttonlarýn kenar kývrýmý deðiþimi
             btnSatis.Region = Region.FromHrgn(CreateRoundRectRgn(
@@ -68,6 +90,19 @@ namespace StokTakipSistemi
               5,
               5));
 
+
+            btnSatisYap.Region = Region.FromHrgn(CreateRoundRectRgn(
+              0,
+              0,
+              btnSatisYap.Width,
+              btnSatisYap.Height,
+              5,
+              5));
+
+
+
+
+
             // Buttonlarýn renk deðiþmi
             btnSatis.BackColor = ColorTranslator.FromHtml("#F8F8FA");
             btnUrun.BackColor = ColorTranslator.FromHtml("#F8F8FA");
@@ -76,6 +111,8 @@ namespace StokTakipSistemi
             btnIstatistik.BackColor = ColorTranslator.FromHtml("#F8F8FA");
             btnSatisYap.BackColor = ColorTranslator.FromHtml("#F8F8FA");
 
+            btnSatisYap.BackColor = ColorTranslator.FromHtml("#005EFC");
+            btnSatisYap.ForeColor = ColorTranslator.FromHtml("#FFFFFF");
 
 
 

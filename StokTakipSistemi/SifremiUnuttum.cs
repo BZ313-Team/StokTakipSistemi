@@ -10,37 +10,29 @@ using System.Windows.Forms;
 
 namespace StokTakipSistemi
 {
-    public partial class Istatistik2 : Form
+    public partial class SifremiUnuttum : Form
     {
-        public Istatistik2()
+        public SifremiUnuttum()
         {
             InitializeComponent();
             // Fontu tüm kontrolleri için uygulamak:
             string fontFamilyName = "Inter"; // Kendi font isminizi buraya yazın
-            float fontSize = 9; // İstediğiniz font boyutunu buraya yazın
+            float fontSize = 10; // İstediğiniz font boyutunu buraya yazın
 
             // Utility sınıfından font uygulama metodunu çağırın
             FontUtility.ApplyCustomFontToAllControls(this, fontFamilyName, fontSize);
 
 
-
-
         }
 
-        private void Istatistik2_Load(object sender, EventArgs e)
+        private void SifremiUnuttum_Load(object sender, EventArgs e)
         {
             int xPosition = 425; // Yatay (X) pozisyonu
-            int yPosition = 50;  // Dikey (Y) pozisyonu
+            int yPosition = 517;  // Dikey (Y) pozisyonu
 
             // Formun başlangıç pozisyonunu elle ayarlayın
             this.StartPosition = FormStartPosition.Manual;
             this.Location = new Point(xPosition, yPosition);
-        }
-
-        private void btnGeri_Click(object sender, EventArgs e)
-        {
-               
-            this.Hide();
         }
     }
 }
