@@ -58,11 +58,12 @@
             tLayoutKarZarar.Controls.Add(tLayoutKarZararUst, 0, 0);
             tLayoutKarZarar.Dock = DockStyle.Fill;
             tLayoutKarZarar.Location = new Point(0, 0);
+            tLayoutKarZarar.Margin = new Padding(3, 2, 3, 2);
             tLayoutKarZarar.Name = "tLayoutKarZarar";
             tLayoutKarZarar.RowCount = 2;
             tLayoutKarZarar.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
             tLayoutKarZarar.RowStyles.Add(new RowStyle(SizeType.Percent, 90F));
-            tLayoutKarZarar.Size = new Size(1115, 546);
+            tLayoutKarZarar.Size = new Size(976, 410);
             tLayoutKarZarar.TabIndex = 0;
             // 
             // tLayoutKarZararGraf
@@ -73,12 +74,13 @@
             tLayoutKarZararGraf.Controls.Add(chartKarZarar, 0, 0);
             tLayoutKarZararGraf.Controls.Add(pnlIstatistikSag, 1, 0);
             tLayoutKarZararGraf.Dock = DockStyle.Fill;
-            tLayoutKarZararGraf.Location = new Point(3, 57);
+            tLayoutKarZararGraf.Location = new Point(3, 43);
+            tLayoutKarZararGraf.Margin = new Padding(3, 2, 3, 2);
             tLayoutKarZararGraf.Name = "tLayoutKarZararGraf";
             tLayoutKarZararGraf.RowCount = 1;
             tLayoutKarZararGraf.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tLayoutKarZararGraf.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
-            tLayoutKarZararGraf.Size = new Size(1109, 486);
+            tLayoutKarZararGraf.RowStyles.Add(new RowStyle(SizeType.Absolute, 364F));
+            tLayoutKarZararGraf.Size = new Size(970, 365);
             tLayoutKarZararGraf.TabIndex = 0;
             // 
             // chartKarZarar
@@ -88,14 +90,15 @@
             chartKarZarar.Dock = DockStyle.Fill;
             legend1.Name = "Legend1";
             chartKarZarar.Legends.Add(legend1);
-            chartKarZarar.Location = new Point(3, 3);
+            chartKarZarar.Location = new Point(3, 2);
+            chartKarZarar.Margin = new Padding(3, 2, 3, 2);
             chartKarZarar.Name = "chartKarZarar";
             series1.ChartArea = "ChartArea1";
             series1.CustomProperties = "PointWidth=0.3";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             chartKarZarar.Series.Add(series1);
-            chartKarZarar.Size = new Size(825, 480);
+            chartKarZarar.Size = new Size(721, 361);
             chartKarZarar.TabIndex = 1;
             chartKarZarar.Text = "chart1";
             // 
@@ -107,16 +110,18 @@
             pnlIstatistikSag.Controls.Add(txtBoxKar);
             pnlIstatistikSag.Controls.Add(txtBoxCiro);
             pnlIstatistikSag.Dock = DockStyle.Fill;
-            pnlIstatistikSag.Location = new Point(834, 3);
+            pnlIstatistikSag.Location = new Point(730, 2);
+            pnlIstatistikSag.Margin = new Padding(3, 2, 3, 2);
             pnlIstatistikSag.Name = "pnlIstatistikSag";
-            pnlIstatistikSag.Size = new Size(272, 480);
+            pnlIstatistikSag.Size = new Size(237, 361);
             pnlIstatistikSag.TabIndex = 2;
             // 
             // btnGeri
             // 
-            btnGeri.Location = new Point(94, 378);
+            btnGeri.Location = new Point(82, 284);
+            btnGeri.Margin = new Padding(3, 2, 3, 2);
             btnGeri.Name = "btnGeri";
-            btnGeri.Size = new Size(84, 40);
+            btnGeri.Size = new Size(74, 30);
             btnGeri.TabIndex = 4;
             btnGeri.Text = "Geri";
             btnGeri.UseVisualStyleBackColor = true;
@@ -125,33 +130,35 @@
             // lblKar
             // 
             lblKar.AutoSize = true;
-            lblKar.Location = new Point(29, 144);
+            lblKar.Location = new Point(25, 108);
             lblKar.Name = "lblKar";
-            lblKar.Size = new Size(38, 20);
+            lblKar.Size = new Size(30, 15);
             lblKar.TabIndex = 3;
             lblKar.Text = "Kar :";
             // 
             // lblCiro
             // 
             lblCiro.AutoSize = true;
-            lblCiro.Location = new Point(29, 93);
+            lblCiro.Location = new Point(25, 70);
             lblCiro.Name = "lblCiro";
-            lblCiro.Size = new Size(43, 20);
+            lblCiro.Size = new Size(35, 15);
             lblCiro.TabIndex = 2;
             lblCiro.Text = "Ciro :";
             // 
             // txtBoxKar
             // 
-            txtBoxKar.Location = new Point(127, 141);
+            txtBoxKar.Location = new Point(111, 106);
+            txtBoxKar.Margin = new Padding(3, 2, 3, 2);
             txtBoxKar.Name = "txtBoxKar";
-            txtBoxKar.Size = new Size(99, 27);
+            txtBoxKar.Size = new Size(87, 23);
             txtBoxKar.TabIndex = 1;
             // 
             // txtBoxCiro
             // 
-            txtBoxCiro.Location = new Point(127, 86);
+            txtBoxCiro.Location = new Point(111, 64);
+            txtBoxCiro.Margin = new Padding(3, 2, 3, 2);
             txtBoxCiro.Name = "txtBoxCiro";
-            txtBoxCiro.Size = new Size(99, 27);
+            txtBoxCiro.Size = new Size(87, 23);
             txtBoxCiro.TabIndex = 0;
             // 
             // tLayoutKarZararUst
@@ -162,39 +169,43 @@
             tLayoutKarZararUst.Controls.Add(lblUrunBazindaKarZarar, 0, 0);
             tLayoutKarZararUst.Controls.Add(cmbBoxIstSFiltre, 1, 0);
             tLayoutKarZararUst.Dock = DockStyle.Fill;
-            tLayoutKarZararUst.Location = new Point(3, 3);
+            tLayoutKarZararUst.Location = new Point(3, 2);
+            tLayoutKarZararUst.Margin = new Padding(3, 2, 3, 2);
             tLayoutKarZararUst.Name = "tLayoutKarZararUst";
             tLayoutKarZararUst.RowCount = 1;
             tLayoutKarZararUst.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tLayoutKarZararUst.Size = new Size(1109, 48);
+            tLayoutKarZararUst.Size = new Size(970, 37);
             tLayoutKarZararUst.TabIndex = 1;
             // 
             // lblUrunBazindaKarZarar
             // 
+            lblUrunBazindaKarZarar.Anchor = AnchorStyles.None;
             lblUrunBazindaKarZarar.AutoSize = true;
-            lblUrunBazindaKarZarar.Dock = DockStyle.Left;
-            lblUrunBazindaKarZarar.Location = new Point(3, 0);
+            lblUrunBazindaKarZarar.Location = new Point(297, 11);
             lblUrunBazindaKarZarar.Name = "lblUrunBazindaKarZarar";
-            lblUrunBazindaKarZarar.Size = new Size(167, 48);
+            lblUrunBazindaKarZarar.Size = new Size(132, 15);
             lblUrunBazindaKarZarar.TabIndex = 0;
             lblUrunBazindaKarZarar.Text = "Ürün Bazında Kar Oranı ";
+            lblUrunBazindaKarZarar.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // cmbBoxIstSFiltre
             // 
             cmbBoxIstSFiltre.Anchor = AnchorStyles.None;
             cmbBoxIstSFiltre.FormattingEnabled = true;
             cmbBoxIstSFiltre.Items.AddRange(new object[] { "Günlük", "Haftalık", "Aylık" });
-            cmbBoxIstSFiltre.Location = new Point(894, 10);
+            cmbBoxIstSFiltre.Location = new Point(782, 7);
+            cmbBoxIstSFiltre.Margin = new Padding(3, 2, 3, 2);
             cmbBoxIstSFiltre.Name = "cmbBoxIstSFiltre";
-            cmbBoxIstSFiltre.Size = new Size(151, 28);
+            cmbBoxIstSFiltre.Size = new Size(133, 23);
             cmbBoxIstSFiltre.TabIndex = 1;
             // 
             // Istatistik2
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1115, 546);
+            ClientSize = new Size(976, 410);
             Controls.Add(tLayoutKarZarar);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Istatistik2";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Istatistik2";

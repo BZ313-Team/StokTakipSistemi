@@ -53,30 +53,27 @@
             pnlKAdi.BorderWidth = 1;
             pnlKAdi.Controls.Add(txtBoxKAdi);
             pnlKAdi.Controls.Add(pBoxKAdi);
-            pnlKAdi.Location = new Point(47, 254);
-            pnlKAdi.Margin = new Padding(3, 4, 3, 4);
+            pnlKAdi.Location = new Point(41, 190);
             pnlKAdi.Name = "pnlKAdi";
-            pnlKAdi.Size = new Size(286, 53);
+            pnlKAdi.Size = new Size(250, 40);
             pnlKAdi.TabIndex = 0;
             // 
             // txtBoxKAdi
             // 
             txtBoxKAdi.Anchor = AnchorStyles.None;
             txtBoxKAdi.BorderStyle = BorderStyle.None;
-            txtBoxKAdi.Location = new Point(80, 13);
-            txtBoxKAdi.Margin = new Padding(3, 4, 3, 4);
+            txtBoxKAdi.Location = new Point(70, 10);
             txtBoxKAdi.Name = "txtBoxKAdi";
-            txtBoxKAdi.Size = new Size(185, 20);
+            txtBoxKAdi.Size = new Size(162, 16);
             txtBoxKAdi.TabIndex = 0;
             // 
             // pBoxKAdi
             // 
             pBoxKAdi.Anchor = AnchorStyles.None;
             pBoxKAdi.Image = (Image)resources.GetObject("pBoxKAdi.Image");
-            pBoxKAdi.Location = new Point(13, 5);
-            pBoxKAdi.Margin = new Padding(3, 4, 3, 4);
+            pBoxKAdi.Location = new Point(11, 4);
             pBoxKAdi.Name = "pBoxKAdi";
-            pBoxKAdi.Size = new Size(34, 40);
+            pBoxKAdi.Size = new Size(30, 30);
             pBoxKAdi.SizeMode = PictureBoxSizeMode.Zoom;
             pBoxKAdi.TabIndex = 0;
             pBoxKAdi.TabStop = false;
@@ -89,30 +86,27 @@
             pnlSifre.BorderWidth = 1;
             pnlSifre.Controls.Add(txtBoxSifre);
             pnlSifre.Controls.Add(pBoxSifre);
-            pnlSifre.Location = new Point(47, 334);
-            pnlSifre.Margin = new Padding(3, 4, 3, 4);
+            pnlSifre.Location = new Point(41, 250);
             pnlSifre.Name = "pnlSifre";
-            pnlSifre.Size = new Size(286, 53);
+            pnlSifre.Size = new Size(250, 40);
             pnlSifre.TabIndex = 1;
             // 
             // txtBoxSifre
             // 
             txtBoxSifre.Anchor = AnchorStyles.None;
             txtBoxSifre.BorderStyle = BorderStyle.None;
-            txtBoxSifre.Location = new Point(80, 13);
-            txtBoxSifre.Margin = new Padding(3, 4, 3, 4);
+            txtBoxSifre.Location = new Point(70, 10);
             txtBoxSifre.Name = "txtBoxSifre";
-            txtBoxSifre.Size = new Size(185, 20);
+            txtBoxSifre.Size = new Size(162, 16);
             txtBoxSifre.TabIndex = 0;
             // 
             // pBoxSifre
             // 
             pBoxSifre.Anchor = AnchorStyles.None;
             pBoxSifre.Image = (Image)resources.GetObject("pBoxSifre.Image");
-            pBoxSifre.Location = new Point(14, 5);
-            pBoxSifre.Margin = new Padding(3, 4, 3, 4);
+            pBoxSifre.Location = new Point(12, 4);
             pBoxSifre.Name = "pBoxSifre";
-            pBoxSifre.Size = new Size(34, 40);
+            pBoxSifre.Size = new Size(30, 30);
             pBoxSifre.SizeMode = PictureBoxSizeMode.Zoom;
             pBoxSifre.TabIndex = 2;
             pBoxSifre.TabStop = false;
@@ -124,10 +118,9 @@
             btnLogin.FlatAppearance.BorderSize = 0;
             btnLogin.FlatStyle = FlatStyle.Flat;
             btnLogin.ForeColor = Color.White;
-            btnLogin.Location = new Point(47, 422);
-            btnLogin.Margin = new Padding(3, 4, 3, 4);
+            btnLogin.Location = new Point(41, 316);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(114, 53);
+            btnLogin.Size = new Size(100, 40);
             btnLogin.TabIndex = 3;
             btnLogin.Text = "Giriş Yap";
             btnLogin.UseVisualStyleBackColor = false;
@@ -137,11 +130,10 @@
             // 
             pBoxLoginAna.Anchor = AnchorStyles.None;
             pBoxLoginAna.Image = (Image)resources.GetObject("pBoxLoginAna.Image");
-            pBoxLoginAna.Location = new Point(105, 56);
-            pBoxLoginAna.Margin = new Padding(3, 4, 3, 4);
+            pBoxLoginAna.Location = new Point(92, 42);
             pBoxLoginAna.Name = "pBoxLoginAna";
-            pBoxLoginAna.Size = new Size(143, 136);
-            pBoxLoginAna.SizeMode = PictureBoxSizeMode.StretchImage;
+            pBoxLoginAna.Size = new Size(125, 102);
+            pBoxLoginAna.SizeMode = PictureBoxSizeMode.Zoom;
             pBoxLoginAna.TabIndex = 4;
             pBoxLoginAna.TabStop = false;
             // 
@@ -152,10 +144,9 @@
             btnSifremiUnuttum.FlatAppearance.BorderSize = 0;
             btnSifremiUnuttum.FlatStyle = FlatStyle.Flat;
             btnSifremiUnuttum.ForeColor = Color.White;
-            btnSifremiUnuttum.Location = new Point(219, 422);
-            btnSifremiUnuttum.Margin = new Padding(3, 4, 3, 4);
+            btnSifremiUnuttum.Location = new Point(192, 316);
             btnSifremiUnuttum.Name = "btnSifremiUnuttum";
-            btnSifremiUnuttum.Size = new Size(114, 53);
+            btnSifremiUnuttum.Size = new Size(100, 40);
             btnSifremiUnuttum.TabIndex = 6;
             btnSifremiUnuttum.Text = "Şifremi Unuttum";
             btnSifremiUnuttum.UseVisualStyleBackColor = false;
@@ -163,15 +154,14 @@
             // 
             // Giris
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(374, 516);
+            ClientSize = new Size(327, 387);
             Controls.Add(btnSifremiUnuttum);
             Controls.Add(pBoxLoginAna);
             Controls.Add(btnLogin);
             Controls.Add(pnlSifre);
             Controls.Add(pnlKAdi);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "Giris";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Giris";
