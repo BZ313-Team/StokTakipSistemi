@@ -106,3 +106,31 @@ C:\Users\sasss\Desktop\StokTakipSistemi\StokTakipSistemi\StokTakipSistemi\obj\De
 C:\Users\sasss\Desktop\StokTakipSistemi\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.genruntimeconfig.cache
 C:\Users\sasss\Desktop\StokTakipSistemi\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\ref\StokTakipSistemi.dll
 C:\Users\HP\Desktop\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.SifremiUnuttum.resources
+C:\Users\mikas\Desktop\Yeni klasör (3)\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\Resources\Inter-VariableFont_opsz,wght.ttf
+C:\Users\mikas\Desktop\Yeni klasör (3)\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\StokTakipSistemi.exe
+C:\Users\mikas\Desktop\Yeni klasör (3)\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\StokTakipSistemi.deps.json
+C:\Users\mikas\Desktop\Yeni klasör (3)\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\StokTakipSistemi.runtimeconfig.json
+C:\Users\mikas\Desktop\Yeni klasör (3)\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\StokTakipSistemi.dll
+C:\Users\mikas\Desktop\Yeni klasör (3)\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\StokTakipSistemi.pdb
+C:\Users\mikas\Desktop\Yeni klasör (3)\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\WinForms.DataVisualization.Utilities.dll
+C:\Users\mikas\Desktop\Yeni klasör (3)\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\WinForms.DataVisualization.dll
+C:\Users\mikas\Desktop\Yeni klasör (3)\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.csproj.AssemblyReference.cache
+C:\Users\mikas\Desktop\Yeni klasör (3)\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.g.resources
+C:\Users\mikas\Desktop\Yeni klasör (3)\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.Giris.resources
+C:\Users\mikas\Desktop\Yeni klasör (3)\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.Istatistik2.resources
+C:\Users\mikas\Desktop\Yeni klasör (3)\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.Properties.Resources.resources
+C:\Users\mikas\Desktop\Yeni klasör (3)\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.Sayfalar.resources
+C:\Users\mikas\Desktop\Yeni klasör (3)\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.SifremiUnuttum.resources
+C:\Users\mikas\Desktop\Yeni klasör (3)\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.csproj.GenerateResource.cache
+C:\Users\mikas\Desktop\Yeni klasör (3)\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mikas\Desktop\Yeni klasör (3)\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.AssemblyInfoInputs.cache
+C:\Users\mikas\Desktop\Yeni klasör (3)\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.AssemblyInfo.cs
+C:\Users\mikas\Desktop\Yeni klasör (3)\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.csproj.CoreCompileInputs.cache
+C:\Users\mikas\Desktop\Yeni klasör (3)\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.sourcelink.json
+C:\Users\mikas\Desktop\Yeni klasör (3)\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTaki.1EEE37DF.Up2Date
+C:\Users\mikas\Desktop\Yeni klasör (3)\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.dll
+C:\Users\mikas\Desktop\Yeni klasör (3)\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\refint\StokTakipSistemi.dll
+C:\Users\mikas\Desktop\Yeni klasör (3)\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.pdb
+C:\Users\mikas\Desktop\Yeni klasör (3)\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.genruntimeconfig.cache
+C:\Users\mikas\Desktop\Yeni klasör (3)\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\ref\StokTakipSistemi.dll
+C:\Users\mikas\Desktop\Yeni klasör (3)\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.ZamEkrani.resources

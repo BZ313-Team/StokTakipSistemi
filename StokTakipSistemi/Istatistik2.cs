@@ -35,6 +35,12 @@ namespace StokTakipSistemi
             // Formun başlangıç pozisyonunu elle ayarlayın
             this.StartPosition = FormStartPosition.Manual;
             this.Location = new Point(xPosition, yPosition);
+
+            //geri butonu
+            btnGeri.FlatStyle = FlatStyle.Flat;
+            btnGeri.FlatAppearance.BorderSize = 2; // Kenarlık kalınlığı
+            btnGeri.FlatAppearance.BorderColor = ColorTranslator.FromHtml("#D8D8DA"); // Kenarlık rengi
+            btnGeri.BackColor = Color.White;
         }
 
         private void btnGeri_Click(object sender, EventArgs e)
