@@ -1,0 +1,1 @@
+string connectionString= "Data Source=localhost;Initial Catalog=VeritabanıAdı;Integrated Security=True";
