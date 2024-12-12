@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "rXH5tKw9m3M=",
+  "dgSpecHash": "rttIpNZ8oIQ=",
   "success": true,
-  "projectFilePath": "C:\\Users\\mikas\\Desktop\\Yeni klasör (3)\\StokTakipSistemi\\StokTakipSistemi\\StokTakipSistemi.csproj",
+  "projectFilePath": "C:\\Users\\sasss\\Desktop\\StokTakipSistemi\\StokTakipSistemi\\StokTakipSistemi.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\mikas\\.nuget\\packages\\winforms.datavisualization\\1.9.2\\winforms.datavisualization.1.9.2.nupkg.sha512"
+    "C:\\Users\\sasss\\.nuget\\packages\\winforms.datavisualization\\1.9.2\\winforms.datavisualization.1.9.2.nupkg.sha512"
   ],
   "logs": []
 }

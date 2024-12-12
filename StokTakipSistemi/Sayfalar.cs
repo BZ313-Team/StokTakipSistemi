@@ -166,13 +166,12 @@ namespace StokTakipSistemi
             btnGecmis.BackColor = ColorTranslator.FromHtml("#F8F8FA");
             btnIstatistik.BackColor = ColorTranslator.FromHtml("#F8F8FA");
             btnSatisYap.BackColor = ColorTranslator.FromHtml("#F8F8FA");
-
             btnSatisYap.BackColor = ColorTranslator.FromHtml("#005EFC");
             btnSatisYap.ForeColor = ColorTranslator.FromHtml("#FFFFFF");
 
 
 
-            // Chartýn gözükmesi için ürün eklenmesi gerekiyor Ürün ekleme denemesi 
+            // Chartýn gözükmesi için ürün eklenmesi gerekiyor Ürün ekleme denemesi silinecek
             chartSatis.Series[0].Points.Clear(); // Mevcut verileri temizler
             chartSatis.Series[0].Points.AddXY("Kategori 1", 40);
             chartSatis.Series[0].Points.AddXY("Kategori 2", 30);
