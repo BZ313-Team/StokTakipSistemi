@@ -45,3 +45,9 @@ UrunID  int  not null,
 SatýsID int   not null,
 );
 
+
+
+CREATE TABLE Users (UserId INT IDENTITY(1,1) PRIMARY KEY, Username NVARCHAR(50) NOT NULL UNIQUE, Password NVARCHAR(255) NOT NULL, CreatedAt DATETIME DEFAULT GETDATE());
+
+
+INSERT INTO Users (Username, Password) VALUES ('dayi', '123456');
