@@ -9,18 +9,19 @@ CREATE TABLE Urun
 
 (UrunID int identity(1,1) primary key not null ,
 UrunBarkod int not null,
-UrunAd nvarchar(10) not null,
+UrunAd nvarchar(50) not null,
 UrunGKategori int not null,
 UrunKategori int not null,
-UrunUreticiFirma nvarchar not null,
-UrunTip nvarchar not null,
-UrunModel nvarchar not null,
+UrunUreticiFirma nvarchar(50) not null,
+UrunTip nvarchar(50) not null,
+UrunModel nvarchar(50) not null,
 UrunBoyut decimal(18,2) not null,
-UrunMensei nvarchar not null,
+UrunMensei nvarchar(50) not null,
 UrunFiyatAlis float not null,
 UrunFiyatSatis float not null,
 UrunGTarih date not null,
-UrunMarka nvarchar not null,
+UrunMarka nvarchar(50) not null,
+CONSTRAINT UQ_UrunUnique UNIQUE (UrunAd)
 );
 
 select * from Stok

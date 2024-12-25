@@ -12,8 +12,9 @@ namespace StokTakipSistemi.controller
 {
     internal class AuthenticationController
     {
-        private string connectionString = "Data Source=localhost\\SQLEXPRESS01;Initial Catalog=master;Integrated Security=True;TrustServerCertificate=True";
-        private string query = "SELECT * FROM dbo.Users";
+        //private string connectionString = "Data Source=localhost\\SQLEXPRESS01;Initial Catalog=master;Integrated Security=True;TrustServerCertificate=True";
+        private string connectionString = "Data Source=AYDEMIR\\SQLEXPRESS;Database=berkayDB;Integrated Security=True;TrustServerCertificate=True;";
+        private string query = "SELECT * FROM Users";
 
         public Boolean login(UserModel userModel)
         {
