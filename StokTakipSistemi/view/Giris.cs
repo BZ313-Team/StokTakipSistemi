@@ -43,9 +43,9 @@ namespace StokTakipSistemi
                 }
             };
 
-            string arkaPlanBeyaz = "#FFFFFF";
+         //   string arkaPlanBeyaz = "#FFFFFF";
             string arkaPlanAcikGri = "#F8F8FA";
-            string kenarCizgisiRengi = "#EAEAEA";
+         // string kenarCizgisiRengi = "#EAEAEA";
             string secilmemisYaziRengi = "#80818B";
             string secilmisYaziRengi = "#1D212E";
             string btnMavi = "#005EFC";

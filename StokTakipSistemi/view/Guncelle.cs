@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StokTakipSistemi.utils;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,12 +9,10 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using StokTakipSistemi.utils;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace StokTakipSistemi
 {
-    public partial class ZamEkrani : Form
+    public partial class Guncelle : Form
     {
         // Yuvarlatılmış dikdörtgen için gerekli WinAPI fonksiyonu
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
@@ -27,9 +26,11 @@ namespace StokTakipSistemi
             int nHeightEllipse
             );
 
-        public ZamEkrani()
+        public Guncelle()
         {
             InitializeComponent();
+
+
 
             // Fontu tüm kontrolleri için uygulamak:
             string fontFamilyName = "Inter"; // Kendi font isminizi buraya yazın
@@ -39,24 +40,24 @@ namespace StokTakipSistemi
             FontUtility.ApplyCustomFontToAllControls(this, fontFamilyName, fontSize);
 
             //buton köşeleri yuvarlama
-            btnEkle.Region = Region.FromHrgn(CreateRoundRectRgn(
+            btnGuncelleEkrani.Region = Region.FromHrgn(CreateRoundRectRgn(
              0,
              0,
-             btnEkle.Width,
-             btnEkle.Height,
+             btnGuncelleEkrani.Width,
+             btnGuncelleEkrani.Height,
              5,
              5));
         }
-
-
-        private void ZamEkrani_Load(object sender, EventArgs e)
+        private void Guncelleme_Load(object sender, EventArgs e)
         {
+
             this.FormBorderStyle = FormBorderStyle.FixedSingle; // Tek bir sabit boyut
             this.MaximizeBox = false;
             this.StartPosition = FormStartPosition.CenterScreen; // Ortada başlat
 
-            btnEkle.BackColor = ColorTranslator.FromHtml("#005EFC");
-            btnEkle.ForeColor = ColorTranslator.FromHtml("#FFFFFF");
+
+            btnGuncelleEkrani.BackColor = ColorTranslator.FromHtml("#005EFC");
+            btnGuncelleEkrani.ForeColor = ColorTranslator.FromHtml("#FFFFFF");
 
             //label yazılarının rengini değiştir
             //lblEskiFiyat.ForeColor = ColorTranslator.FromHtml("#1D212E");
@@ -66,17 +67,13 @@ namespace StokTakipSistemi
             Color newBackColor = Color.Transparent;
 
             // Formun tüm Label kontrollerini değiştir
-            ChangeAllLabelsColorRecursive(this, newForeColor, newBackColor);
+            //ChangeAllLabelsColorRecursive(this, newForeColor, newBackColor);
 
             //formun rengini değştir
             this.BackColor = ColorTranslator.FromHtml("#F8F8FA");
-
-            txtBoxBarkodZamEkrani.Enabled = true; // TextBox'ı etkinleştir
-            txtBoxBarkodZamEkrani.BackColor = SystemColors.Window; // Sistem arka plan rengini kullan
-            txtBoxBarkodZamEkrani.ForeColor = SystemColors.ControlText; // Sistem metin rengini kullan
-
-
         }
+
+
         private void ChangeAllLabelsColorRecursive(Control parent, Color foreColor, Color backColor)
         {
             foreach (Control control in parent.Controls)
@@ -92,36 +89,6 @@ namespace StokTakipSistemi
                 }
             }
         }
-
-        private void cmbBoxZamTuru_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            panelUruneZam.Visible = false;
-            panelKategoriZam.Visible = false;
-            panelMarkaZam.Visible = false;
-            if (cmbBoxZamTuru.SelectedIndex == 0)
-            {
-                panelUruneZam.Visible = true;
-                panelKategoriZam.Visible = false;
-                panelKategoriZam.Visible = false;
-                panelEkran.Visible = false;
-
-            }
-            else if (cmbBoxZamTuru.SelectedIndex == 1)
-            {
-                panelKategoriZam.Visible = true;
-                panelUruneZam.Visible = false;
-                panelMarkaZam.Visible = false; 
-                panelEkran.Visible = false;
-
-            }
-            else if(cmbBoxZamTuru.SelectedIndex == 2)
-            {
-                panelMarkaZam.Visible = true;
-                panelUruneZam.Visible = false;
-                panelKategoriZam.Visible = false;
-                panelEkran.Visible = false;
-
-            }
-        }
     }
 }
+
