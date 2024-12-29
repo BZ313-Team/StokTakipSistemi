@@ -7,18 +7,26 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Data.SqlClient;
 using StokTakipSistemi.model;
+using StokTakipSistemi;
 
 namespace StokTakipSistemi.controller
 {
+    using StokTakipSistemi;
     internal class AuthenticationController
     {
-        private string connectionString = "Data Source=localhost\\SQLEXPRESS01;Initial Catalog=master;Integrated Security=True;TrustServerCertificate=True";
-        private string query = "SELECT * FROM dbo.Users";
+        SQLIslemleri  sqlIslemleri = new SQLIslemleri();
+       
+        
+        /*private string connectionString = "Data Source=DESKTOP-IRAO93A\\SQLEXPRESS;Database=fatih;Integrated Security=True;TrustServerCertificate=True;";
+        private string query = "SELECT * FROM Users";*/
 
         public Boolean login(UserModel userModel)
         {
-            List<UserModel> users = new List<UserModel>();
+            
+            string connectionString = sqlIslemleri.GetBaglanti();
+            string query = sqlIslemleri.GetSorguAuthentication();
 
+            List<UserModel> users = new List<UserModel>();
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 try

@@ -6,11 +6,16 @@ using System.Drawing.Text;
 using System.Windows.Forms.DataVisualization.Charting;
 using System.Reflection;
 using StokTakipSistemi.utils;
+using Microsoft.Data.SqlClient;
 
 namespace StokTakipSistemi
 {
     public partial class Sayfalar : Form
     {
+        UrunIslemleri urunIslemleri = new UrunIslemleri();
+        SQLIslemleri sqlIslemleri = new SQLIslemleri();
+
+
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
         (
@@ -22,11 +27,11 @@ namespace StokTakipSistemi
             int nHeightEllipse
         );
 
-
-
+        //Sayfalar Form
         public Sayfalar()
         {
             InitializeComponent();
+            this.Resize += new EventHandler(tabControl1_Resize);
 
             ApplyRoundedCornersToPanel(pnlSatisbtn, 5);
             ApplyRoundedCornersToPanel(pnlUrunlerbtn, 5);
@@ -37,18 +42,20 @@ namespace StokTakipSistemi
             ApplyRoundedCornersToPanel(pnlUrunEklebtn, 5);
             ApplyRoundedCornersToPanel(pnlUrunSilbtn, 5);
             ApplyRoundedCornersToPanel(pnlTemizlebtn, 5);
-            ApplyRoundedCornersToPanel(pnlUrunGuncellebtn, 5);
             ApplyRoundedCornersToPanel(pnlZamEklebtn, 5);
 
-            cmbBoxUrunSFiltre.Text = "Günlük";
-            cmbBoxStokSFiltre.Text = "Günlük";
-            cmbBoxGecmisSFiltre.Text = "Günlük";
-            cmbBoxIstFiltre.Text = "Günlük";
 
-            cmbBoxUrunSFiltre.ForeColor = ColorTranslator.FromHtml("#80818B");
-            cmbBoxStokSFiltre.ForeColor = ColorTranslator.FromHtml("#80818B");
+
+            //ComboBoxlarýn içinde günlük olarak baþlangýç atama
+
+            cmbBoxGecmisSFiltre.Text = "Günlük";
+            cmbBoxFiltre1.Text = "Günlük";
+            cmbBoxFiltre2.Text = "Günlük";
+
             cmbBoxGecmisSFiltre.ForeColor = ColorTranslator.FromHtml("#80818B");
-            cmbBoxIstFiltre.ForeColor = ColorTranslator.FromHtml("#80818B");
+            cmbBoxFiltre1.ForeColor = ColorTranslator.FromHtml("#80818B");
+            cmbBoxFiltre2.ForeColor = ColorTranslator.FromHtml("#80818B");
+
 
             // Fontu tüm kontrolleri için uygulamak:
             string fontFamilyName = "Inter"; // Kendi font isminizi buraya yazýn
@@ -140,8 +147,8 @@ namespace StokTakipSistemi
             btnUrunGuncelle.Region = Region.FromHrgn(CreateRoundRectRgn(
               0,
               0,
-              btnUrunEkle.Width,
-              btnUrunEkle.Height,
+              btnUrunGuncelle.Width,
+              btnUrunGuncelle.Height,
               5,
               5));
 
@@ -152,6 +159,15 @@ namespace StokTakipSistemi
               btnZamEkle.Height,
               5,
               5));
+
+            btnSonraki.Region = Region.FromHrgn(CreateRoundRectRgn(
+          0,
+          0,
+          btnSonraki.Width,
+          btnSonraki.Height,
+          5,
+          5));
+
             // panellerin renk deðiþimi
             pnlSatisbtn.BackColor = ColorTranslator.FromHtml("#F8F8FA");
             pnlUrunlerbtn.BackColor = ColorTranslator.FromHtml("#F8F8FA");
@@ -169,13 +185,18 @@ namespace StokTakipSistemi
             btnSatisYap.BackColor = ColorTranslator.FromHtml("#F8F8FA");
             btnSatisYap.BackColor = ColorTranslator.FromHtml("#005EFC");
             btnSatisYap.ForeColor = ColorTranslator.FromHtml("#FFFFFF");
-
+            btnUrunGuncelle.BackColor = ColorTranslator.FromHtml("#005EFC");
+            btnUrunGuncelle.ForeColor = ForeColor = ColorTranslator.FromHtml("#FFFFFF");
+            btnSonraki.BackColor = ColorTranslator.FromHtml("#005EFC");
+            btnSonraki.ForeColor = ForeColor = ColorTranslator.FromHtml("#FFFFFF");
 
 
             // Chartýn gözükmesi için ürün eklenmesi gerekiyor Ürün ekleme denemesi silinecek
-            chartSatis.Series[0].Points.Clear(); // Mevcut verileri temizler
-            chartSatis.Series[0].Points.AddXY("Kategori 1", 40);
-            chartSatis.Series[0].Points.AddXY("Kategori 2", 30);
+            chartUrunBazindaSatis.Series[0].Points.Clear(); // Mevcut verileri temizler
+            chartUrunBazindaSatis.Series[0].Points.AddXY("Kategori 1", 40);
+            chartUrunBazindaSatis.Series[0].Points.AddXY("Kategori 2", 30);
+            chartUrunBazindaSatis.Series[0].Points.AddXY("Kategori 3", 30);
+            chartUrunBazindaSatis.Series[0].Points.AddXY("Kategori 4", 30);
 
 
         }
@@ -193,9 +214,21 @@ namespace StokTakipSistemi
         ));
         }
 
+        // Sayfalar_Load ile alakalý kodlar
         private void Sayfalar_Load(object sender, EventArgs e)
         {
             
+            // program açýldýðýnda stok ekranýna bütün verileri getir ilk baþta
+            urunIslemleri.urunleriCek(string.Empty, dataGViewStok);
+
+
+            // istatistik ekraný için 
+            panelUrunBazindaSatis.Visible = true;
+            panelUrunKarOraný.Visible = false;
+            panel1.Width = (int)(this.ClientSize.Width * 0.7);
+
+            // burda bitiyor
+
             int xPosition = 150; // Yatay (X) pozisyonu
             int yPosition = 175;  // Dikey (Y) pozisyonu
 
@@ -226,11 +259,7 @@ namespace StokTakipSistemi
             btnTemizle.FlatAppearance.BorderColor = ColorTranslator.FromHtml("#D8D8DA"); // Kenarlýk rengi
             btnTemizle.BackColor = Color.White;
 
-            //ürün güncelle
-            btnUrunGuncelle.FlatStyle = FlatStyle.Flat;
-            btnUrunGuncelle.FlatAppearance.BorderSize = 3; // Kenarlýk kalýnlýðý
-            btnUrunGuncelle.FlatAppearance.BorderColor = ColorTranslator.FromHtml("#D8D8DA"); // Kenarlýk rengi
-            btnUrunGuncelle.BackColor = Color.White;
+
 
             //zam ekle
             btnZamEkle.FlatStyle = FlatStyle.Flat;
@@ -238,17 +267,124 @@ namespace StokTakipSistemi
             btnZamEkle.FlatAppearance.BorderColor = ColorTranslator.FromHtml("#D8D8DA"); // Kenarlýk rengi
             btnZamEkle.BackColor = Color.White;
 
-            //ileri butonu
-            btnIleri.FlatStyle = FlatStyle.Flat;
-            btnIleri.FlatAppearance.BorderSize = 2; // Kenarlýk kalýnlýðý
-            btnIleri.FlatAppearance.BorderColor = ColorTranslator.FromHtml("#D8D8DA"); // Kenarlýk rengi
-            btnIleri.BackColor = Color.White;
+
+
+            //combobox'larýn bazýlarýna default deðer atama
+            comboboxDefaultDegerAta();
+
+            //combobox'larýn bazýlarýna tag atýyoruz
+            comboboxTagAta();
+
+            textBoxTagAta();
+
+            //combobox'lara týklandýgýnda içinin boþaltýlmasý
+            tiklandigindaSil();
+
+            dataGViewStok.DefaultCellStyle.ForeColor = Color.Black; // Yazý rengi
+            dataGViewStok.DefaultCellStyle.BackColor = Color.White; // Arka plan
+            dataGViewStok.RowsDefaultCellStyle.BackColor = Color.White;
+            dataGViewStok.AlternatingRowsDefaultCellStyle.BackColor = Color.LightGray; // Alternatif satýr rengi
 
         }
 
+        //combobox'lara default deðer atayan fonksiyon
+        private void comboboxDefaultDegerAta()
+        {
+            cmbBoxGenelK.Text = "Genel Kategori";
+            cmbBoxUrunK.Text = "Ürün Kategorisi";
+            cmbBoxFirmaAdi.Text = "Firma Adý";
+            cmbBoxUrunTipi.Text = "Ürün Tipi";
+            cmbBoxUrunModeli.Text = "Ürün Modeli";
+            cmbBoxBoyut.Text = "Boyut";
+            cmbBoxMensei.Text = "Mensei";
+        }
 
+        private void comboboxTagAta()
+        {
+            cmbBoxGenelK.Tag = "Genel Kategori";
+            cmbBoxUrunK.Tag = "Ürün Kategorisi";
+            cmbBoxFirmaAdi.Tag = "Firma Adý";
+            cmbBoxUrunTipi.Tag = "Ürün Tipi";
+            cmbBoxUrunModeli.Tag = "Ürün Modeli";
+            cmbBoxBoyut.Tag = "Boyut";
+            cmbBoxMensei.Tag = "Mensei";
+        }
 
+        private void textBoxTagAta()
+        {
+            txtBoxUBarkodu.Tag = "Ürün Barkodu";
+            txtBoxUAdi.Tag = "Ürün Adý";
+            cmbBoxAlisFiyati.Tag = "Alýþ Fiyatý";
+            cmbBoxSatisFiyati.Tag = "Satýþ Fiyatý";
+            txtBoxStok.Tag = "Stok";
+            txtBoxMarka.Tag = "Marka";
+            mtxtBoxGTarihi.Tag = "Ürün Giriþ Tarihi";
+        }
 
+        //combobox'a týklandýðýnda default veriyi silen veya geri getiren fonksiyon
+        private void tiklandigindaSil()
+        {
+            cmbBoxGenelK.Enter += new EventHandler(ComboBoxDefaultVeriyiSil);
+            cmbBoxGenelK.Leave += new EventHandler(ComboBoxDefaultVeriyiYukle);
+
+            cmbBoxUrunK.Enter += new EventHandler(ComboBoxDefaultVeriyiSil);
+            cmbBoxUrunK.Leave += new EventHandler(ComboBoxDefaultVeriyiYukle);
+
+            cmbBoxFirmaAdi.Enter += new EventHandler(ComboBoxDefaultVeriyiSil);
+            cmbBoxFirmaAdi.Leave += new EventHandler(ComboBoxDefaultVeriyiYukle);
+
+            cmbBoxUrunTipi.Enter += new EventHandler(ComboBoxDefaultVeriyiSil);
+            cmbBoxUrunTipi.Leave += new EventHandler(ComboBoxDefaultVeriyiYukle);
+
+            cmbBoxUrunModeli.Enter += new EventHandler(ComboBoxDefaultVeriyiSil);
+            cmbBoxUrunModeli.Leave += new EventHandler(ComboBoxDefaultVeriyiYukle);
+
+            cmbBoxBoyut.Enter += new EventHandler(ComboBoxDefaultVeriyiSil);
+            cmbBoxBoyut.Leave += new EventHandler(ComboBoxDefaultVeriyiYukle);
+
+            cmbBoxMensei.Enter += new EventHandler(ComboBoxDefaultVeriyiSil);
+            cmbBoxMensei.Leave += new EventHandler(ComboBoxDefaultVeriyiYukle);
+        }
+
+        //combobox'a týklandýðýnda default veriyi silen fonksiyon
+        private void ComboBoxDefaultVeriyiSil(object? sender, EventArgs e)
+        {
+            // sender'ýn null olmadýðýný garanti etmemiz lazým yoksa uyarý veriyor
+            if (sender is ComboBox cmbBox)
+            {
+                // ComboBox'ýn metni belirli bir deðere sahipse ve öðeleri yoksa, metni temizle
+                if (cmbBox.Items.Count == 0 &&
+                    (cmbBox.Text == "Genel Kategori" ||
+                    cmbBox.Text == "Ürün Kategorisi" ||
+                    cmbBox.Text == "Firma Adý" ||
+                    cmbBox.Text == "Ürün Tipi" ||
+                    cmbBox.Text == "Ürün Modeli" ||
+                    cmbBox.Text == "Boyut" ||
+                    cmbBox.Text == "Mensei"))
+                {
+                    cmbBox.Text = "";
+                }
+            }
+        }
+
+        //combobox'a týklandýðýnda default veriyi geri getiren fonksiyon
+        private void ComboBoxDefaultVeriyiYukle(object? sender, EventArgs e)
+        {
+            // sender'ýn null olmadýðýný garanti etmemiz lazým yoksa uyarý veriyor
+            if (sender is ComboBox cmbBox)
+            {
+                if (cmbBox.Items.Count == 0 && string.IsNullOrWhiteSpace(cmbBox.Text))
+                {
+                    if (cmbBox == cmbBoxGenelK) cmbBox.Text = "Genel Kategori";
+                    else if (cmbBox == cmbBoxUrunK) cmbBox.Text = "Ürün Kategorisi";
+                    else if (cmbBox == cmbBoxFirmaAdi) cmbBox.Text = "Firma Adý";
+                    else if (cmbBox == cmbBoxUrunTipi) cmbBox.Text = "Ürün Tipi";
+                    else if (cmbBox == cmbBoxUrunModeli) cmbBox.Text = "Ürün Modeli";
+                    else if (cmbBox == cmbBoxBoyut) cmbBox.Text = "Boyut";
+                    else if (cmbBox == cmbBoxMensei) cmbBox.Text = "Mensei";
+                }
+            }
+        }
 
         // buttonlarýn renk ayarlarý
 
@@ -272,6 +408,8 @@ namespace StokTakipSistemi
             tLayoutPSatisEkrani.BackColor = ColorTranslator.FromHtml("#FFFFF");
 
         }
+        
+        
         // buttonlarýn font ayarlarý
         private void LoginNew_Load(object sender, EventArgs e)
         {
@@ -314,6 +452,7 @@ namespace StokTakipSistemi
         }
 
 
+        // btnSatis_Click içindeki iþlevler
         private void btnSatis_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabPageSatis;
@@ -344,6 +483,7 @@ namespace StokTakipSistemi
             pBoxSecilmisIstatistik.Visible = false;
         }
 
+        //btnUrunler_Click içindeki iþlevler
         private void btnUrunler_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabPageUrun;
@@ -373,6 +513,7 @@ namespace StokTakipSistemi
             pBoxSecilmisIstatistik.Visible = false;
         }
 
+        //btnStok_Click içindeki iþlevler
         private void btnStok_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabPageStok;
@@ -402,6 +543,7 @@ namespace StokTakipSistemi
             pBoxSecilmisIstatistik.Visible = false;
         }
 
+        //btnGecmis_Click içindeki iþlevler
         private void btnGecmis_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabPageGecmis;
@@ -431,9 +573,11 @@ namespace StokTakipSistemi
             pBoxSecilmisIstatistik.Visible = false;
         }
 
+        //btnIstatistik_Click içindeki iþlevler
         private void btnIstatistik_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabPageIstatistik;
+
 
             //font renk deðiþimi
             btnIstatistik.ForeColor = ColorTranslator.FromHtml("#1D212E");
@@ -460,22 +604,133 @@ namespace StokTakipSistemi
             pBoxSecilmisGecmis.Visible = false;
         }
 
-
-
-        private void btnIleri_Click(object sender, EventArgs e)
-        {
-            Istatistik2 istatistik2 = new Istatistik2();
-            istatistik2.Show();
-
-
-        }
-
+        //btnZamEkle_Click içindeki iþlevler
         private void btnZamEkle_Click(object sender, EventArgs e)
         {
             ZamEkrani zamekrani = new ZamEkrani();
             zamekrani.Show();
         }
 
-        
+        //btnUrunEkle_Click içindeki iþlevler
+        private void btnUrunEkle_Click(object sender, EventArgs e)
+        {
+
+            UrunIslemleri urunIslemleri = new UrunIslemleri();
+
+            TextBox[] textBoxBosMu = { cmbBoxAlisFiyati, cmbBoxSatisFiyati, txtBoxUBarkodu, txtBoxUAdi, txtBoxStok, txtBoxMarka };
+            ComboBox[] comboBoxBosMu = { cmbBoxBoyut, cmbBoxGenelK, cmbBoxUrunK, cmbBoxFirmaAdi, cmbBoxUrunTipi, cmbBoxUrunModeli, cmbBoxMensei };
+
+            urunIslemleri.urunEkle(txtBoxUBarkodu, txtBoxUAdi, cmbBoxGenelK, cmbBoxUrunK, cmbBoxFirmaAdi, cmbBoxUrunTipi, cmbBoxUrunModeli,
+            cmbBoxBoyut, cmbBoxMensei, cmbBoxAlisFiyati, cmbBoxSatisFiyati, mtxtBoxGTarihi, txtBoxMarka, txtBoxStok, textBoxBosMu,
+            comboBoxBosMu);
+
+        }
+
+
+        // ürün eklendikten sonra eklenen verilerin ayný zamanda combobox'lara eklenmesi için fonksiyon
+        public void urunEkleArayuzGuncelle(string GenelKategori, string urunKategori, string firmaAdi, string urunTipi,
+                                           string urunModeli, string urunBoyut, string urunMensei)
+        {
+            cmbBoxGenelK.Items.Add(GenelKategori);
+            cmbBoxUrunK.Items.Add(urunKategori);
+            cmbBoxFirmaAdi.Items.Add(firmaAdi);
+            cmbBoxUrunTipi.Items.Add(urunTipi);
+            cmbBoxUrunModeli.Items.Add(urunModeli);
+            cmbBoxBoyut.Items.Add(urunBoyut);
+            cmbBoxMensei.Items.Add(urunMensei);
+        }
+
+        //Sayfalar_FormClosed fonksiyonu içindeki iþlevler, yani sayfalar kapandýktan sonra yapýlacak fonksiyonlar burada
+        private void Sayfalar_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        //Sayfalar_FormClosing fonksiyonu içindeki iþlevler, yani sayfalar kapanýrken sonra yapýlacak fonksiyonlar burada
+        private void Sayfalar_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        //btnUrunSil_Click fonksiyonu içindeki iþlevler
+        private void btnUrunSil_Click(object sender, EventArgs e)
+        {
+            UrunIslemleri urunIslemleri = new UrunIslemleri();
+
+            int urunBarkodu = int.Parse(txtBoxUBarkodu.Text);
+            urunIslemleri.urunSil(urunBarkodu);
+        }
+
+        //btnTemizle_Click fonksiyonu içindeki iþlevler
+        private void btnTemizle_Click(object sender, EventArgs e)
+        {
+            txtBoxUBarkodu.Clear();
+            txtBoxUAdi.Clear();
+            cmbBoxGenelK.SelectedIndex = 0;
+            cmbBoxUrunK.SelectedIndex = 0;
+            cmbBoxFirmaAdi.SelectedIndex = 0;
+            cmbBoxUrunTipi.SelectedIndex = 0;
+            cmbBoxUrunModeli.SelectedIndex = 0;
+            cmbBoxBoyut.SelectedIndex = 0;
+            cmbBoxMensei.SelectedIndex = 0;
+            cmbBoxAlisFiyati.Clear();
+            cmbBoxSatisFiyati.Clear();
+            txtBoxStok.Clear();
+            txtBoxMarka.Clear();
+            mtxtBoxGTarihi.Clear();
+
+        }
+
+        //btnUrunGuncelle_Click fonksiyonu içindeki iþlevler
+        private void btnUrunGuncelle_Click(object sender, EventArgs e)
+        {
+            Guncelle guncellemegit = new Guncelle();
+            guncellemegit.Show();
+        }
+
+        //btnSonraki_Click fonksiyonu içindeki iþlevler
+        private void btnSonraki_Click(object sender, EventArgs e)
+        {
+            if (panel1.Visible == true && panelUrunBazindaSatis.Visible == true)
+            {
+                panel1.Visible = false;
+                panelUrunBazindaSatis.Visible = false;
+                panel2.Visible = true;
+                panelUrunKarOraný.Visible = true;
+            }
+            else if (panel2.Visible == true && panelUrunKarOraný.Visible == true)
+            {
+                panel1.Visible = true;
+                panelUrunBazindaSatis.Visible = true;
+                panel2.Visible = false;
+                panelUrunKarOraný.Visible = false;
+            }
+        }
+
+        //Pencere büyüdüðünde onunla orantýlý þekilde istatistik ekranýnýn da büyümesi ile alakalý kodlar tabControll_Resize
+        private void tabControl1_Resize(object sender, EventArgs e)
+        {
+            TabPage tabistatistikPage = tabControl1.TabPages["tabPageIstatistik"]; // tabIstatistik yerine sizin tab page isminizi yazýn
+
+            if (this.WindowState == FormWindowState.Maximized)
+            {
+                // Tam ekran durumunda panelleri daha geniþ yap
+                panelUrunBazindaSatis.Width = (int)(tabistatistikPage.Width * 0.9);
+                panelUrunKarOraný.Width = (int)(tabistatistikPage.Width * 0.9);
+            }
+            else
+            {
+                panelUrunBazindaSatis.Width = tabistatistikPage.Width / 2;
+                panelUrunKarOraný.Width = tabistatistikPage.Width / 2;
+            }
+        }
+
+        //Stok ekranýndaki txtBoxStokSFiltre textbox'u her deðiþtiðinde çalýþacak fonksiyon
+        private void txtBoxStokSFiltre_TextChanged(object sender, EventArgs e)
+        {
+            UrunIslemleri urunIslemleri = new UrunIslemleri();
+
+            urunIslemleri.urunleriCek(txtBoxStokSFiltre.Text, dataGViewStok);
+        }
     }
 }

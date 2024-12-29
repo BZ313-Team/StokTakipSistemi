@@ -1,53 +1,70 @@
-CREATE TABLE Stok
-(UrunID int identity(1,1) primary key not null,
-StokDurum nvarchar(10) not null,
-StokTur nvarchar(10) not null,
-StokMiktar int null
-);
+-- Satis Tablosu
+CREATE TABLE [dbo].[Satis](
+    [SatýsID] [int] IDENTITY(1,1) NOT NULL,
+    [UrunID] [int] NOT NULL,
+    [Indirimtur] [nvarchar](30) NOT NULL,
+    [Miktar] [int] NOT NULL,
+    [CreatedAt] [datetime] NULL DEFAULT (getdate()),
+    PRIMARY KEY CLUSTERED ([SatýsID])
+)
 
-CREATE TABLE Urun 
+-- Stok Tablosu
+CREATE TABLE [dbo].[Stok](
+    [UrunID] [int] IDENTITY(1,1) NOT NULL,
+    [StokDurum] [nvarchar](20) NOT NULL,
+    [StokTur] [nvarchar](20) NOT NULL,
+    [StokMiktar] [int] NULL,
+    PRIMARY KEY CLUSTERED ([UrunID])
+)
 
-(UrunID int identity(1,1) primary key not null ,
-UrunBarkod int not null,
-UrunAd nvarchar(10) not null,
-UrunGKategori int not null,
-UrunKategori int not null,
-UrunUreticiFirma nvarchar not null,
-UrunTip nvarchar not null,
-UrunModel nvarchar not null,
-UrunBoyut decimal(18,2) not null,
-UrunMensei nvarchar not null,
-UrunFiyatAlis float not null,
-UrunFiyatSatis float not null,
-UrunGTarih date not null,
-UrunMarka nvarchar not null,
-);
+-- Urun Tablosu
+CREATE TABLE [dbo].[Urun](
+    [UrunID] [int] IDENTITY(1,1) NOT NULL,
+    [UrunBarkod] [int] NOT NULL,
+    [UrunAd] [nvarchar](50) NOT NULL,
+    [UrunGKategori] [nvarchar](50) NOT NULL,
+    [UrunKategori] [nvarchar](50) NOT NULL,
+    [UrunUreticiFirma] [nvarchar](50) NOT NULL,
+    [UrunTip] [nvarchar](50) NOT NULL,
+    [UrunModel] [nvarchar](50) NOT NULL,
+    [UrunBoyut] [decimal](18, 2) NOT NULL,
+    [UrunMensei] [nvarchar](50) NOT NULL,
+    [UrunFiyatAlis] [float] NOT NULL,
+    [UrunFiyatSatis] [float] NOT NULL,
+    [UrunGTarih] [date] NOT NULL,
+    [UrunMarka] [nvarchar](50) NOT NULL,
+    PRIMARY KEY CLUSTERED ([UrunID]),
+    CONSTRAINT [UQ_UrunBarkod] UNIQUE NONCLUSTERED ([UrunBarkod])
+)
 
-select * from Stok
+-- Users Tablosu
+CREATE TABLE [dbo].[Users](
+    [UserId] [int] IDENTITY(1,1) NOT NULL,
+    [Username] [nvarchar](50) NOT NULL,
+    [Password] [nvarchar](255) NOT NULL,
+    [CreatedAt] [datetime] NULL DEFAULT (getdate()),
+    PRIMARY KEY CLUSTERED ([UserId]),
+    UNIQUE NONCLUSTERED ([Username])
+)
 
+-- Users verisi
+INSERT INTO [dbo].[Users] ([Username], [Password]) 
+VALUES ('dayi', '123456')
 
+-- Istatistik Satis Tablosu
+CREATE TABLE [dbo].[IstatistikSatis](
+    [ID] [int] IDENTITY(1,1) NOT NULL,
+    [UrunGKategori] [nvarchar](50) NOT NULL,
+    [Miktar] [int] NOT NULL,
+    [UrunFiyatSatis] [float] NOT NULL,
+    [CreatedAt] [datetime] NULL DEFAULT (getdate())
+)
 
-CREATE TABLE Satis
-(
-SatýsID int identity (1,1) primary key not null,
-Indirimtur nvarchar not null,
-Miktar int not null,
-
-);
-
-
-
-
-CREATE TABLE UrunSatis
-
-(
-UrunID  int  not null,
-SatýsID int   not null,
-);
-
-
-
-CREATE TABLE Users (UserId INT IDENTITY(1,1) PRIMARY KEY, Username NVARCHAR(50) NOT NULL UNIQUE, Password NVARCHAR(255) NOT NULL, CreatedAt DATETIME DEFAULT GETDATE());
-
-
-INSERT INTO Users (Username, Password) VALUES ('dayi', '123456');
+-- Istatistik Alis Tablosu
+CREATE TABLE [dbo].[IstatistikAlis](
+    [ID] [int] IDENTITY(1,1) NOT NULL,
+    [UrunGKategori] [nvarchar](50) NOT NULL,
+    [Miktar] [int] NOT NULL,
+    [UrunFiyatAlis] [float] NOT NULL,
+    [CreatedAt] [datetime] NULL DEFAULT (getdate())
+)
