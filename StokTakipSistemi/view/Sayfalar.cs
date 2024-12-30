@@ -656,9 +656,7 @@ namespace StokTakipSistemi
         private void btnUrunSil_Click(object sender, EventArgs e)
         {
             UrunIslemleri urunIslemleri = new UrunIslemleri();
-
-            int urunBarkodu = int.Parse(txtBoxUBarkodu.Text);
-            urunIslemleri.urunSil(urunBarkodu);
+            urunIslemleri.urunSil(txtBoxUBarkodu.Text);
         }
 
         //btnTemizle_Click fonksiyonu içindeki iþlevler
