@@ -20,7 +20,7 @@ CREATE TABLE [dbo].[Stok](
 -- Urun Tablosu
 CREATE TABLE [dbo].[Urun](
     [UrunID] [int] IDENTITY(1,1) NOT NULL,
-    [UrunBarkod] [int] NOT NULL,
+    [UrunBarkod] [nvarchar (13)] NOT NULL,
     [UrunAd] [nvarchar](50) NOT NULL,
     [UrunGKategori] [nvarchar](50) NOT NULL,
     [UrunKategori] [nvarchar](50) NOT NULL,
@@ -49,7 +49,7 @@ CREATE TABLE [dbo].[Users](
 
 -- Users verisi
 INSERT INTO [dbo].[Users] ([Username], [Password]) 
-VALUES ('dayi', '123456')
+VALUES ('alper', '123')
 
 -- Istatistik Satis Tablosu
 CREATE TABLE [dbo].[IstatistikSatis](

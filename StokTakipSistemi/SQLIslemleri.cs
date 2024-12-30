@@ -10,7 +10,8 @@ namespace StokTakipSistemi
 {
     internal class SQLIslemleri
     {
-        private string baglanti = "Server=DESKTOP-IRAO93A\\SQLEXPRESS;Database=fatih;Integrated Security=True;TrustServerCertificate=True;";
+        // SQL bağlantı cümlesi
+        private string baglanti = "Server=YourDevice\\SQLEXPRESS;Database=yourDB;Integrated Security=True;TrustServerCertificate=True;";
 
         
         private string urunSorguEklemeyiYap = @"INSERT INTO Urun       
@@ -28,7 +29,7 @@ namespace StokTakipSistemi
                          (@StokDurum, @StokTur, @StokMiktar);";
 
         private static string[] aranacakSutunlar = {         // aranacak sütunları belirliyoruz, bazıları varchar olmadığı için geçici olarak
-                "CONVERT(NVARCHAR, U.UrunBarkod)",   // varchar'a çeviriyoruz.
+                "U.UrunBarkod",   
                 "U.UrunAd",
                 "U.UrunGKategori",
                 "U.UrunKategori",
@@ -89,6 +90,7 @@ namespace StokTakipSistemi
 
         private string sorguAuthentication = "SELECT * FROM Users";
 
+        
 
         public string GetBaglanti()
         {
@@ -143,6 +145,72 @@ namespace StokTakipSistemi
         public string GetSorguAuthentication()
         {
             return sorguAuthentication;
+        }
+
+
+
+
+
+
+
+        /*        ZAM İŞLEMLERİ İÇİN SQL SORGULARI          */
+
+        // Urun bazında zam yapmak için kullanılacak sorgu
+        private string urunZamSorgu = "UPDATE Urun SET urunFiyatSatis = urunFiyatSatis + (urunFiyatSatis * @ZamOrani) " +
+                                      "WHERE UrunBarkod = @UrunBarkod ";
+
+        // Kategori bazında zam yapmak için kullanılacak sorgu
+        private string kategoriZamSorgu = "UPDATE Urun SET urunFiyatSatis = urunFiyatSatis + (urunFiyatSatis * @ZamOrani) " +
+                                          "WHERE UrunGKategori = @UrunGKategori AND UrunKategori = @UrunKategori";
+
+        // Marka bazında zam yapmak için kullanılacak sorgu
+        private string markaZamSorgu = "UPDATE Urun SET urunFiyatSatis = urunFiyatSatis + (urunFiyatSatis * @ZamOrani) " +
+                                   "WHERE UrunUreticiFirma = @UrunUreticiFirma AND UrunMarka = @UrunMarka";
+
+        //Barkoda göre urunun kategorisini çekmek için kullanılacak sorgu
+        private string urunKategoriSorgu = "SELECT UrunKategori FROM Urun WHERE UrunBarkod = @UrunBarkod";
+
+        //Barkoda göre urunun adını çekmek için kullanılacak sorgu
+        private string urununAdiSorgu = "SELECT UrunAd FROM Urun WHERE UrunBarkod = @UrunBarkod";
+
+        //Barkoda göre urunun markasını çekmek için kullanılacak sorgu
+        private string urunMarkaSorgu = "SELECT  UrunMarka FROM Urun WHERE UrunBarkod = @UrunBarkod";
+
+        //Barkoda göre urunun eski fiyatını çekmek için kullanılacak sorgu
+        private string eskiFiyatSorgu = "SELECT urunFiyatSatis FROM Urun WHERE UrunBarkod = @UrunBarkod";
+
+        public string GetUrunZamSorgu()
+        {
+            return urunZamSorgu;
+        }
+
+        public string GetKategoriZamSorgu()
+        {
+            return kategoriZamSorgu;
+        }
+
+        public string GetMarkaZamSorgu()
+        {
+            return markaZamSorgu;
+        }
+
+        public string GetUrunKategoriSorgu()
+        {
+            return urunKategoriSorgu;
+        }
+
+        public string GetUrunAdiSorgu()
+        {
+            return urununAdiSorgu;
+        }
+
+        public string GetUrunMarkaSorgu()
+        {
+            return urunMarkaSorgu;
+        }
+        public string GetEskiFiyatSorgu()
+        {
+            return eskiFiyatSorgu;
         }
     }
 }

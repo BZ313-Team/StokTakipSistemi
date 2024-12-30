@@ -8,6 +8,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Data.SqlClient;
 using StokTakipSistemi.utils;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
@@ -15,6 +16,8 @@ namespace StokTakipSistemi
 {
     public partial class ZamEkrani : Form
     {
+        UrunIslemleri urunIslemleri = new UrunIslemleri();
+        SQLIslemleri sqlIslemleri = new SQLIslemleri();
         // Yuvarlatılmış dikdörtgen için gerekli WinAPI fonksiyonu
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn
@@ -47,8 +50,6 @@ namespace StokTakipSistemi
              5,
              5));
         }
-
-
         private void ZamEkrani_Load(object sender, EventArgs e)
         {
             this.FormBorderStyle = FormBorderStyle.FixedSingle; // Tek bir sabit boyut
@@ -71,11 +72,16 @@ namespace StokTakipSistemi
             //formun rengini değştir
             this.BackColor = ColorTranslator.FromHtml("#F8F8FA");
 
-            txtBoxBarkodZamEkrani.Enabled = true; // TextBox'ı etkinleştir
-            txtBoxBarkodZamEkrani.BackColor = SystemColors.Window; // Sistem arka plan rengini kullan
-            txtBoxBarkodZamEkrani.ForeColor = SystemColors.ControlText; // Sistem metin rengini kullan
+            txtBoxBarkod.Enabled = true; // TextBox'ı etkinleştir
+            txtBoxBarkod.BackColor = SystemColors.Window; // Sistem arka plan rengini kullan
+            txtBoxBarkod.ForeColor = SystemColors.ControlText; // Sistem metin rengini kullan
 
+            cmbBoxZamTuru.SelectedIndex = 0; // ComboBox'ı ilk elemana ayarla
+            txtBoxBarkod.TextChanged += txtBoxBarkod_TextChanged;
+            // Zam oranı girişine TextChanged olayını bağlama
+            txtBoxZam.TextChanged += txtBoxZam_TextChanged;
 
+            FillAllComboBoxes();
         }
         private void ChangeAllLabelsColorRecursive(Control parent, Color foreColor, Color backColor)
         {
@@ -92,18 +98,17 @@ namespace StokTakipSistemi
                 }
             }
         }
-
         private void cmbBoxZamTuru_SelectedIndexChanged(object sender, EventArgs e)
         {
-            panelUruneZam.Visible = false;
+            panelUruneZam.Visible = false;//Urune zam paneli kullanılmıyor.
             panelKategoriZam.Visible = false;
             panelMarkaZam.Visible = false;
             if (cmbBoxZamTuru.SelectedIndex == 0)
             {
-                panelUruneZam.Visible = true;
+                panelUruneZam.Visible = false;
                 panelKategoriZam.Visible = false;
                 panelKategoriZam.Visible = false;
-                panelEkran.Visible = false;
+                panelEkran.Visible = true;
 
             }
             else if (cmbBoxZamTuru.SelectedIndex == 1)
@@ -123,5 +128,42 @@ namespace StokTakipSistemi
 
             }
         }
+        private void btnEkle_Click(object sender, EventArgs e)
+        {
+            urunIslemleri.zamEkle(cmbBoxZamTuru, txtBoxBarkod,cmbBoxGenelKategori2, cmbBoxUrunKategori2,
+                                  cmbBoxMarka3, cmbBoxFirmaAdi3, txtBoxZam, txtBoxZam2, txtBoxZam3);
+        }
+
+        // Barkod girişine TextChanged olayını bağlama
+        private void txtBoxBarkod_TextChanged(object sender, EventArgs e)
+        {
+            if (txtBoxBarkod.Text.Length == 13)
+            {
+                urunIslemleri.barkodChanged(txtBoxBarkod, txtBoxEskiFiyat, cmbBoxUrunKategori, cmbBoxUrunAdi, cmbBoxMarka);
+            }
+            else if (txtBoxBarkod.Text.Length < 13)
+            {
+                txtBoxEskiFiyat.Text = "Ürün Bulunamadı.";
+                cmbBoxUrunKategori.SelectedIndex = -1;
+                cmbBoxUrunAdi.SelectedIndex = -1;
+                cmbBoxMarka.SelectedIndex = -1;
+            }
+        }
+
+        // Zam oranı girişine TextChanged olayını bağlama
+        private void txtBoxZam_TextChanged(object sender, EventArgs e)
+        {
+            urunIslemleri.zamChanged(txtBoxZam, txtBoxEskiFiyat, txtBoxYeniFiyat);
+        }
+
+        // Combobox'lar dolduruluyor
+        private void FillAllComboBoxes()
+        {
+            urunIslemleri.comboBoxDoldur("SELECT DISTINCT UrunGKategori FROM Urun;", cmbBoxGenelKategori2);// Genel kategori ComboBox'u doldur
+            urunIslemleri.comboBoxDoldur("SELECT DISTINCT UrunKategori FROM Urun;", cmbBoxUrunKategori2);// Ürün kategori ComboBox'u doldur
+            urunIslemleri.comboBoxDoldur("SELECT DISTINCT UrunMarka FROM Urun;", cmbBoxMarka3);// Marka ComboBox'u doldu
+            urunIslemleri.comboBoxDoldur("SELECT DISTINCT UrunUreticiFirma FROM Urun;", cmbBoxFirmaAdi3);// Firma ComboBox'u doldur
+        }
+        
     }
 }
