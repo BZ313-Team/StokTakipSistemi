@@ -8,23 +8,19 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Globalization;
 using System.Data;
-using System.ComponentModel;
-using System.Drawing;
-using System.Numerics;
-using StokTakipSistemi.utils;
-using System.Windows.Forms.VisualStyles;
+using Microsoft.IdentityModel.Tokens;
 
 
 namespace StokTakipSistemi
 {
     internal class UrunIslemleri
     {
-
+        
         SQLIslemleri sqlIslemleri = new SQLIslemleri();
         // ürün ekleme fonksiyonu
-        public void urunEkle(TextBox urunBarkodTextBox, TextBox urunAdTextBox, ComboBox urunGKategoriComboBox, ComboBox urunKategoriComboBox,
+        public void urunEkle(TextBox urunBarkodTextBox, TextBox urunAdTextBox, ComboBox urunGKategoriComboBox, ComboBox urunKategoriComboBox, 
         ComboBox urunUreticiFirmaComboBox, ComboBox urunTipComboBox, ComboBox urunModelComboBox, ComboBox urunBoyutComboBox,
-        ComboBox urunMenseiComboBox, TextBox urunFiyatAlisTextBox, TextBox urunFiyatSatisTextBox, MaskedTextBox urunGirisTarihiMaskedTextBox,
+        ComboBox urunMenseiComboBox, TextBox urunFiyatAlisTextBox, TextBox urunFiyatSatisTextBox, MaskedTextBox urunGirisTarihiMaskedTextBox, 
         TextBox urunMarkaTextBox, TextBox urunStokMiktarTextBox, TextBox[] textBoxlarBosMu, ComboBox[] comboBoxlarBosMu)
         {
             SQLIslemleri sqlIslemleri = new SQLIslemleri();
@@ -36,7 +32,7 @@ namespace StokTakipSistemi
 
             //MessageBox.Show(" bosyerVarmi dan çıkıldı girilenVerilerDogrumu'ya girilecek");
             // Eğer girilen bütün veriler doğru değilse işlem iptal olacak.
-            if (!girilenVerilerDogruMu(urunStokMiktarTextBox, urunBarkodTextBox, urunFiyatAlisTextBox, urunFiyatSatisTextBox,
+            if (!girilenVerilerDogruMu(urunStokMiktarTextBox, urunBarkodTextBox, urunFiyatAlisTextBox, urunFiyatSatisTextBox, 
                 urunBoyutComboBox, urunGirisTarihiMaskedTextBox))
                 return;
             //MessageBox.Show("girilenVerilerDogrumudan çıkıldı dönüştürülme işlemi yapılacak");
@@ -47,7 +43,7 @@ namespace StokTakipSistemi
             //MessageBox.Show("Dönüştürülme işlemi yapıldı eklemeYap fonksiyonuna girilecek");
 
             // eklenecek ürün ile aynı barkoda sahip ürün veritabanında var mı onu kontrol ediyoruz burada
-            if (!urunVarMi(urunBarkodTextBox.Text))
+            if(!urunVarMi(urunBarkodTextBox.Text))
             {
                 MessageBox.Show("Aynı barkodda başka bir ürün zaten mevcut");
                 return;
@@ -62,8 +58,8 @@ namespace StokTakipSistemi
         }
 
         // ürün ekleme işlemini gerçekleştirecek asıl fonksiyon. urunEkle tarafından çağrılacak
-        private void eklemeyiYap(string urunBarkod, string urunAd, string urunGKategori, string urunKategori, string urunUreticiFirma, string urunTip,
-        string urunModel, decimal urunBoyut, string urunMensei, float urunFiyatAlis, float urunFiyatSatis, DateTime urunGirisTarihi,
+        private void eklemeyiYap(string urunBarkod, string urunAd, string urunGKategori, string urunKategori, string urunUreticiFirma, string urunTip, 
+        string urunModel, decimal urunBoyut, string urunMensei, float urunFiyatAlis, float urunFiyatSatis, DateTime urunGirisTarihi, 
         string urunMarka, int stokMiktar)
         {
             string baglanti = sqlIslemleri.GetBaglanti();
@@ -178,7 +174,7 @@ namespace StokTakipSistemi
         }
 
         // Kullanıcının girdiği verilerin doğruluğunu kontrol eden fonksiyon.
-        private bool girilenVerilerDogruMu(TextBox stokMiktarTextBox, TextBox urunBarkoduTextBox, TextBox urunAlisFiyatiTextBox,
+        private bool girilenVerilerDogruMu(TextBox stokMiktarTextBox, TextBox urunBarkoduTextBox, TextBox urunAlisFiyatiTextBox, 
             TextBox urunSatisFiyatiTextBox, ComboBox urunBoyutComboBox, MaskedTextBox urunGirisTarihiMaskedTextBox)
         {
             int stokMiktarInt;
@@ -196,16 +192,16 @@ namespace StokTakipSistemi
                 return false;
             }
 
-            // textbox'dan gelen ürün barkodunu int'e çevrilmezse kullanıcıya doğru veri girmesi için uyarı gönderdik
+            // textbox'dan gelen ürün barkodu string değilse  kullanıcıya doğru veri girmesi için uyarı gönderdik
             foreach (char c in urunBarkoduTextBox.Text)
-            {
                 if (!char.IsDigit(c))
                 {
-                    MessageBox.Show("Ürün barkodu yalnızca sayı olabilir");
+                    MessageBox.Show("Ürün barkodu yalnızca sayı olmalıdır");
                     urunBarkoduTextBox.Focus();
                     return false;
                 }
-            }
+
+            
 
             // textbox'dan gelen ürün barkodunun 8 haneli olup olmadığına baktık 8 haneli değilse kullanıcıya uyarı gönderdik
             if (urunBarkoduTextBox.Text.Length != 13)
@@ -240,7 +236,7 @@ namespace StokTakipSistemi
             }
 
             // maskedTextBox'dan gelen date bilgisi DateTime'a çevrilmezse kullanıcıya doğru veri girmesi için uyarı gönderdik
-            if (!DateTime.TryParseExact(urunGirisTarihiMaskedTextBox.Text, format, cultureInfo, DateTimeStyles.None, out urunGirisTarihiDateTime))
+            if(!DateTime.TryParseExact(urunGirisTarihiMaskedTextBox.Text, format, cultureInfo, DateTimeStyles.None, out urunGirisTarihiDateTime))
             {
                 MessageBox.Show("Geçerli bir ürün giriş tarihi girin.");
                 urunGirisTarihiMaskedTextBox.Focus();
@@ -251,7 +247,7 @@ namespace StokTakipSistemi
 
 
             // kullanıcı ürün giriş tarihini tam yazamadıysa kullanıcıya doğru veri girmesi için uyarı gönderiyoruz.
-            if (urunGirisTarihiMaskedTextBox.Text.Contains("_"))
+            if(urunGirisTarihiMaskedTextBox.Text.Contains("_"))
             {
                 MessageBox.Show("Ürün tarihini boşluk bırakmadan eksiksiz girin.");
                 urunGirisTarihiMaskedTextBox.Focus();
@@ -263,30 +259,29 @@ namespace StokTakipSistemi
         }
 
         // urunEkle fonksiyonu içine eklemeYap fonksiyonuna gönderilecek parametreleri dönüştürmek için kullanılan fonksiyon
-        private (decimal, float, float, DateTime, int) parametreleriDonustur(string urunBoyutString,
+        private (decimal, float, float, DateTime, int) parametreleriDonustur(string urunBoyutString, 
             string urunFiyatAlisString, string urunFiyatSatisString, string urunGirisTarihiString, string urunStokMiktarString)
         {
-
             decimal donusturulmusUrunBoyut = decimal.Parse(urunBoyutString);
             float donusturulmusUrunFiyatAlis = float.Parse(urunFiyatAlisString);
             float donusturulmusUrunFiyatSatis = float.Parse(urunFiyatSatisString);
             DateTime donusturulmusUrunGirisTarihi = DateTime.Parse(urunGirisTarihiString);
             int donusturulmusStokMiktar = int.Parse(urunStokMiktarString);
 
-            return (donusturulmusUrunBoyut, donusturulmusUrunFiyatAlis, donusturulmusUrunFiyatSatis,
+            return(donusturulmusUrunBoyut, donusturulmusUrunFiyatAlis, donusturulmusUrunFiyatSatis,
                    donusturulmusUrunGirisTarihi, donusturulmusStokMiktar);
 
         }
 
         // ürün silme fonksiyonu
-        public void urunSil(string urunBarkod)
+        /*public void urunSil(string urunBarkod)
         {
             string baglanti = sqlIslemleri.GetBaglanti();
             string sorgu = sqlIslemleri.GetSorguUrunSil();
             string kontrolSorgu = sqlIslemleri.GetKontrolSorguUrunSil();
 
             using (SqlConnection connection = new SqlConnection(baglanti))
-            using (SqlCommand command = new SqlCommand(sorgu, connection))
+                using(SqlCommand command =  new SqlCommand(sorgu, connection))
             {
                 try
                 {
@@ -298,7 +293,7 @@ namespace StokTakipSistemi
                     kontrolCommand.Parameters.AddWithValue("@UrunBarkod", urunBarkod);    // kontrol ediyoruz
                     int urunSayisi = (int)kontrolCommand.ExecuteScalar();                //
 
-                    if (urunSayisi == 0)
+                    if(urunSayisi  == 0 )
                     {
                         MessageBox.Show("Bu barkoda sahip bir ürün mevcut değil");
                         return;
@@ -308,12 +303,12 @@ namespace StokTakipSistemi
 
                     MessageBox.Show("Ürün başarıyla silindi");
                 }
-                catch (Exception)
+                catch(Exception)
                 {
                     MessageBox.Show("Beklenmedik bir hata oluştu");
                 }
             }
-        }
+        }*/
 
         // aynı barkodlu ürün veritabanında halihazırda var mı yok mu onu kontrol eden fonksiyon
         public bool urunVarMi(string urunBarkodu)
@@ -367,7 +362,7 @@ namespace StokTakipSistemi
                 try
                 {
 
-                    if (!textBoxBosMu)
+                    if(!textBoxBosMu)
                         command.Parameters.AddWithValue("@arananVeri", $"%{arananVeri}");
 
                     connection.Open();
@@ -388,14 +383,151 @@ namespace StokTakipSistemi
             }
         }
 
+        
+        
+        // Satış ekranı listview'ine ürünü çekmek için ürünleri önce bir DateTable'a atıyoruz
+        public DataTable urunuSatisTablosunaCek(string urunBarkodu)
+        {
+            DataTable urunTablosu = new DataTable();
 
+            using (SqlConnection connection = new SqlConnection(sqlIslemleri.GetBaglanti()))
+            {
+                string sorgu = sqlIslemleri.GetUrunSatisEkraniSorgu();
 
+                using (SqlCommand command = new SqlCommand(sorgu, connection))
+                {
+                    command.Parameters.AddWithValue("@UrunBarkod", urunBarkodu);
+                    SqlDataAdapter adapter = new SqlDataAdapter(command);
+                    adapter.Fill(urunTablosu);
+                }
+            }
 
+            return urunTablosu;
+        }
 
+        public void urunuSatisEkraninaTasi(string urunBarkodu, ListView listViewSatisEkrani, TextBox textBoxBarkodGorunmez,
+            TextBox textBoxTutar, TextBox textBoxToplamTutar)
+        {
+            DataTable urunTablosu = urunuSatisTablosunaCek(urunBarkodu);
 
+            if (urunTablosu.Rows.Count > 0)
+            {
+                bool urunVarMi = false;
+                DataRow urun = urunTablosu.Rows[0];
 
+                string urunBarkod = urun["UrunBarkod"]?.ToString() ?? string.Empty;
+                string urunAdi = urun["UrunAd"]?.ToString() ?? string.Empty;
+                decimal urunFiyat = Convert.ToDecimal(urun["UrunFiyatSatis"]);
 
+                int mevcutAdet;
 
+                foreach (ListViewItem item in listViewSatisEkrani.Items)
+                {
+                    if (item.SubItems[0].Text == urunBarkod)
+                    {
+                        mevcutAdet = Convert.ToInt32(item.SubItems[3].Text);
+                        item.SubItems[3].Text = (mevcutAdet + 1).ToString();
+                        urunVarMi = true;
+
+                        // Mevcut tutarı güncelle
+                        tutarVeToplamTutarGuncelle(urunFiyat, textBoxTutar, textBoxToplamTutar);
+                        break;
+                    }
+                }
+
+                if (!urunVarMi)
+                {
+                    // Yeni bir ürün ekle
+                    ListViewItem newItem = new ListViewItem(urunBarkod);
+                    newItem.SubItems.Add(urunAdi);
+                    newItem.SubItems.Add(urunFiyat.ToString("F2"));
+                    newItem.SubItems.Add("1");
+                    listViewSatisEkrani.Items.Add(newItem);
+
+                    // Yeni eklenen ürünün tutarını güncelle
+                    tutarVeToplamTutarGuncelle(urunFiyat, textBoxTutar, textBoxToplamTutar);
+                }
+
+                textBoxBarkodGorunmez.Clear();
+                textBoxBarkodGorunmez.Focus();
+            }
+            else
+            {
+                MessageBox.Show("Böyle bir ürün mevcut değil");
+                textBoxBarkodGorunmez.Clear();
+                textBoxBarkodGorunmez.Focus();
+            }
+        }
+
+        /*private void tutarVeToplamTutarGuncelle(decimal urunFiyat, TextBox textBoxTutar, TextBox textBoxToplamTutar)
+        {
+            // Eklenen veya güncellenen ürünün fiyatını textBoxTutar'a yaz
+            textBoxTutar.Text = urunFiyat.ToString("F2");
+
+            // Mevcut toplam tutarı al ve eklenen ürünün fiyatını ekle
+            decimal mevcutToplamTutar = 0;
+            decimal.TryParse(textBoxToplamTutar.Text, out mevcutToplamTutar);
+            mevcutToplamTutar += urunFiyat;
+
+            // Yeni toplam tutarı textBoxToplamTutar'a yaz
+            textBoxToplamTutar.Text = mevcutToplamTutar.ToString("F2");
+        }
+
+        public void tutarVeToplamTutariSatisTamamlayaAktar(string toplamTutar, TextBox toplamTutarTextbox)
+        {
+            toplamTutarTextbox.Text = toplamTutar;
+        }
+
+        public void satisTamamlaVerileriAktar(ListView satisEkraniListView, string indirimTur, string connectionString, float toplamTutar)
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    foreach (ListViewItem item in satisEkraniListView.Items)
+                    {
+                        string urunBarkod = item.SubItems[0].Text;
+                        if (!int.TryParse(item.SubItems[3].Text, out int urunAdet))
+                        {
+                            throw new Exception($"UrunAdet geçersiz: {item.SubItems[3].Text}");
+                        }
+                        if (!float.TryParse(item.SubItems[2].Text, out float urunFiyatSatis))
+                        {
+                            throw new Exception($"UrunFiyatSatis geçersiz: {item.SubItems[2].Text}");
+                        }
+
+                        // Tek bir SQL sorgusuyla tüm işlemleri gerçekleştirin
+                        string query = sqlIslemleri.GetSatisTamamlaVerileriAktarSorgu();
+
+                        using (SqlCommand cmd = new SqlCommand(query, connection))
+                        {
+                            cmd.Parameters.AddWithValue("@UrunBarkod", urunBarkod);
+                            cmd.Parameters.AddWithValue("@Indirimtur", indirimTur);
+                            cmd.Parameters.AddWithValue("@Miktar", urunAdet);
+                            cmd.Parameters.AddWithValue("@UrunFiyatSatis", urunFiyatSatis);
+                            cmd.ExecuteNonQuery();
+                        }
+                    }
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Veritabanına veri aktarılırken bir hata oluştu: " + ex.Message);
+            }
+        }
+
+        public void satisEkraniVeriTemizle(TextBox satisEkraniTutar, TextBox satisEkraniToplamTutar, TextBox textBoxBarodGorunmez, 
+            ListView satisEkraniListView)
+        {
+            satisEkraniTutar.Clear();
+            satisEkraniToplamTutar.Clear();
+            textBoxBarodGorunmez.Clear();
+            textBoxBarodGorunmez.Focus();
+            satisEkraniListView.Items.Clear();
+        }*/
 
         /*             ZAM İŞLEMERİ          */
 
@@ -417,9 +549,9 @@ namespace StokTakipSistemi
                 }
                 else // Eğer barkod ve zam oranı doğru girilmişse
                 {
-                    string barkodU= barkod.Text;
+                    string barkodU = barkod.Text;
                     float zam = float.Parse(zamOrani1.Text);
-                    uruneZamYap(barkodU,zam);
+                    uruneZamYap(barkodU, zam);
                 }
             }
             else if (zamTuru.SelectedIndex == 1) // Eğer kategoriye göre zam yapılacaksa
@@ -582,7 +714,7 @@ namespace StokTakipSistemi
         }
 
         // Barkod değiştiğinde eski fiyatı getiren fonksiyon
-        public void barkodChanged(TextBox barkod, TextBox eskiFiyat, ComboBox kategori, ComboBox urun, ComboBox marka)
+        public void barkodChanged(TextBox barkod, TextBox eskiFiyat, TextBox kategori, TextBox urun, TextBox marka)
         {
             if (dogruMu(barkod.Text)) // Barkod doğru formatta ise
             {
@@ -780,5 +912,6 @@ namespace StokTakipSistemi
             }
             return true;
         }
+
     }
 }

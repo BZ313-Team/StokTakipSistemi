@@ -410,65 +410,67 @@ C:\Users\hentc\OneDrive\Masaüstü\StokTakipSistemi\StokTakipSistemi\obj\Debug\n
 C:\Users\hentc\OneDrive\Masaüstü\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.pdb
 C:\Users\hentc\OneDrive\Masaüstü\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.genruntimeconfig.cache
 C:\Users\hentc\OneDrive\Masaüstü\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\ref\StokTakipSistemi.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\Resources\Inter-VariableFont_opsz,wght.ttf
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\StokTakipSistemi.exe
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\StokTakipSistemi.deps.json
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\StokTakipSistemi.runtimeconfig.json
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\StokTakipSistemi.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\StokTakipSistemi.pdb
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\Azure.Core.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\Azure.Identity.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\System.ClientModel.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\System.Memory.Data.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\System.Runtime.Caching.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\WinForms.DataVisualization.Utilities.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\WinForms.DataVisualization.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\de\Microsoft.Data.SqlClient.resources.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\es\Microsoft.Data.SqlClient.resources.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\it\Microsoft.Data.SqlClient.resources.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.csproj.AssemblyReference.cache
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.g.resources
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.Properties.Resources.resources
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.Giris.resources
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.Guncelle.resources
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.Sayfalar.resources
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.SifremiUnuttum.resources
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.ZamEkrani.resources
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.csproj.GenerateResource.cache
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.AssemblyInfoInputs.cache
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.AssemblyInfo.cs
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.csproj.CoreCompileInputs.cache
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.sourcelink.json
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTaki.1EEE37DF.Up2Date
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\refint\StokTakipSistemi.dll
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.pdb
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.genruntimeconfig.cache
-C:\Users\ALPER OZDEMIR\Desktop\fatih son\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\ref\StokTakipSistemi.dll
+C:\Users\hentc\OneDrive\Masaüstü\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.SatisTamamla.resources
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\Resources\Inter-VariableFont_opsz,wght.ttf
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\StokTakipSistemi.exe
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\StokTakipSistemi.deps.json
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\StokTakipSistemi.runtimeconfig.json
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\StokTakipSistemi.dll
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\StokTakipSistemi.pdb
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\Azure.Core.dll
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\Azure.Identity.dll
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\System.ClientModel.dll
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\System.Memory.Data.dll
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\System.Runtime.Caching.dll
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\WinForms.DataVisualization.Utilities.dll
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\WinForms.DataVisualization.dll
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Runtime.Caching.dll
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.csproj.AssemblyReference.cache
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.g.resources
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.Properties.Resources.resources
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.SatisTamamla.resources
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.Giris.resources
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.Guncelle.resources
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.Sayfalar.resources
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.SifremiUnuttum.resources
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.ZamEkrani.resources
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.csproj.GenerateResource.cache
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.AssemblyInfoInputs.cache
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.AssemblyInfo.cs
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.csproj.CoreCompileInputs.cache
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.sourcelink.json
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTaki.1EEE37DF.Up2Date
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.dll
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\refint\StokTakipSistemi.dll
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.pdb
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\StokTakipSistemi.genruntimeconfig.cache
+C:\Users\ALPER OZDEMIR\Desktop\StokTakipSistemi\StokTakipSistemi\obj\Debug\net8.0-windows\ref\StokTakipSistemi.dll

@@ -1,34 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ALPER OZDEMIR\\Desktop\\fatih son\\StokTakipSistemi\\",
+  "WorkspaceRootPath": "C:\\Users\\hentc\\OneDrive\\Masa\u00FCst\u00FC\\StokTakipSistemi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|c:\\users\\alper ozdemir\\desktop\\fatih son\\stoktakipsistemi\\stoktakipsistemi\\sqlislemleri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|solutionrelative:stoktakipsistemi\\sqlislemleri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|c:\\users\\alper ozdemir\\desktop\\fatih son\\stoktakipsistemi\\stoktakipsistemi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|solutionrelative:stoktakipsistemi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|c:\\users\\alper ozdemir\\desktop\\fatih son\\stoktakipsistemi\\stoktakipsistemi\\urunislemleri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|c:\\users\\hentc\\onedrive\\masa\u00FCst\u00FC\\stoktakipsistemi\\stoktakipsistemi\\urunislemleri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|solutionrelative:stoktakipsistemi\\urunislemleri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|c:\\users\\alper ozdemir\\desktop\\fatih son\\stoktakipsistemi\\stoktakipsistemi\\view\\zamekrani.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|solutionrelative:stoktakipsistemi\\view\\zamekrani.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|c:\\users\\hentc\\onedrive\\masa\u00FCst\u00FC\\stoktakipsistemi\\stoktakipsistemi\\sqlislemleri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|solutionrelative:stoktakipsistemi\\sqlislemleri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|c:\\users\\alper ozdemir\\desktop\\fatih son\\stoktakipsistemi\\stoktakipsistemi\\view\\sayfalar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|solutionrelative:stoktakipsistemi\\view\\sayfalar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|c:\\users\\hentc\\onedrive\\masa\u00FCst\u00FC\\stoktakipsistemi\\stoktakipsistemi\\satistamamla.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|solutionrelative:stoktakipsistemi\\satistamamla.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|C:\\Users\\ALPER OZDEMIR\\Desktop\\fatih son\\StokTakipSistemi\\stoktakipsistemi\\view\\sayfalar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|c:\\users\\hentc\\onedrive\\masa\u00FCst\u00FC\\stoktakipsistemi\\stoktakipsistemi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|solutionrelative:stoktakipsistemi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|C:\\Users\\hentc\\OneDrive\\Masa\u00FCst\u00FC\\StokTakipSistemi\\stoktakipsistemi\\satistamamla.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|solutionrelative:stoktakipsistemi\\satistamamla.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|C:\\Users\\hentc\\OneDrive\\Masa\u00FCst\u00FC\\StokTakipSistemi\\stoktakipsistemi\\view\\sayfalar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|solutionrelative:stoktakipsistemi\\view\\sayfalar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|c:\\users\\alper ozdemir\\desktop\\fatih son\\stoktakipsistemi\\stoktakipsistemi\\view\\zamekrani.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|c:\\users\\hentc\\onedrive\\masa\u00FCst\u00FC\\stoktakipsistemi\\stoktakipsistemi\\view\\zamekrani.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|solutionrelative:stoktakipsistemi\\view\\zamekrani.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|c:\\users\\hentc\\onedrive\\masa\u00FCst\u00FC\\stoktakipsistemi\\stoktakipsistemi\\view\\zamekrani.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|solutionrelative:stoktakipsistemi\\view\\zamekrani.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|C:\\Users\\hentc\\OneDrive\\Masa\u00FCst\u00FC\\StokTakipSistemi\\stoktakipsistemi\\view\\zamekrani.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|solutionrelative:stoktakipsistemi\\view\\zamekrani.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -41,95 +49,113 @@
           "SelectedChildIndex": 7,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hentc\\OneDrive\\Masa\u00FCst\u00FC\\StokTakipSistemi\\StokTakipSistemi\\Program.cs",
+              "RelativeDocumentMoniker": "StokTakipSistemi\\Program.cs",
+              "ToolTip": "C:\\Users\\hentc\\OneDrive\\Masa\u00FCst\u00FC\\StokTakipSistemi\\StokTakipSistemi\\Program.cs",
+              "RelativeToolTip": "StokTakipSistemi\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T13:07:04.559Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ALPER OZDEMIR\\Desktop\\fatih son\\StokTakipSistemi\\StokTakipSistemi\\Program.cs",
-              "RelativeDocumentMoniker": "StokTakipSistemi\\Program.cs",
-              "ToolTip": "C:\\Users\\ALPER OZDEMIR\\Desktop\\fatih son\\StokTakipSistemi\\StokTakipSistemi\\Program.cs",
-              "RelativeToolTip": "StokTakipSistemi\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "SatisTamamla.cs",
+              "DocumentMoniker": "C:\\Users\\hentc\\OneDrive\\Masa\u00FCst\u00FC\\StokTakipSistemi\\StokTakipSistemi\\SatisTamamla.cs",
+              "RelativeDocumentMoniker": "StokTakipSistemi\\SatisTamamla.cs",
+              "ToolTip": "C:\\Users\\hentc\\OneDrive\\Masa\u00FCst\u00FC\\StokTakipSistemi\\StokTakipSistemi\\SatisTamamla.cs",
+              "RelativeToolTip": "StokTakipSistemi\\SatisTamamla.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAADwv0cAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T13:08:42.321Z",
+              "WhenOpened": "2024-12-31T13:04:48.337Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Sayfalar.cs",
-              "DocumentMoniker": "C:\\Users\\ALPER OZDEMIR\\Desktop\\fatih son\\StokTakipSistemi\\StokTakipSistemi\\view\\Sayfalar.cs",
-              "RelativeDocumentMoniker": "StokTakipSistemi\\view\\Sayfalar.cs",
-              "ToolTip": "C:\\Users\\ALPER OZDEMIR\\Desktop\\fatih son\\StokTakipSistemi\\StokTakipSistemi\\view\\Sayfalar.cs",
-              "RelativeToolTip": "StokTakipSistemi\\view\\Sayfalar.cs",
-              "ViewState": "AgIAAIkCAAAAAAAAAAAEwJICAAAtAAAAAAAAAA==",
+              "Title": "SatisTamamla.cs [Tasar\u0131m]",
+              "DocumentMoniker": "C:\\Users\\hentc\\OneDrive\\Masa\u00FCst\u00FC\\StokTakipSistemi\\StokTakipSistemi\\SatisTamamla.cs",
+              "RelativeDocumentMoniker": "StokTakipSistemi\\SatisTamamla.cs",
+              "ToolTip": "C:\\Users\\ALPER OZDEMIR\\Desktop\\StokTakipSistemi\\StokTakipSistemi\\SatisTamamla.cs [Tasar\u0131m]",
+              "RelativeToolTip": "..\\..\\..\\..\\ALPER OZDEMIR\\Desktop\\StokTakipSistemi\\StokTakipSistemi\\SatisTamamla.cs [Tasar\u0131m]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T12:05:03.238Z",
+              "WhenOpened": "2024-12-31T13:04:44.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ZamEkrani.cs",
+              "DocumentMoniker": "C:\\Users\\hentc\\OneDrive\\Masa\u00FCst\u00FC\\StokTakipSistemi\\StokTakipSistemi\\view\\ZamEkrani.cs",
+              "RelativeDocumentMoniker": "StokTakipSistemi\\view\\ZamEkrani.cs",
+              "ToolTip": "C:\\Users\\hentc\\OneDrive\\Masa\u00FCst\u00FC\\StokTakipSistemi\\StokTakipSistemi\\view\\ZamEkrani.cs",
+              "RelativeToolTip": "StokTakipSistemi\\view\\ZamEkrani.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAkwG8AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T12:52:16.688Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ZamEkrani.cs [Tasar\u0131m]",
+              "DocumentMoniker": "C:\\Users\\hentc\\OneDrive\\Masa\u00FCst\u00FC\\StokTakipSistemi\\StokTakipSistemi\\view\\ZamEkrani.cs",
+              "RelativeDocumentMoniker": "StokTakipSistemi\\view\\ZamEkrani.cs",
+              "ToolTip": "C:\\Users\\ALPER OZDEMIR\\Desktop\\StokTakipSistemi\\StokTakipSistemi\\view\\ZamEkrani.cs [Tasar\u0131m]",
+              "RelativeToolTip": "..\\..\\..\\..\\ALPER OZDEMIR\\Desktop\\StokTakipSistemi\\StokTakipSistemi\\view\\ZamEkrani.cs [Tasar\u0131m]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-31T12:52:13.093Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "ZamEkrani.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\ALPER OZDEMIR\\Desktop\\fatih son\\StokTakipSistemi\\StokTakipSistemi\\view\\ZamEkrani.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\hentc\\OneDrive\\Masa\u00FCst\u00FC\\StokTakipSistemi\\StokTakipSistemi\\view\\ZamEkrani.Designer.cs",
               "RelativeDocumentMoniker": "StokTakipSistemi\\view\\ZamEkrani.Designer.cs",
-              "ToolTip": "C:\\Users\\ALPER OZDEMIR\\Desktop\\fatih son\\StokTakipSistemi\\StokTakipSistemi\\view\\ZamEkrani.Designer.cs",
+              "ToolTip": "C:\\Users\\hentc\\OneDrive\\Masa\u00FCst\u00FC\\StokTakipSistemi\\StokTakipSistemi\\view\\ZamEkrani.Designer.cs",
               "RelativeToolTip": "StokTakipSistemi\\view\\ZamEkrani.Designer.cs",
-              "ViewState": "AgIAAIUAAAAAAAAAAAAcwG4AAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAABkCAAAAAAAAAAAAAOwCAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T00:23:44.705Z"
+              "WhenOpened": "2024-12-31T12:51:28.752Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Sayfalar.cs [Tasar\u0131m]",
-              "DocumentMoniker": "C:\\Users\\ALPER OZDEMIR\\Desktop\\fatih son\\StokTakipSistemi\\StokTakipSistemi\\view\\Sayfalar.cs",
-              "RelativeDocumentMoniker": "StokTakipSistemi\\view\\Sayfalar.cs",
-              "ToolTip": "C:\\Users\\ALPER OZDEMIR\\Desktop\\fatih son\\StokTakipSistemi\\StokTakipSistemi\\view\\Sayfalar.cs [Tasar\u0131m]",
-              "RelativeToolTip": "StokTakipSistemi\\view\\Sayfalar.cs [Tasar\u0131m]",
+              "DocumentIndex": 1,
+              "Title": "SQLIslemleri.cs",
+              "DocumentMoniker": "C:\\Users\\hentc\\OneDrive\\Masa\u00FCst\u00FC\\StokTakipSistemi\\StokTakipSistemi\\SQLIslemleri.cs",
+              "RelativeDocumentMoniker": "StokTakipSistemi\\SQLIslemleri.cs",
+              "ToolTip": "C:\\Users\\hentc\\OneDrive\\Masa\u00FCst\u00FC\\StokTakipSistemi\\StokTakipSistemi\\SQLIslemleri.cs",
+              "RelativeToolTip": "StokTakipSistemi\\SQLIslemleri.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-30T00:05:25.313Z"
+              "WhenOpened": "2024-12-26T16:01:12.015Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ZamEkrani.cs",
-              "DocumentMoniker": "C:\\Users\\ALPER OZDEMIR\\Desktop\\fatih son\\StokTakipSistemi\\StokTakipSistemi\\view\\ZamEkrani.cs",
-              "RelativeDocumentMoniker": "StokTakipSistemi\\view\\ZamEkrani.cs",
-              "ToolTip": "C:\\Users\\ALPER OZDEMIR\\Desktop\\fatih son\\StokTakipSistemi\\StokTakipSistemi\\view\\ZamEkrani.cs",
-              "RelativeToolTip": "StokTakipSistemi\\view\\ZamEkrani.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAowJYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-29T21:08:20.224Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "UrunIslemleri.cs",
-              "DocumentMoniker": "C:\\Users\\ALPER OZDEMIR\\Desktop\\fatih son\\StokTakipSistemi\\StokTakipSistemi\\UrunIslemleri.cs",
+              "DocumentMoniker": "C:\\Users\\hentc\\OneDrive\\Masa\u00FCst\u00FC\\StokTakipSistemi\\StokTakipSistemi\\UrunIslemleri.cs",
               "RelativeDocumentMoniker": "StokTakipSistemi\\UrunIslemleri.cs",
-              "ToolTip": "C:\\Users\\ALPER OZDEMIR\\Desktop\\fatih son\\StokTakipSistemi\\StokTakipSistemi\\UrunIslemleri.cs",
+              "ToolTip": "C:\\Users\\hentc\\OneDrive\\Masa\u00FCst\u00FC\\StokTakipSistemi\\StokTakipSistemi\\UrunIslemleri.cs",
               "RelativeToolTip": "StokTakipSistemi\\UrunIslemleri.cs",
-              "ViewState": "AgIAALcBAAAAAAAAAAAAAM4BAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAHEBAAAAAAAAAAAUwBECAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-26T16:01:11.414Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SQLIslemleri.cs",
-              "DocumentMoniker": "C:\\Users\\ALPER OZDEMIR\\Desktop\\fatih son\\StokTakipSistemi\\StokTakipSistemi\\SQLIslemleri.cs",
-              "RelativeDocumentMoniker": "StokTakipSistemi\\SQLIslemleri.cs",
-              "ToolTip": "C:\\Users\\ALPER OZDEMIR\\Desktop\\fatih son\\StokTakipSistemi\\StokTakipSistemi\\SQLIslemleri.cs",
-              "RelativeToolTip": "StokTakipSistemi\\SQLIslemleri.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAwAAAAfAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Sayfalar.cs [Tasar\u0131m]",
+              "DocumentMoniker": "C:\\Users\\hentc\\OneDrive\\Masa\u00FCst\u00FC\\StokTakipSistemi\\StokTakipSistemi\\view\\Sayfalar.cs",
+              "RelativeDocumentMoniker": "StokTakipSistemi\\view\\Sayfalar.cs",
+              "ToolTip": "C:\\Users\\ALPER OZDEMIR\\Desktop\\StokTakipSistemi\\StokTakipSistemi\\view\\Sayfalar.cs [Tasar\u0131m]",
+              "RelativeToolTip": "..\\..\\..\\..\\ALPER OZDEMIR\\Desktop\\StokTakipSistemi\\StokTakipSistemi\\view\\Sayfalar.cs [Tasar\u0131m]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T16:01:12.015Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-25T10:15:47.375Z"
             }
           ]
         }
