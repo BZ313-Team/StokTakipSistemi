@@ -12,7 +12,6 @@ namespace StokTakipSistemi
     {
         private string baglanti = "Server=yourDevice\\SQLEXPRESS;Database=yourDB;Integrated Security=True;TrustServerCertificate=True;";
 
-        
         private string urunSorguEklemeyiYap = @"INSERT INTO Urun       
                  (UrunBarkod, UrunAd, UrunGKategori, UrunKategori, UrunUreticiFirma, 
                   UrunTip, UrunModel, UrunBoyut, UrunMensei, UrunFiyatAlis, 

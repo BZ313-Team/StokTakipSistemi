@@ -159,10 +159,10 @@
             chartUrunBazindaSatis = new System.Windows.Forms.DataVisualization.Charting.Chart();
             panel1 = new Panel();
             tLayoutIstUstUrunBazıUst = new TableLayoutPanel();
+            grafikOpsiyon = new ComboBox();
             lblAra1 = new Label();
             lblUrunBazindaYuzdeliSatis = new Label();
-            cmbBoxFiltre1 = new ComboBox();
-            txtBoxAraFiltre1 = new TextBox();
+            products = new ComboBox();
             panel2 = new Panel();
             tableLayoutPanel1 = new TableLayoutPanel();
             lblAra2 = new Label();
@@ -1711,12 +1711,12 @@
             tLayoutIstUstUrunBazıUst.ColumnCount = 4;
             tLayoutIstUstUrunBazıUst.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 31F));
             tLayoutIstUstUrunBazıUst.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 9F));
-            tLayoutIstUstUrunBazıUst.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 20F));
-            tLayoutIstUstUrunBazıUst.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 40F));
+            tLayoutIstUstUrunBazıUst.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 27.5828457F));
+            tLayoutIstUstUrunBazıUst.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 32.5536079F));
+            tLayoutIstUstUrunBazıUst.Controls.Add(grafikOpsiyon, 2, 0);
             tLayoutIstUstUrunBazıUst.Controls.Add(lblAra1, 1, 0);
             tLayoutIstUstUrunBazıUst.Controls.Add(lblUrunBazindaYuzdeliSatis, 0, 0);
-            tLayoutIstUstUrunBazıUst.Controls.Add(cmbBoxFiltre1, 3, 0);
-            tLayoutIstUstUrunBazıUst.Controls.Add(txtBoxAraFiltre1, 2, 0);
+            tLayoutIstUstUrunBazıUst.Controls.Add(products, 3, 0);
             tLayoutIstUstUrunBazıUst.Dock = DockStyle.Fill;
             tLayoutIstUstUrunBazıUst.Location = new Point(0, 0);
             tLayoutIstUstUrunBazıUst.Name = "tLayoutIstUstUrunBazıUst";
@@ -1725,43 +1725,46 @@
             tLayoutIstUstUrunBazıUst.Size = new Size(1026, 57);
             tLayoutIstUstUrunBazıUst.TabIndex = 0;
             // 
+            // grafikOpsiyon
+            // 
+            grafikOpsiyon.Anchor = AnchorStyles.None;
+            grafikOpsiyon.FormattingEnabled = true;
+            grafikOpsiyon.Items.AddRange(new object[] { "Haftalık Ciro", "Haftalık Satılan Urun", "Aylık Ciro", "Aylık Satılan Urun" });
+            grafikOpsiyon.Location = new Point(451, 14);
+            grafikOpsiyon.Name = "grafikOpsiyon";
+            grafikOpsiyon.Size = new Size(198, 28);
+            grafikOpsiyon.TabIndex = 2;
+            grafikOpsiyon.SelectedIndexChanged += grafikOpsiyon_SelectedIndexChanged;
+            // 
             // lblAra1
             // 
             lblAra1.Anchor = AnchorStyles.None;
             lblAra1.AutoSize = true;
-            lblAra1.Location = new Point(344, 18);
+            lblAra1.Location = new Point(343, 18);
             lblAra1.Name = "lblAra1";
-            lblAra1.Size = new Size(39, 20);
+            lblAra1.Size = new Size(40, 20);
             lblAra1.TabIndex = 1;
-            lblAra1.Text = "Ara :";
+            lblAra1.Text = "Mod";
             // 
             // lblUrunBazindaYuzdeliSatis
             // 
             lblUrunBazindaYuzdeliSatis.Anchor = AnchorStyles.None;
             lblUrunBazindaYuzdeliSatis.AutoSize = true;
-            lblUrunBazindaYuzdeliSatis.Location = new Point(43, 18);
+            lblUrunBazindaYuzdeliSatis.Location = new Point(48, 18);
             lblUrunBazindaYuzdeliSatis.Name = "lblUrunBazindaYuzdeliSatis";
-            lblUrunBazindaYuzdeliSatis.Size = new Size(231, 20);
+            lblUrunBazindaYuzdeliSatis.Size = new Size(220, 20);
             lblUrunBazindaYuzdeliSatis.TabIndex = 0;
-            lblUrunBazindaYuzdeliSatis.Text = "Ürün Bazında Yüzdelik Satış Oranı";
+            lblUrunBazindaYuzdeliSatis.Text = "Ciro - Satılan Urun Sayısı Grafiği";
             // 
-            // cmbBoxFiltre1
+            // products
             // 
-            cmbBoxFiltre1.Anchor = AnchorStyles.None;
-            cmbBoxFiltre1.FormattingEnabled = true;
-            cmbBoxFiltre1.Items.AddRange(new object[] { "Günlük", "Haftalık", "Aylık" });
-            cmbBoxFiltre1.Location = new Point(746, 14);
-            cmbBoxFiltre1.Name = "cmbBoxFiltre1";
-            cmbBoxFiltre1.Size = new Size(148, 28);
-            cmbBoxFiltre1.TabIndex = 1;
-            // 
-            // txtBoxAraFiltre1
-            // 
-            txtBoxAraFiltre1.Anchor = AnchorStyles.Left;
-            txtBoxAraFiltre1.Location = new Point(413, 15);
-            txtBoxAraFiltre1.Name = "txtBoxAraFiltre1";
-            txtBoxAraFiltre1.Size = new Size(148, 27);
-            txtBoxAraFiltre1.TabIndex = 2;
+            products.Anchor = AnchorStyles.None;
+            products.FormattingEnabled = true;
+            products.Location = new Point(759, 14);
+            products.Name = "products";
+            products.Size = new Size(198, 28);
+            products.TabIndex = 1;
+            products.SelectedIndexChanged += products_SelectedIndexChanged;
             // 
             // panel2
             // 
@@ -1863,7 +1866,7 @@
             panelGrafikveButon.Controls.Add(panelSagButon);
             panelGrafikveButon.Location = new Point(37, 79);
             panelGrafikveButon.Name = "panelGrafikveButon";
-            panelGrafikveButon.Size = new Size(995, 531);
+            panelGrafikveButon.Size = new Size(824, 531);
             panelGrafikveButon.TabIndex = 3;
             // 
             // panelSagButon
@@ -1872,7 +1875,7 @@
             panelSagButon.Controls.Add(btnSonraki);
             panelSagButon.Location = new Point(861, 475);
             panelSagButon.Name = "panelSagButon";
-            panelSagButon.Size = new Size(134, 56);
+            panelSagButon.Size = new Size(0, 56);
             panelSagButon.TabIndex = 0;
             // 
             // btnSonraki
@@ -1880,7 +1883,7 @@
             btnSonraki.Dock = DockStyle.Fill;
             btnSonraki.Location = new Point(0, 0);
             btnSonraki.Name = "btnSonraki";
-            btnSonraki.Size = new Size(134, 56);
+            btnSonraki.Size = new Size(0, 56);
             btnSonraki.TabIndex = 0;
             btnSonraki.Text = "Sonraki";
             btnSonraki.UseVisualStyleBackColor = true;
@@ -2080,8 +2083,7 @@
         private TableLayoutPanel tLayoutIstUstUrunBazıUst;
         private Label lblAra1;
         private Label lblUrunBazindaYuzdeliSatis;
-        private ComboBox cmbBoxFiltre1;
-        private TextBox txtBoxAraFiltre1;
+        private ComboBox products;
         private Panel panel2;
         private TableLayoutPanel tableLayoutPanel1;
         private Label lblAra2;
@@ -2111,5 +2113,6 @@
         private ColumnHeader UrunFiyatSatis;
         private ColumnHeader UrunAdet;
         private Button satisiIptalEtButon;
+        private ComboBox grafikOpsiyon;
     }
 }
