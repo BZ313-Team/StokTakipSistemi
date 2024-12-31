@@ -8,6 +8,7 @@ using System.Reflection;
 using StokTakipSistemi.utils;
 using Microsoft.Data.SqlClient;
 using System.Data;
+using StokTakipSistemi.controller;
 
 namespace StokTakipSistemi
 {
@@ -49,12 +50,12 @@ namespace StokTakipSistemi
 
             //ComboBoxlarýn içinde günlük olarak baþlangýç atama
 
-            cmbBoxGecmisSFiltre.Text = "Günlük";
-            cmbBoxFiltre1.Text = "Günlük";
-            cmbBoxFiltre2.Text = "Günlük";
+            //cmbBoxGecmisSFiltre.Text = "Günlük";
+            //products.Text = "Günlük";
+            //cmbBoxFiltre2.Text = "Günlük";
 
             cmbBoxGecmisSFiltre.ForeColor = ColorTranslator.FromHtml("#80818B");
-            cmbBoxFiltre1.ForeColor = ColorTranslator.FromHtml("#80818B");
+            products.ForeColor = ColorTranslator.FromHtml("#80818B");
             cmbBoxFiltre2.ForeColor = ColorTranslator.FromHtml("#80818B");
 
 
@@ -192,15 +193,37 @@ namespace StokTakipSistemi
             btnSonraki.ForeColor = ForeColor = ColorTranslator.FromHtml("#FFFFFF");
 
 
-            // Chartýn gözükmesi için ürün eklenmesi gerekiyor Ürün ekleme denemesi silinecek
-            chartUrunBazindaSatis.Series[0].Points.Clear(); // Mevcut verileri temizler
-            chartUrunBazindaSatis.Series[0].Points.AddXY("Kategori 1", 40);
-            chartUrunBazindaSatis.Series[0].Points.AddXY("Kategori 2", 30);
-            chartUrunBazindaSatis.Series[0].Points.AddXY("Kategori 3", 30);
-            chartUrunBazindaSatis.Series[0].Points.AddXY("Kategori 4", 30);
+            List<String> distinctCategories = new StatisticController().getDistinctCategories();
+            foreach (var item in distinctCategories) products.Items.Add(item);
 
+            products.SelectedIndex = 0;
+            grafikOpsiyon.SelectedIndex = 0;
 
+            resetChart();
+        }
 
+        private void resetChart()
+        {
+            String selectedOption = grafikOpsiyon.GetItemText(grafikOpsiyon.SelectedItem);
+
+            if (selectedOption == "Haftalýk Ciro" || selectedOption == "Haftalýk Satýlan Urun")
+            {
+                setWeeklyChart();
+            }
+            else
+            {
+                setMonthlyChart();
+            }
+        }
+
+        private void setMonthlyChart()
+        {
+           // TODO
+        }
+
+        private void setWeeklyChart()
+        {
+           // TODO
         }
 
         // Panel kenarlarýný kývýrmak için kullanýlacak metod
@@ -783,6 +806,16 @@ namespace StokTakipSistemi
         private void satisiIptalEtButon_Click(object sender, EventArgs e)
         {
             urunIslemleri.satisEkraniVeriTemizle(txtBoxTutar, txtBoxToplamTutar, textBoxBarkodGorunmez, listViewSatisEkrani);
+        }
+
+        private void grafikOpsiyon_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            resetChart();
+        }
+
+        private void products_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            resetChart();
         }
     }
 }
