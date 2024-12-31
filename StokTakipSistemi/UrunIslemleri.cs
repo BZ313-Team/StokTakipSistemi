@@ -274,7 +274,7 @@ namespace StokTakipSistemi
         }
 
         // ürün silme fonksiyonu
-        /*public void urunSil(string urunBarkod)
+        public void urunSil(string urunBarkod)
         {
             string baglanti = sqlIslemleri.GetBaglanti();
             string sorgu = sqlIslemleri.GetSorguUrunSil();
@@ -308,7 +308,7 @@ namespace StokTakipSistemi
                     MessageBox.Show("Beklenmedik bir hata oluştu");
                 }
             }
-        }*/
+        }
 
         // aynı barkodlu ürün veritabanında halihazırda var mı yok mu onu kontrol eden fonksiyon
         public bool urunVarMi(string urunBarkodu)
