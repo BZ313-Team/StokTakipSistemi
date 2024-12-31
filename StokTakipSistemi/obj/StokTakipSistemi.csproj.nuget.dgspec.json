@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ALPER OZDEMIR\\Desktop\\Yeni klasör (2)\\StokTakipSistemi\\StokTakipSistemi\\StokTakipSistemi.csproj": {}
+    "C:\\Users\\onurq\\OneDrive\\Masaüstü\\StokTakipSistemi\\StokTakipSistemi\\StokTakipSistemi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ALPER OZDEMIR\\Desktop\\Yeni klasör (2)\\StokTakipSistemi\\StokTakipSistemi\\StokTakipSistemi.csproj": {
+    "C:\\Users\\onurq\\OneDrive\\Masaüstü\\StokTakipSistemi\\StokTakipSistemi\\StokTakipSistemi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ALPER OZDEMIR\\Desktop\\Yeni klasör (2)\\StokTakipSistemi\\StokTakipSistemi\\StokTakipSistemi.csproj",
+        "projectUniqueName": "C:\\Users\\onurq\\OneDrive\\Masaüstü\\StokTakipSistemi\\StokTakipSistemi\\StokTakipSistemi.csproj",
         "projectName": "StokTakipSistemi",
-        "projectPath": "C:\\Users\\ALPER OZDEMIR\\Desktop\\Yeni klasör (2)\\StokTakipSistemi\\StokTakipSistemi\\StokTakipSistemi.csproj",
-        "packagesPath": "C:\\Users\\ALPER OZDEMIR\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ALPER OZDEMIR\\Desktop\\Yeni klasör (2)\\StokTakipSistemi\\StokTakipSistemi\\obj\\",
+        "projectPath": "C:\\Users\\onurq\\OneDrive\\Masaüstü\\StokTakipSistemi\\StokTakipSistemi\\StokTakipSistemi.csproj",
+        "packagesPath": "C:\\Users\\onurq\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\onurq\\OneDrive\\Masaüstü\\StokTakipSistemi\\StokTakipSistemi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ALPER OZDEMIR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\onurq\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,26 +38,11 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
-          "dependencies": {
-            "Microsoft.Data.SqlClient": {
-              "target": "Package",
-              "version": "[5.2.2, )"
-            },
-            "WinForms.DataVisualization": {
-              "target": "Package",
-              "version": "[1.9.2, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -70,15 +54,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            },
-            "Microsoft.WindowsDesktop.App.WindowsForms": {
-              "privateAssets": "none"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
