@@ -459,7 +459,7 @@ namespace StokTakipSistemi
             }
         }
 
-        /*private void tutarVeToplamTutarGuncelle(decimal urunFiyat, TextBox textBoxTutar, TextBox textBoxToplamTutar)
+        private void tutarVeToplamTutarGuncelle(decimal urunFiyat, TextBox textBoxTutar, TextBox textBoxToplamTutar)
         {
             // Eklenen veya güncellenen ürünün fiyatını textBoxTutar'a yaz
             textBoxTutar.Text = urunFiyat.ToString("F2");
@@ -527,7 +527,7 @@ namespace StokTakipSistemi
             textBoxBarodGorunmez.Clear();
             textBoxBarodGorunmez.Focus();
             satisEkraniListView.Items.Clear();
-        }*/
+        }
 
         /*             ZAM İŞLEMERİ          */
 

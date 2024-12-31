@@ -10,7 +10,7 @@ namespace StokTakipSistemi
 {
     internal class SQLIslemleri
     {
-        private string baglanti = "Server=DESKTOP-IRAO93A\\SQLEXPRESS;Database=fatih;Integrated Security=True;TrustServerCertificate=True;";
+        private string baglanti = "Server=yourDevice\\SQLEXPRESS;Database=yourDB;Integrated Security=True;TrustServerCertificate=True;";
 
         
         private string urunSorguEklemeyiYap = @"INSERT INTO Urun       
