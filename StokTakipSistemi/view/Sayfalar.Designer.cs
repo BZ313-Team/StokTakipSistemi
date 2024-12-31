@@ -62,27 +62,22 @@
             tabPageSatis = new TabPage();
             tLayoutPSatisSayfa = new TableLayoutPanel();
             tLayoutPSatisEkrani = new TableLayoutPanel();
-            tLayoutPToplamTutar = new TableLayoutPanel();
-            lblToplamTutarTL = new Label();
-            txtBoxToplamTutar = new TextBox();
-            lblToplamTutar = new Label();
-            tLayoutPIndirimYuzde = new TableLayoutPanel();
-            txtBoxIndirimYuzde = new TextBox();
-            lblIndirimYuzde = new Label();
-            tLayoutPIndirimTL = new TableLayoutPanel();
-            lblIndırımTLL = new Label();
-            txtBoxIndirimTL = new TextBox();
-            lblIndirimTL = new Label();
-            tLayoutPBileme = new TableLayoutPanel();
-            lblBilemeTL = new Label();
-            lblBileme = new Label();
-            txtBoxBileme = new TextBox();
-            dataGViewSatisEkrani = new DataGridView();
+            satisiIptalEtButon = new Button();
             tLayoutPTutar = new TableLayoutPanel();
             txtBoxTutar = new TextBox();
             lblTutar = new Label();
             lblTutarTL = new Label();
+            tLayoutPBileme = new TableLayoutPanel();
+            tLayoutPToplamTutar = new TableLayoutPanel();
+            lblToplamTutarTL = new Label();
+            txtBoxToplamTutar = new TextBox();
+            lblToplamTutar = new Label();
             btnSatisYap = new Button();
+            listViewSatisEkrani = new ListView();
+            UrunBarkod = new ColumnHeader();
+            UrunAd = new ColumnHeader();
+            UrunFiyatSatis = new ColumnHeader();
+            UrunAdet = new ColumnHeader();
             tLayoutPSatisSayfaSol = new TableLayoutPanel();
             tLayoutPHesapMakinesi = new TableLayoutPanel();
             btn7 = new Button();
@@ -104,6 +99,7 @@
             btnEsittir = new Button();
             btnCikarma = new Button();
             btnToplama = new Button();
+            textBoxBarkodGorunmez = new TextBox();
             tabPageUrun = new TabPage();
             tLayoutPUrunSayfa = new TableLayoutPanel();
             tLayoutPUrunlerUst = new TableLayoutPanel();
@@ -201,12 +197,8 @@
             tabPageSatis.SuspendLayout();
             tLayoutPSatisSayfa.SuspendLayout();
             tLayoutPSatisEkrani.SuspendLayout();
-            tLayoutPToplamTutar.SuspendLayout();
-            tLayoutPIndirimYuzde.SuspendLayout();
-            tLayoutPIndirimTL.SuspendLayout();
-            tLayoutPBileme.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGViewSatisEkrani).BeginInit();
             tLayoutPTutar.SuspendLayout();
+            tLayoutPToplamTutar.SuspendLayout();
             tLayoutPSatisSayfaSol.SuspendLayout();
             tLayoutPHesapMakinesi.SuspendLayout();
             tabPageUrun.SuspendLayout();
@@ -556,6 +548,7 @@
             tabControl1.SelectedIndex = 0;
             tabControl1.Size = new Size(1055, 661);
             tabControl1.TabIndex = 1;
+            tabControl1.SelectedIndexChanged += tabControl1_SelectedIndexChanged;
             tabControl1.Resize += tabControl1_Resize;
             // 
             // tabPageSatis
@@ -588,13 +581,12 @@
             // 
             tLayoutPSatisEkrani.ColumnCount = 1;
             tLayoutPSatisEkrani.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tLayoutPSatisEkrani.Controls.Add(tLayoutPToplamTutar, 0, 5);
-            tLayoutPSatisEkrani.Controls.Add(tLayoutPIndirimYuzde, 0, 4);
-            tLayoutPSatisEkrani.Controls.Add(tLayoutPIndirimTL, 0, 3);
-            tLayoutPSatisEkrani.Controls.Add(tLayoutPBileme, 0, 2);
-            tLayoutPSatisEkrani.Controls.Add(dataGViewSatisEkrani, 0, 0);
+            tLayoutPSatisEkrani.Controls.Add(satisiIptalEtButon, 0, 4);
             tLayoutPSatisEkrani.Controls.Add(tLayoutPTutar, 0, 1);
-            tLayoutPSatisEkrani.Controls.Add(btnSatisYap, 0, 6);
+            tLayoutPSatisEkrani.Controls.Add(tLayoutPBileme, 0, 5);
+            tLayoutPSatisEkrani.Controls.Add(tLayoutPToplamTutar, 0, 2);
+            tLayoutPSatisEkrani.Controls.Add(btnSatisYap, 0, 3);
+            tLayoutPSatisEkrani.Controls.Add(listViewSatisEkrani, 0, 0);
             tLayoutPSatisEkrani.Dock = DockStyle.Fill;
             tLayoutPSatisEkrani.Location = new Point(307, 3);
             tLayoutPSatisEkrani.Name = "tLayoutPSatisEkrani";
@@ -610,184 +602,18 @@
             tLayoutPSatisEkrani.TabIndex = 0;
             tLayoutPSatisEkrani.Paint += tLayoutPSatisEkrani_Paint;
             // 
-            // tLayoutPToplamTutar
+            // satisiIptalEtButon
             // 
-            tLayoutPToplamTutar.ColumnCount = 3;
-            tLayoutPToplamTutar.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 40F));
-            tLayoutPToplamTutar.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 18F));
-            tLayoutPToplamTutar.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 42F));
-            tLayoutPToplamTutar.Controls.Add(lblToplamTutarTL, 2, 0);
-            tLayoutPToplamTutar.Controls.Add(txtBoxToplamTutar, 1, 0);
-            tLayoutPToplamTutar.Controls.Add(lblToplamTutar, 0, 0);
-            tLayoutPToplamTutar.Dock = DockStyle.Fill;
-            tLayoutPToplamTutar.Location = new Point(3, 504);
-            tLayoutPToplamTutar.Name = "tLayoutPToplamTutar";
-            tLayoutPToplamTutar.RowCount = 1;
-            tLayoutPToplamTutar.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tLayoutPToplamTutar.Size = new Size(725, 30);
-            tLayoutPToplamTutar.TabIndex = 5;
-            // 
-            // lblToplamTutarTL
-            // 
-            lblToplamTutarTL.Anchor = AnchorStyles.Left;
-            lblToplamTutarTL.AutoSize = true;
-            lblToplamTutarTL.Location = new Point(423, 5);
-            lblToplamTutarTL.Name = "lblToplamTutarTL";
-            lblToplamTutarTL.Size = new Size(24, 20);
-            lblToplamTutarTL.TabIndex = 4;
-            lblToplamTutarTL.Text = "TL";
-            // 
-            // txtBoxToplamTutar
-            // 
-            txtBoxToplamTutar.Dock = DockStyle.Left;
-            txtBoxToplamTutar.Location = new Point(293, 3);
-            txtBoxToplamTutar.Name = "txtBoxToplamTutar";
-            txtBoxToplamTutar.Size = new Size(116, 27);
-            txtBoxToplamTutar.TabIndex = 2;
-            // 
-            // lblToplamTutar
-            // 
-            lblToplamTutar.Anchor = AnchorStyles.Right;
-            lblToplamTutar.AutoSize = true;
-            lblToplamTutar.Location = new Point(190, 5);
-            lblToplamTutar.Name = "lblToplamTutar";
-            lblToplamTutar.Size = new Size(97, 20);
-            lblToplamTutar.TabIndex = 1;
-            lblToplamTutar.Text = "Toplam Tutar";
-            // 
-            // tLayoutPIndirimYuzde
-            // 
-            tLayoutPIndirimYuzde.ColumnCount = 3;
-            tLayoutPIndirimYuzde.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 40F));
-            tLayoutPIndirimYuzde.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 18F));
-            tLayoutPIndirimYuzde.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 42F));
-            tLayoutPIndirimYuzde.Controls.Add(txtBoxIndirimYuzde, 1, 0);
-            tLayoutPIndirimYuzde.Controls.Add(lblIndirimYuzde, 0, 0);
-            tLayoutPIndirimYuzde.Dock = DockStyle.Fill;
-            tLayoutPIndirimYuzde.Location = new Point(3, 468);
-            tLayoutPIndirimYuzde.Name = "tLayoutPIndirimYuzde";
-            tLayoutPIndirimYuzde.RowCount = 1;
-            tLayoutPIndirimYuzde.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tLayoutPIndirimYuzde.Size = new Size(725, 30);
-            tLayoutPIndirimYuzde.TabIndex = 4;
-            // 
-            // txtBoxIndirimYuzde
-            // 
-            txtBoxIndirimYuzde.Dock = DockStyle.Left;
-            txtBoxIndirimYuzde.Location = new Point(293, 3);
-            txtBoxIndirimYuzde.Name = "txtBoxIndirimYuzde";
-            txtBoxIndirimYuzde.Size = new Size(116, 27);
-            txtBoxIndirimYuzde.TabIndex = 2;
-            // 
-            // lblIndirimYuzde
-            // 
-            lblIndirimYuzde.Anchor = AnchorStyles.Right;
-            lblIndirimYuzde.AutoSize = true;
-            lblIndirimYuzde.Location = new Point(209, 5);
-            lblIndirimYuzde.Name = "lblIndirimYuzde";
-            lblIndirimYuzde.Size = new Size(78, 20);
-            lblIndirimYuzde.TabIndex = 1;
-            lblIndirimYuzde.Text = "İndirim(%)";
-            // 
-            // tLayoutPIndirimTL
-            // 
-            tLayoutPIndirimTL.ColumnCount = 3;
-            tLayoutPIndirimTL.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 40F));
-            tLayoutPIndirimTL.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 18F));
-            tLayoutPIndirimTL.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 42F));
-            tLayoutPIndirimTL.Controls.Add(lblIndırımTLL, 2, 0);
-            tLayoutPIndirimTL.Controls.Add(txtBoxIndirimTL, 1, 0);
-            tLayoutPIndirimTL.Controls.Add(lblIndirimTL, 0, 0);
-            tLayoutPIndirimTL.Dock = DockStyle.Fill;
-            tLayoutPIndirimTL.Location = new Point(3, 432);
-            tLayoutPIndirimTL.Name = "tLayoutPIndirimTL";
-            tLayoutPIndirimTL.RowCount = 1;
-            tLayoutPIndirimTL.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tLayoutPIndirimTL.Size = new Size(725, 30);
-            tLayoutPIndirimTL.TabIndex = 3;
-            // 
-            // lblIndırımTLL
-            // 
-            lblIndırımTLL.Anchor = AnchorStyles.Left;
-            lblIndırımTLL.AutoSize = true;
-            lblIndırımTLL.Location = new Point(423, 5);
-            lblIndırımTLL.Name = "lblIndırımTLL";
-            lblIndırımTLL.Size = new Size(24, 20);
-            lblIndırımTLL.TabIndex = 4;
-            lblIndırımTLL.Text = "TL";
-            // 
-            // txtBoxIndirimTL
-            // 
-            txtBoxIndirimTL.Dock = DockStyle.Left;
-            txtBoxIndirimTL.Location = new Point(293, 3);
-            txtBoxIndirimTL.Name = "txtBoxIndirimTL";
-            txtBoxIndirimTL.Size = new Size(116, 27);
-            txtBoxIndirimTL.TabIndex = 2;
-            // 
-            // lblIndirimTL
-            // 
-            lblIndirimTL.Anchor = AnchorStyles.Right;
-            lblIndirimTL.AutoSize = true;
-            lblIndirimTL.Location = new Point(213, 5);
-            lblIndirimTL.Name = "lblIndirimTL";
-            lblIndirimTL.Size = new Size(74, 20);
-            lblIndirimTL.TabIndex = 1;
-            lblIndirimTL.Text = "İndirim(₺)";
-            // 
-            // tLayoutPBileme
-            // 
-            tLayoutPBileme.ColumnCount = 3;
-            tLayoutPBileme.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 40F));
-            tLayoutPBileme.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 18F));
-            tLayoutPBileme.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 42F));
-            tLayoutPBileme.Controls.Add(lblBilemeTL, 2, 0);
-            tLayoutPBileme.Controls.Add(lblBileme, 0, 0);
-            tLayoutPBileme.Controls.Add(txtBoxBileme, 1, 0);
-            tLayoutPBileme.Dock = DockStyle.Fill;
-            tLayoutPBileme.Location = new Point(3, 396);
-            tLayoutPBileme.Name = "tLayoutPBileme";
-            tLayoutPBileme.RowCount = 1;
-            tLayoutPBileme.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tLayoutPBileme.Size = new Size(725, 30);
-            tLayoutPBileme.TabIndex = 2;
-            // 
-            // lblBilemeTL
-            // 
-            lblBilemeTL.Anchor = AnchorStyles.Left;
-            lblBilemeTL.AutoSize = true;
-            lblBilemeTL.Location = new Point(423, 5);
-            lblBilemeTL.Name = "lblBilemeTL";
-            lblBilemeTL.Size = new Size(24, 20);
-            lblBilemeTL.TabIndex = 4;
-            lblBilemeTL.Text = "TL";
-            // 
-            // lblBileme
-            // 
-            lblBileme.Anchor = AnchorStyles.Right;
-            lblBileme.AutoSize = true;
-            lblBileme.Location = new Point(232, 5);
-            lblBileme.Name = "lblBileme";
-            lblBileme.Size = new Size(55, 20);
-            lblBileme.TabIndex = 0;
-            lblBileme.Text = "Bileme";
-            // 
-            // txtBoxBileme
-            // 
-            txtBoxBileme.Dock = DockStyle.Left;
-            txtBoxBileme.Location = new Point(293, 3);
-            txtBoxBileme.Name = "txtBoxBileme";
-            txtBoxBileme.Size = new Size(116, 27);
-            txtBoxBileme.TabIndex = 2;
-            // 
-            // dataGViewSatisEkrani
-            // 
-            dataGViewSatisEkrani.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGViewSatisEkrani.Dock = DockStyle.Fill;
-            dataGViewSatisEkrani.Location = new Point(3, 3);
-            dataGViewSatisEkrani.Name = "dataGViewSatisEkrani";
-            dataGViewSatisEkrani.RowHeadersWidth = 51;
-            dataGViewSatisEkrani.Size = new Size(725, 351);
-            dataGViewSatisEkrani.TabIndex = 0;
+            satisiIptalEtButon.Anchor = AnchorStyles.None;
+            satisiIptalEtButon.FlatAppearance.BorderSize = 0;
+            satisiIptalEtButon.FlatStyle = FlatStyle.Flat;
+            satisiIptalEtButon.Location = new Point(279, 468);
+            satisiIptalEtButon.Name = "satisiIptalEtButon";
+            satisiIptalEtButon.Size = new Size(173, 30);
+            satisiIptalEtButon.TabIndex = 8;
+            satisiIptalEtButon.Text = "Satışı İptal Et";
+            satisiIptalEtButon.UseVisualStyleBackColor = true;
+            satisiIptalEtButon.Click += satisiIptalEtButon_Click;
             // 
             // tLayoutPTutar
             // 
@@ -798,19 +624,19 @@
             tLayoutPTutar.Controls.Add(txtBoxTutar, 1, 0);
             tLayoutPTutar.Controls.Add(lblTutar, 0, 0);
             tLayoutPTutar.Controls.Add(lblTutarTL, 2, 0);
-            tLayoutPTutar.Dock = DockStyle.Fill;
             tLayoutPTutar.Location = new Point(3, 360);
             tLayoutPTutar.Name = "tLayoutPTutar";
             tLayoutPTutar.RowCount = 1;
             tLayoutPTutar.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tLayoutPTutar.Size = new Size(725, 30);
+            tLayoutPTutar.Size = new Size(721, 30);
             tLayoutPTutar.TabIndex = 1;
             // 
             // txtBoxTutar
             // 
             txtBoxTutar.Dock = DockStyle.Left;
-            txtBoxTutar.Location = new Point(293, 3);
+            txtBoxTutar.Location = new Point(291, 3);
             txtBoxTutar.Name = "txtBoxTutar";
+            txtBoxTutar.ReadOnly = true;
             txtBoxTutar.Size = new Size(116, 27);
             txtBoxTutar.TabIndex = 1;
             // 
@@ -819,7 +645,7 @@
             lblTutar.Anchor = AnchorStyles.Right;
             lblTutar.AutoSize = true;
             lblTutar.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblTutar.Location = new Point(247, 5);
+            lblTutar.Location = new Point(245, 5);
             lblTutar.Margin = new Padding(0);
             lblTutar.Name = "lblTutar";
             lblTutar.Size = new Size(43, 20);
@@ -830,29 +656,122 @@
             // 
             lblTutarTL.Anchor = AnchorStyles.Left;
             lblTutarTL.AutoSize = true;
-            lblTutarTL.Location = new Point(423, 5);
+            lblTutarTL.Location = new Point(420, 5);
             lblTutarTL.Name = "lblTutarTL";
             lblTutarTL.Size = new Size(24, 20);
             lblTutarTL.TabIndex = 3;
             lblTutarTL.Text = "TL";
+            // 
+            // tLayoutPBileme
+            // 
+            tLayoutPBileme.ColumnCount = 3;
+            tLayoutPBileme.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 40F));
+            tLayoutPBileme.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 18F));
+            tLayoutPBileme.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 42F));
+            tLayoutPBileme.Dock = DockStyle.Fill;
+            tLayoutPBileme.Location = new Point(3, 504);
+            tLayoutPBileme.Name = "tLayoutPBileme";
+            tLayoutPBileme.RowCount = 1;
+            tLayoutPBileme.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tLayoutPBileme.Size = new Size(725, 30);
+            tLayoutPBileme.TabIndex = 2;
+            // 
+            // tLayoutPToplamTutar
+            // 
+            tLayoutPToplamTutar.ColumnCount = 3;
+            tLayoutPToplamTutar.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 40F));
+            tLayoutPToplamTutar.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 18F));
+            tLayoutPToplamTutar.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 42F));
+            tLayoutPToplamTutar.Controls.Add(lblToplamTutarTL, 2, 0);
+            tLayoutPToplamTutar.Controls.Add(txtBoxToplamTutar, 1, 0);
+            tLayoutPToplamTutar.Controls.Add(lblToplamTutar, 0, 0);
+            tLayoutPToplamTutar.Location = new Point(3, 396);
+            tLayoutPToplamTutar.Name = "tLayoutPToplamTutar";
+            tLayoutPToplamTutar.RowCount = 1;
+            tLayoutPToplamTutar.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tLayoutPToplamTutar.Size = new Size(721, 30);
+            tLayoutPToplamTutar.TabIndex = 5;
+            // 
+            // lblToplamTutarTL
+            // 
+            lblToplamTutarTL.Anchor = AnchorStyles.Left;
+            lblToplamTutarTL.AutoSize = true;
+            lblToplamTutarTL.Location = new Point(420, 5);
+            lblToplamTutarTL.Name = "lblToplamTutarTL";
+            lblToplamTutarTL.Size = new Size(24, 20);
+            lblToplamTutarTL.TabIndex = 4;
+            lblToplamTutarTL.Text = "TL";
+            // 
+            // txtBoxToplamTutar
+            // 
+            txtBoxToplamTutar.Dock = DockStyle.Left;
+            txtBoxToplamTutar.Location = new Point(291, 3);
+            txtBoxToplamTutar.Name = "txtBoxToplamTutar";
+            txtBoxToplamTutar.ReadOnly = true;
+            txtBoxToplamTutar.Size = new Size(116, 27);
+            txtBoxToplamTutar.TabIndex = 2;
+            // 
+            // lblToplamTutar
+            // 
+            lblToplamTutar.Anchor = AnchorStyles.Right;
+            lblToplamTutar.AutoSize = true;
+            lblToplamTutar.Location = new Point(188, 5);
+            lblToplamTutar.Name = "lblToplamTutar";
+            lblToplamTutar.Size = new Size(97, 20);
+            lblToplamTutar.TabIndex = 1;
+            lblToplamTutar.Text = "Toplam Tutar";
             // 
             // btnSatisYap
             // 
             btnSatisYap.Anchor = AnchorStyles.None;
             btnSatisYap.FlatAppearance.BorderSize = 0;
             btnSatisYap.FlatStyle = FlatStyle.Flat;
-            btnSatisYap.Location = new Point(304, 554);
+            btnSatisYap.Location = new Point(279, 432);
             btnSatisYap.Name = "btnSatisYap";
-            btnSatisYap.Size = new Size(123, 45);
+            btnSatisYap.Size = new Size(173, 30);
             btnSatisYap.TabIndex = 6;
             btnSatisYap.Text = "Satış Yap";
             btnSatisYap.UseVisualStyleBackColor = true;
+            btnSatisYap.Click += btnSatisYap_Click;
+            // 
+            // listViewSatisEkrani
+            // 
+            listViewSatisEkrani.Columns.AddRange(new ColumnHeader[] { UrunBarkod, UrunAd, UrunFiyatSatis, UrunAdet });
+            listViewSatisEkrani.Dock = DockStyle.Fill;
+            listViewSatisEkrani.Location = new Point(3, 4);
+            listViewSatisEkrani.Margin = new Padding(3, 4, 3, 4);
+            listViewSatisEkrani.Name = "listViewSatisEkrani";
+            listViewSatisEkrani.Size = new Size(725, 349);
+            listViewSatisEkrani.TabIndex = 7;
+            listViewSatisEkrani.UseCompatibleStateImageBehavior = false;
+            listViewSatisEkrani.View = View.Details;
+            // 
+            // UrunBarkod
+            // 
+            UrunBarkod.Text = "Barkod";
+            UrunBarkod.Width = 120;
+            // 
+            // UrunAd
+            // 
+            UrunAd.Text = "Ürün Adı";
+            UrunAd.Width = 120;
+            // 
+            // UrunFiyatSatis
+            // 
+            UrunFiyatSatis.Text = "Ürün Fiyatı";
+            UrunFiyatSatis.Width = 120;
+            // 
+            // UrunAdet
+            // 
+            UrunAdet.Text = "Adet";
+            UrunAdet.Width = 120;
             // 
             // tLayoutPSatisSayfaSol
             // 
             tLayoutPSatisSayfaSol.ColumnCount = 1;
             tLayoutPSatisSayfaSol.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tLayoutPSatisSayfaSol.Controls.Add(tLayoutPHesapMakinesi, 0, 0);
+            tLayoutPSatisSayfaSol.Controls.Add(textBoxBarkodGorunmez, 0, 1);
             tLayoutPSatisSayfaSol.Dock = DockStyle.Fill;
             tLayoutPSatisSayfaSol.Location = new Point(3, 3);
             tLayoutPSatisSayfaSol.Name = "tLayoutPSatisSayfaSol";
@@ -1092,6 +1011,17 @@
             btnToplama.TabIndex = 14;
             btnToplama.Text = "+";
             btnToplama.UseVisualStyleBackColor = true;
+            // 
+            // textBoxBarkodGorunmez
+            // 
+            textBoxBarkodGorunmez.BackColor = SystemColors.HighlightText;
+            textBoxBarkodGorunmez.Location = new Point(3, 361);
+            textBoxBarkodGorunmez.Margin = new Padding(3, 4, 3, 4);
+            textBoxBarkodGorunmez.Name = "textBoxBarkodGorunmez";
+            textBoxBarkodGorunmez.ReadOnly = true;
+            textBoxBarkodGorunmez.Size = new Size(289, 27);
+            textBoxBarkodGorunmez.TabIndex = 2;
+            textBoxBarkodGorunmez.KeyPress += textBoxBarkodGorunmez_KeyPress;
             // 
             // tabPageUrun
             // 
@@ -1996,18 +1926,12 @@
             tabPageSatis.ResumeLayout(false);
             tLayoutPSatisSayfa.ResumeLayout(false);
             tLayoutPSatisEkrani.ResumeLayout(false);
-            tLayoutPToplamTutar.ResumeLayout(false);
-            tLayoutPToplamTutar.PerformLayout();
-            tLayoutPIndirimYuzde.ResumeLayout(false);
-            tLayoutPIndirimYuzde.PerformLayout();
-            tLayoutPIndirimTL.ResumeLayout(false);
-            tLayoutPIndirimTL.PerformLayout();
-            tLayoutPBileme.ResumeLayout(false);
-            tLayoutPBileme.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGViewSatisEkrani).EndInit();
             tLayoutPTutar.ResumeLayout(false);
             tLayoutPTutar.PerformLayout();
+            tLayoutPToplamTutar.ResumeLayout(false);
+            tLayoutPToplamTutar.PerformLayout();
             tLayoutPSatisSayfaSol.ResumeLayout(false);
+            tLayoutPSatisSayfaSol.PerformLayout();
             tLayoutPHesapMakinesi.ResumeLayout(false);
             tabPageUrun.ResumeLayout(false);
             tLayoutPUrunSayfa.ResumeLayout(false);
@@ -2062,22 +1986,9 @@
         private TabPage tabPageGecmis;
         private TableLayoutPanel tLayoutPSatisSayfa;
         private TableLayoutPanel tLayoutPSatisEkrani;
-        private DataGridView dataGViewSatisEkrani;
         private TableLayoutPanel tLayoutPToplamTutar;
         private TextBox txtBoxToplamTutar;
-        private TableLayoutPanel tLayoutPIndirimYuzde;
-        private TextBox txtBoxIndirimYuzde;
         private Label lblToplamTutar;
-        private TableLayoutPanel tLayoutPIndirimTL;
-        private TextBox txtBoxIndirimTL;
-        private Label lblIndirimYuzde;
-        private TableLayoutPanel tLayoutPBileme;
-        private TextBox txtBoxBileme;
-        private Label lblIndirimTL;
-        private TableLayoutPanel tLayoutPTutar;
-        private Label lblBileme;
-        private TextBox txtBoxTutar;
-        private Label lblTutar;
         private Button btnSatisYap;
         private TableLayoutPanel tLayoutPSatisSayfaSol;
         private TableLayoutPanel tLayoutPHesapMakinesi;
@@ -2141,10 +2052,7 @@
         private ComboBox cmbBoxFirmaAdi;
         private ComboBox cmbBoxUrunK;
         private MaskedTextBox mtxtBoxGTarihi;
-        private Label lblTutarTL;
         private Label lblToplamTutarTL;
-        private Label lblIndırımTLL;
-        private Label lblBilemeTL;
         private Panel pnlSatisbtn;
         private Panel pnlUrunlerbtn;
         private Panel pnlStokbtn;
@@ -2191,5 +2099,17 @@
         private TextBox txtBoxStokSFiltre;
         private Label lblStokAra;
         private Button btnUrunGuncelle;
+        private TextBox textBoxBarkodGorunmez;
+        private TableLayoutPanel tLayoutPTutar;
+        private TextBox txtBoxTutar;
+        private Label lblTutar;
+        private Label lblTutarTL;
+        private TableLayoutPanel tLayoutPBileme;
+        private ListView listViewSatisEkrani;
+        private ColumnHeader UrunBarkod;
+        private ColumnHeader UrunAd;
+        private ColumnHeader UrunFiyatSatis;
+        private ColumnHeader UrunAdet;
+        private Button satisiIptalEtButon;
     }
 }

@@ -7,6 +7,7 @@ using System.Windows.Forms.DataVisualization.Charting;
 using System.Reflection;
 using StokTakipSistemi.utils;
 using Microsoft.Data.SqlClient;
+using System.Data;
 
 namespace StokTakipSistemi
 {
@@ -65,9 +66,9 @@ namespace StokTakipSistemi
             FontUtility.ApplyCustomFontToAllControls(this, fontFamilyName, fontSize);
             btnDEL.Font = new Font(btnUrunler.Font.FontFamily, 9f);
             lblTutar.Font = new Font(btnUrunler.Font.FontFamily, 11f);
-            lblBileme.Font = new Font(btnUrunler.Font.FontFamily, 11f);
-            lblIndirimTL.Font = new Font(btnUrunler.Font.FontFamily, 11f);
-            lblIndirimYuzde.Font = new Font(btnUrunler.Font.FontFamily, 11f);
+            //lblBileme.Font = new Font(btnUrunler.Font.FontFamily, 11f);
+            //lblIndirimTL.Font = new Font(btnUrunler.Font.FontFamily, 11f);
+            //lblIndirimYuzde.Font = new Font(btnUrunler.Font.FontFamily, 11f);
             lblToplamTutar.Font = new Font(btnUrunler.Font.FontFamily, 11f);
 
             //Buttonlarýn kenar kývrýmý deðiþimi
@@ -199,6 +200,7 @@ namespace StokTakipSistemi
             chartUrunBazindaSatis.Series[0].Points.AddXY("Kategori 4", 30);
 
 
+
         }
 
         // Panel kenarlarýný kývýrmak için kullanýlacak metod
@@ -217,7 +219,7 @@ namespace StokTakipSistemi
         // Sayfalar_Load ile alakalý kodlar
         private void Sayfalar_Load(object sender, EventArgs e)
         {
-            
+
             // program açýldýðýnda stok ekranýna bütün verileri getir ilk baþta
             urunIslemleri.urunleriCek(string.Empty, dataGViewStok);
 
@@ -284,6 +286,12 @@ namespace StokTakipSistemi
             dataGViewStok.DefaultCellStyle.BackColor = Color.White; // Arka plan
             dataGViewStok.RowsDefaultCellStyle.BackColor = Color.White;
             dataGViewStok.AlternatingRowsDefaultCellStyle.BackColor = Color.LightGray; // Alternatif satýr rengi
+
+            this.BeginInvoke((Action)delegate
+            {
+                tabControl1.SelectedTab = tabPageSatis; // tabPageSatis sekmesine geçiþ yaptýk
+                textBoxBarkodGorunmez.Focus(); // Ardýndan textBoxBileme'ye odaklandýk
+            });
 
         }
 
@@ -408,8 +416,8 @@ namespace StokTakipSistemi
             tLayoutPSatisEkrani.BackColor = ColorTranslator.FromHtml("#FFFFF");
 
         }
-        
-        
+
+
         // buttonlarýn font ayarlarý
         private void LoginNew_Load(object sender, EventArgs e)
         {
@@ -656,7 +664,8 @@ namespace StokTakipSistemi
         private void btnUrunSil_Click(object sender, EventArgs e)
         {
             UrunIslemleri urunIslemleri = new UrunIslemleri();
-            urunIslemleri.urunSil(txtBoxUBarkodu.Text);
+
+            //urunIslemleri.urunSil(txtBoxUBarkodu.Text);
         }
 
         //btnTemizle_Click fonksiyonu içindeki iþlevler
@@ -729,6 +738,51 @@ namespace StokTakipSistemi
             UrunIslemleri urunIslemleri = new UrunIslemleri();
 
             urunIslemleri.urunleriCek(txtBoxStokSFiltre.Text, dataGViewStok);
+        }
+
+        private void textBoxBarkodGorunmez_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (textBoxBarkodGorunmez.Text.Length < 13)
+            {
+                textBoxBarkodGorunmez.Text += e.KeyChar;
+            }
+
+            foreach (char c in textBoxBarkodGorunmez.Text)
+            {
+                if (!char.IsDigit(c))
+                {
+                    textBoxBarkodGorunmez.Clear();
+                    textBoxBarkodGorunmez.Focus();
+                    return;
+                }
+            }
+
+            // Barkod verisi tamamlandýktan sonra iþlem yapýn
+            if (textBoxBarkodGorunmez.Text.Length == 13)
+            {
+
+                urunIslemleri.urunuSatisEkraninaTasi(textBoxBarkodGorunmez.Text, listViewSatisEkrani, textBoxBarkodGorunmez,
+                    txtBoxTutar, txtBoxToplamTutar);
+            }
+        }
+
+        private void btnSatisYap_Click(object sender, EventArgs e)
+        {
+            SatisTamamla satisTamamla = new SatisTamamla();
+            satisTamamla.Show();
+
+            satisTamamla.verileriYukle(txtBoxToplamTutar.Text, listViewSatisEkrani, txtBoxTutar, txtBoxToplamTutar, textBoxBarkodGorunmez);
+        }
+
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (tabControl1.SelectedTab == tabPageSatis)
+                textBoxBarkodGorunmez.Focus();
+        }
+
+        private void satisiIptalEtButon_Click(object sender, EventArgs e)
+        {
+            urunIslemleri.satisEkraniVeriTemizle(txtBoxTutar, txtBoxToplamTutar, textBoxBarkodGorunmez, listViewSatisEkrani);
         }
     }
 }

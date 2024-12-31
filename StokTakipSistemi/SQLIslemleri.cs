@@ -10,8 +10,7 @@ namespace StokTakipSistemi
 {
     internal class SQLIslemleri
     {
-        // SQL bağlantı cümlesi
-        private string baglanti = "Server=YourDevice\\SQLEXPRESS;Database=yourDB;Integrated Security=True;TrustServerCertificate=True;";
+        private string baglanti = "Server=DESKTOP-IRAO93A\\SQLEXPRESS;Database=fatih;Integrated Security=True;TrustServerCertificate=True;";
 
         
         private string urunSorguEklemeyiYap = @"INSERT INTO Urun       
@@ -90,7 +89,33 @@ namespace StokTakipSistemi
 
         private string sorguAuthentication = "SELECT * FROM Users";
 
-        
+        private string urunSatisEkraniSorgu = "SELECT UrunBarkod, UrunAd, UrunFiyatSatis FROM Urun WHERE UrunBarkod = @UrunBarkod";
+
+        private string satisTamamlaVerileriAktarSorgu = @"
+                            DECLARE @UrunID int;
+                            DECLARE @UrunGKategori nvarchar(50);
+                            DECLARE @UrunFiyat decimal(18, 2);
+                            DECLARE @UrunToplamFiyat decimal(18, 2);
+
+                            -- UrunID, UrunGKategori ve UrunFiyat'ı al
+                            SELECT @UrunID = UrunID, @UrunGKategori = UrunGKategori, @UrunFiyat = UrunFiyatSatis
+                            FROM Urun
+                            WHERE UrunBarkod = @UrunBarkod;
+    
+                            -- UrunToplamFiyat hesapla
+                            SET @UrunToplamFiyat = @UrunFiyat * @Miktar;
+    
+                            -- Satis tablosuna ekle
+                            INSERT INTO Satis (UrunID, Indirimtur, Miktar) VALUES (@UrunID, @Indirimtur, @Miktar);
+    
+                            -- IstatistikSatis tablosuna ekle
+                            INSERT INTO IstatistikSatis (UrunGKategori, Miktar, UrunFiyatSatis)
+                            VALUES (@UrunGKategori, @Miktar, @UrunToplamFiyat);
+    
+                            -- Stok tablosunu güncelle
+                            UPDATE Stok SET StokMiktar = StokMiktar - @Miktar WHERE UrunID = @UrunID;
+                            ";
+
 
         public string GetBaglanti()
         {
@@ -147,10 +172,15 @@ namespace StokTakipSistemi
             return sorguAuthentication;
         }
 
+        public string GetUrunSatisEkraniSorgu()
+        {
+            return urunSatisEkraniSorgu;
+        }
 
-
-
-
+        public string GetSatisTamamlaVerileriAktarSorgu()
+        {
+            return satisTamamlaVerileriAktarSorgu;
+        }
 
 
         /*        ZAM İŞLEMLERİ İÇİN SQL SORGULARI          */
