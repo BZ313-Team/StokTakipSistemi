@@ -196,8 +196,8 @@ namespace StokTakipSistemi
             List<String> distinctCategories = new StatisticController().getDistinctCategories();
             foreach (var item in distinctCategories) products.Items.Add(item);
 
-            products.SelectedIndex = 0;
-            grafikOpsiyon.SelectedIndex = 0;
+            products.Tag = "Ürün Seçiniz";
+            grafikOpsiyon.Tag = "Mod Seçiniz";
 
             resetChart();
         }
@@ -381,6 +381,9 @@ namespace StokTakipSistemi
             comboboxTagAta();
 
             textBoxTagAta();
+
+            grafikOpsiyon.Tag = "Mod seçiniz";
+            products.Tag = "Ürün Seçiniz";
 
             //combobox'lara týklandýgýnda içinin boþaltýlmasý
             tiklandigindaSil();
@@ -794,9 +797,95 @@ namespace StokTakipSistemi
         //btnUrunGuncelle_Click fonksiyonu içindeki iþlevler
         private void btnUrunGuncelle_Click(object sender, EventArgs e)
         {
-            Guncelle guncellemegit = new Guncelle();
-            guncellemegit.Show();
+            try
+            {
+                if (dataGViewStok.SelectedRows.Count == 0)
+                {
+                    MessageBox.Show("Lütfen bir ürün seçin.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                DataGridViewRow selectedRow = dataGViewStok.SelectedRows[0];
+                string urunID = selectedRow.Cells["UrunID"].Value?.ToString();
+
+                if (string.IsNullOrWhiteSpace(urunID))
+                {
+                    MessageBox.Show("Seçilen ürünün ID bilgisi bulunamadý.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                SQLIslemleri sqlIslemleri = new SQLIslemleri();
+                string baglanti = sqlIslemleri.GetBaglanti();
+                string query = @"
+            SELECT Urun.UrunBarkod, Urun.UrunAd, Urun.UrunGKategori, Urun.UrunKategori, 
+                   Urun.UrunUreticiFirma, Urun.UrunTip, Urun.UrunModel, Urun.UrunBoyut, 
+                   Urun.UrunMensei, Urun.UrunFiyatAlis, Urun.UrunFiyatSatis, Urun.UrunMarka, 
+                   Stok.StokMiktar 
+            FROM Urun 
+            JOIN Stok ON Urun.UrunID = Stok.UrunID 
+            WHERE Urun.UrunID = @UrunID";
+
+                using (SqlConnection connection = new SqlConnection(baglanti))
+                {
+                    connection.Open();
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@UrunID", urunID);
+
+                        using (SqlDataReader reader = command.ExecuteReader())
+                        {
+                            if (reader.Read())
+                            {
+                                // SQL'den gelen deðerleri string olarak al
+                                string urunBarkodu = reader["UrunBarkod"].ToString();
+                                string urunAdi = reader["UrunAd"].ToString();
+                                string urunGKategori = reader["UrunGKategori"].ToString();
+                                string urunKategori = reader["UrunKategori"].ToString();
+                                string urunFirma = reader["UrunUreticiFirma"].ToString();
+                                string urunTip = reader["UrunTip"].ToString();
+                                string urunModel = reader["UrunModel"].ToString();
+                                string urunBoyut = reader["UrunBoyut"].ToString();
+                                string urunMensei = reader["UrunMensei"].ToString();
+                                string urunFiyatAlis = reader["UrunFiyatAlis"].ToString();
+                                string urunFiyatSatis = reader["UrunFiyatSatis"].ToString();
+                                string urunStok = reader["StokMiktar"].ToString();
+                                string urunMarka = reader["UrunMarka"].ToString();
+
+                                // Guncelle sýnýfýný aç ve verileri gönder
+                                Guncelle guncellemeForm = new Guncelle();
+                                guncellemeForm.setTxtCmb(
+                                    urunID,
+                                    urunBarkodu,
+                                    urunAdi,
+                                    urunGKategori,
+                                    urunKategori,
+                                    urunFirma,
+                                    urunTip,
+                                    urunModel,
+                                    urunBoyut,
+                                    urunMensei,
+                                    urunFiyatAlis,
+                                    urunFiyatSatis,
+                                    urunStok,
+                                    urunMarka
+                                );
+
+                                guncellemeForm.Show();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Seçilen ürüne ait bilgiler bulunamadý.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            }
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Bir hata oluþtu: {ex.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
+
 
         //btnSonraki_Click fonksiyonu içindeki iþlevler
         private void btnSonraki_Click(object sender, EventArgs e)

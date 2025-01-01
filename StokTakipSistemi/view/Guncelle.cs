@@ -89,6 +89,114 @@ namespace StokTakipSistemi
                 }
             }
         }
+
+ 
+            private int _urunID; // Sınıf değişkeni olarak urunID'yi tanımla
+
+        // Bu metod ürün güncelleme ile ilişkilidir. Sayfalar sınıfından gelen parametreleri alır ve text boxlara doldurur.  
+        public void setTxtCmb(
+          string urunID,
+          string urunBarkodu,
+          string urunAdi,
+          string urunGKategori,
+          string urunKategori,
+          string urunFirma,
+          string urunTipi,
+          string urunModeli,
+          string urunBoyutu,
+          string urunMensei,
+          string urunAlisFiyat,
+          string urunSatisFiyat,
+          string urunStok,
+          string urunMarka)
+        {
+            // _urunID'yi dönüştür ve sınıf değişkenine ata
+            if (int.TryParse(urunID, out int parsedUrunID))
+            {
+                _urunID = parsedUrunID;
+            }
+            else
+            {
+                MessageBox.Show("Geçersiz ürün ID.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Kontrollere değerleri atayalım
+            txtBoxUBarkodu2.Text = urunBarkodu;
+            txtBoxUAdi2.Text = urunAdi;
+            cmbBoxGenelK2.Text = urunGKategori;
+            cmbBoxUrunK2.Text = urunKategori;
+            cmbBoxFirmaAdi2.Text = urunFirma;
+            cmbBoxUrunTipi2.Text = urunTipi;
+            cmbBoxUrunModeli2.Text = urunModeli;
+            cmbBoxBoyut2.Text = urunBoyutu;
+            cmbBoxMensei2.Text = urunMensei;
+            txtBoxAlisFiyati2.Text = urunAlisFiyat;
+            txtBoxSatisFiyati2.Text = urunSatisFiyat;
+            txtBoxStok2.Text = urunStok;
+            txtBoxMarka2.Text = urunMarka;
+
+            // Güncelleme butonunu aktif hale getir
+            btnGuncelleEkrani.Enabled = true;
+        }
+
+        private void btnGuncelleEkrani_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Parametreleri uygun tiplere dönüştürme
+                string urunBarkodu = txtBoxUBarkodu2.Text;
+                string urunAdi = txtBoxUAdi2.Text;
+                string urunGKategori = cmbBoxGenelK2.Text;
+                string urunKategori = cmbBoxUrunK2.Text;
+                string urunFirma = cmbBoxFirmaAdi2.Text;
+                string urunTipi = cmbBoxUrunTipi2.Text;
+                string urunModeli = cmbBoxUrunModeli2.Text;
+                if (!decimal.TryParse(cmbBoxBoyut2.Text, out decimal urunBoyutu))
+                {
+                    MessageBox.Show("Geçersiz ürün boyutu.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                string urunMensei = cmbBoxMensei2.Text;
+                if (!decimal.TryParse(txtBoxAlisFiyati2.Text, out decimal urunAlisFiyat))
+                {
+                    MessageBox.Show("Geçersiz alış fiyatı.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                if (!decimal.TryParse(txtBoxSatisFiyati2.Text, out decimal urunSatisFiyat))
+                {
+                    MessageBox.Show("Geçersiz satış fiyatı.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                if (!int.TryParse(txtBoxStok2.Text, out int urunStok))
+                {
+                    MessageBox.Show("Geçersiz stok miktarı.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                string urunMarka = txtBoxMarka2.Text;
+
+                // Güncelleme işlemini gerçekleştirelim
+                UrunIslemleri urunIslemleri = new UrunIslemleri();
+                bool guncellendi = urunIslemleri.UrunGuncelle(_urunID, urunBarkodu, urunAdi, urunGKategori,
+                    urunKategori, urunFirma, urunTipi, urunModeli, urunBoyutu,
+                    urunMensei, urunAlisFiyat, urunSatisFiyat, urunStok, urunMarka);
+
+                if (guncellendi)
+                {
+                    MessageBox.Show("Güncelleme başarılı.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    btnGuncelleEkrani.Enabled = false;
+                }
+                else
+                {
+                    MessageBox.Show("Güncelleme başarısız oldu.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Güncelleme işlemi sırasında bir hata oluştu: {ex.Message}", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
+    
 }
 

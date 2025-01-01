@@ -51,8 +51,8 @@
             cmbBoxUrunModeli2 = new ComboBox();
             cmbBoxBoyut2 = new ComboBox();
             cmbBoxMensei2 = new ComboBox();
-            txtBoxAlisFiyati = new TextBox();
-            txtBoxSatisFiyati = new TextBox();
+            txtBoxAlisFiyati2 = new TextBox();
+            txtBoxSatisFiyati2 = new TextBox();
             txtBoxStok2 = new TextBox();
             txtBoxMarka2 = new TextBox();
             tLayoutPUrunBilgi = new TableLayoutPanel();
@@ -64,21 +64,22 @@
             btnGuncelleEkrani.Anchor = AnchorStyles.None;
             btnGuncelleEkrani.FlatAppearance.BorderSize = 0;
             btnGuncelleEkrani.FlatStyle = FlatStyle.Flat;
-            btnGuncelleEkrani.Location = new Point(216, 443);
-            btnGuncelleEkrani.Margin = new Padding(4, 3, 4, 3);
+            btnGuncelleEkrani.Location = new Point(247, 591);
+            btnGuncelleEkrani.Margin = new Padding(5, 4, 5, 4);
             btnGuncelleEkrani.Name = "btnGuncelleEkrani";
-            btnGuncelleEkrani.Size = new Size(140, 41);
+            btnGuncelleEkrani.Size = new Size(160, 55);
             btnGuncelleEkrani.TabIndex = 31;
             btnGuncelleEkrani.Text = "Güncelle";
             btnGuncelleEkrani.UseVisualStyleBackColor = true;
+            btnGuncelleEkrani.Click += btnGuncelleEkrani_Click;
             // 
             // lblMarka
             // 
             lblMarka.AutoSize = true;
             lblMarka.Dock = DockStyle.Left;
-            lblMarka.Location = new Point(3, 336);
+            lblMarka.Location = new Point(3, 444);
             lblMarka.Name = "lblMarka";
-            lblMarka.Size = new Size(46, 28);
+            lblMarka.Size = new Size(57, 41);
             lblMarka.TabIndex = 26;
             lblMarka.Text = "Marka :";
             // 
@@ -86,37 +87,34 @@
             // 
             cmbBoxGenelK2.Dock = DockStyle.Left;
             cmbBoxGenelK2.FormattingEnabled = true;
-            cmbBoxGenelK2.Location = new Point(124, 58);
-            cmbBoxGenelK2.Margin = new Padding(3, 2, 3, 2);
+            cmbBoxGenelK2.Location = new Point(142, 77);
             cmbBoxGenelK2.Name = "cmbBoxGenelK2";
-            cmbBoxGenelK2.Size = new Size(140, 23);
+            cmbBoxGenelK2.Size = new Size(159, 28);
             cmbBoxGenelK2.TabIndex = 15;
             // 
             // txtBoxUAdi2
             // 
             txtBoxUAdi2.Dock = DockStyle.Left;
-            txtBoxUAdi2.Location = new Point(124, 30);
-            txtBoxUAdi2.Margin = new Padding(3, 2, 3, 2);
+            txtBoxUAdi2.Location = new Point(142, 40);
             txtBoxUAdi2.Name = "txtBoxUAdi2";
-            txtBoxUAdi2.Size = new Size(140, 23);
+            txtBoxUAdi2.Size = new Size(159, 27);
             txtBoxUAdi2.TabIndex = 14;
             // 
             // txtBoxUBarkodu2
             // 
             txtBoxUBarkodu2.Dock = DockStyle.Left;
-            txtBoxUBarkodu2.Location = new Point(124, 2);
-            txtBoxUBarkodu2.Margin = new Padding(3, 2, 3, 2);
+            txtBoxUBarkodu2.Location = new Point(142, 3);
             txtBoxUBarkodu2.Name = "txtBoxUBarkodu2";
-            txtBoxUBarkodu2.Size = new Size(140, 23);
+            txtBoxUBarkodu2.Size = new Size(159, 27);
             txtBoxUBarkodu2.TabIndex = 13;
             // 
             // lblUrunK
             // 
             lblUrunK.AutoSize = true;
             lblUrunK.Dock = DockStyle.Left;
-            lblUrunK.Location = new Point(3, 84);
+            lblUrunK.Location = new Point(3, 111);
             lblUrunK.Name = "lblUrunK";
-            lblUrunK.Size = new Size(94, 28);
+            lblUrunK.Size = new Size(118, 37);
             lblUrunK.TabIndex = 12;
             lblUrunK.Text = "Ürün Kategorisi :";
             // 
@@ -124,9 +122,9 @@
             // 
             lblFirmaAdi.AutoSize = true;
             lblFirmaAdi.Dock = DockStyle.Left;
-            lblFirmaAdi.Location = new Point(3, 112);
+            lblFirmaAdi.Location = new Point(3, 148);
             lblFirmaAdi.Name = "lblFirmaAdi";
-            lblFirmaAdi.Size = new Size(64, 28);
+            lblFirmaAdi.Size = new Size(80, 37);
             lblFirmaAdi.TabIndex = 1;
             lblFirmaAdi.Text = "Firma Adı :";
             // 
@@ -134,9 +132,9 @@
             // 
             lblUrunTipi.AutoSize = true;
             lblUrunTipi.Dock = DockStyle.Left;
-            lblUrunTipi.Location = new Point(3, 140);
+            lblUrunTipi.Location = new Point(3, 185);
             lblUrunTipi.Name = "lblUrunTipi";
-            lblUrunTipi.Size = new Size(61, 28);
+            lblUrunTipi.Size = new Size(76, 37);
             lblUrunTipi.TabIndex = 3;
             lblUrunTipi.Text = "Ürün Tipi :";
             // 
@@ -144,9 +142,9 @@
             // 
             lblUrunModel.AutoSize = true;
             lblUrunModel.Dock = DockStyle.Left;
-            lblUrunModel.Location = new Point(3, 168);
+            lblUrunModel.Location = new Point(3, 222);
             lblUrunModel.Name = "lblUrunModel";
-            lblUrunModel.Size = new Size(79, 28);
+            lblUrunModel.Size = new Size(98, 37);
             lblUrunModel.TabIndex = 6;
             lblUrunModel.Text = "Ürün Modeli :";
             // 
@@ -154,9 +152,9 @@
             // 
             lblAlisF.AutoSize = true;
             lblAlisF.Dock = DockStyle.Left;
-            lblAlisF.Location = new Point(3, 252);
+            lblAlisF.Location = new Point(3, 333);
             lblAlisF.Name = "lblAlisF";
-            lblAlisF.Size = new Size(63, 28);
+            lblAlisF.Size = new Size(79, 37);
             lblAlisF.TabIndex = 8;
             lblAlisF.Text = "Alış Fiyatı :";
             // 
@@ -164,9 +162,9 @@
             // 
             lblMensei.AutoSize = true;
             lblMensei.Dock = DockStyle.Left;
-            lblMensei.Location = new Point(3, 224);
+            lblMensei.Location = new Point(3, 296);
             lblMensei.Name = "lblMensei";
-            lblMensei.Size = new Size(51, 28);
+            lblMensei.Size = new Size(63, 37);
             lblMensei.TabIndex = 7;
             lblMensei.Text = "Menşei :";
             // 
@@ -174,9 +172,9 @@
             // 
             lblBoyut.AutoSize = true;
             lblBoyut.Dock = DockStyle.Left;
-            lblBoyut.Location = new Point(3, 196);
+            lblBoyut.Location = new Point(3, 259);
             lblBoyut.Name = "lblBoyut";
-            lblBoyut.Size = new Size(44, 28);
+            lblBoyut.Size = new Size(54, 37);
             lblBoyut.TabIndex = 5;
             lblBoyut.Text = "Boyut :";
             // 
@@ -184,9 +182,9 @@
             // 
             lblSatisF.AutoSize = true;
             lblSatisF.Dock = DockStyle.Left;
-            lblSatisF.Location = new Point(3, 280);
+            lblSatisF.Location = new Point(3, 370);
             lblSatisF.Name = "lblSatisF";
-            lblSatisF.Size = new Size(68, 28);
+            lblSatisF.Size = new Size(86, 37);
             lblSatisF.TabIndex = 9;
             lblSatisF.Text = "Satış Fiyatı :";
             // 
@@ -194,9 +192,9 @@
             // 
             lblStok.AutoSize = true;
             lblStok.Dock = DockStyle.Left;
-            lblStok.Location = new Point(3, 308);
+            lblStok.Location = new Point(3, 407);
             lblStok.Name = "lblStok";
-            lblStok.Size = new Size(36, 28);
+            lblStok.Size = new Size(45, 37);
             lblStok.TabIndex = 10;
             lblStok.Text = "Stok :";
             // 
@@ -206,7 +204,7 @@
             lblUrunBarkodu.Dock = DockStyle.Left;
             lblUrunBarkodu.Location = new Point(3, 0);
             lblUrunBarkodu.Name = "lblUrunBarkodu";
-            lblUrunBarkodu.Size = new Size(86, 28);
+            lblUrunBarkodu.Size = new Size(106, 37);
             lblUrunBarkodu.TabIndex = 0;
             lblUrunBarkodu.Text = "Ürün Barkodu :";
             // 
@@ -214,9 +212,9 @@
             // 
             lblUrunAdi.AutoSize = true;
             lblUrunAdi.Dock = DockStyle.Left;
-            lblUrunAdi.Location = new Point(3, 28);
+            lblUrunAdi.Location = new Point(3, 37);
             lblUrunAdi.Name = "lblUrunAdi";
-            lblUrunAdi.Size = new Size(60, 28);
+            lblUrunAdi.Size = new Size(74, 37);
             lblUrunAdi.TabIndex = 2;
             lblUrunAdi.Text = "Ürün Adı :";
             // 
@@ -224,9 +222,9 @@
             // 
             lblGenelK.AutoSize = true;
             lblGenelK.Dock = DockStyle.Left;
-            lblGenelK.Location = new Point(3, 56);
+            lblGenelK.Location = new Point(3, 74);
             lblGenelK.Name = "lblGenelK";
-            lblGenelK.Size = new Size(98, 28);
+            lblGenelK.Size = new Size(125, 37);
             lblGenelK.TabIndex = 4;
             lblGenelK.Text = "Genel Kategorisi :";
             // 
@@ -234,96 +232,86 @@
             // 
             cmbBoxUrunK2.Dock = DockStyle.Left;
             cmbBoxUrunK2.FormattingEnabled = true;
-            cmbBoxUrunK2.Location = new Point(124, 86);
-            cmbBoxUrunK2.Margin = new Padding(3, 2, 3, 2);
+            cmbBoxUrunK2.Location = new Point(142, 114);
             cmbBoxUrunK2.Name = "cmbBoxUrunK2";
-            cmbBoxUrunK2.Size = new Size(140, 23);
+            cmbBoxUrunK2.Size = new Size(159, 28);
             cmbBoxUrunK2.TabIndex = 16;
             // 
             // cmbBoxFirmaAdi2
             // 
             cmbBoxFirmaAdi2.Dock = DockStyle.Left;
             cmbBoxFirmaAdi2.FormattingEnabled = true;
-            cmbBoxFirmaAdi2.Location = new Point(124, 114);
-            cmbBoxFirmaAdi2.Margin = new Padding(3, 2, 3, 2);
+            cmbBoxFirmaAdi2.Location = new Point(142, 151);
             cmbBoxFirmaAdi2.Name = "cmbBoxFirmaAdi2";
-            cmbBoxFirmaAdi2.Size = new Size(140, 23);
+            cmbBoxFirmaAdi2.Size = new Size(159, 28);
             cmbBoxFirmaAdi2.TabIndex = 17;
             // 
             // cmbBoxUrunTipi2
             // 
             cmbBoxUrunTipi2.Dock = DockStyle.Left;
             cmbBoxUrunTipi2.FormattingEnabled = true;
-            cmbBoxUrunTipi2.Location = new Point(124, 142);
-            cmbBoxUrunTipi2.Margin = new Padding(3, 2, 3, 2);
+            cmbBoxUrunTipi2.Location = new Point(142, 188);
             cmbBoxUrunTipi2.Name = "cmbBoxUrunTipi2";
-            cmbBoxUrunTipi2.Size = new Size(140, 23);
+            cmbBoxUrunTipi2.Size = new Size(159, 28);
             cmbBoxUrunTipi2.TabIndex = 18;
             // 
             // cmbBoxUrunModeli2
             // 
             cmbBoxUrunModeli2.Dock = DockStyle.Left;
             cmbBoxUrunModeli2.FormattingEnabled = true;
-            cmbBoxUrunModeli2.Location = new Point(124, 170);
-            cmbBoxUrunModeli2.Margin = new Padding(3, 2, 3, 2);
+            cmbBoxUrunModeli2.Location = new Point(142, 225);
             cmbBoxUrunModeli2.Name = "cmbBoxUrunModeli2";
-            cmbBoxUrunModeli2.Size = new Size(140, 23);
+            cmbBoxUrunModeli2.Size = new Size(159, 28);
             cmbBoxUrunModeli2.TabIndex = 19;
             // 
             // cmbBoxBoyut2
             // 
             cmbBoxBoyut2.Dock = DockStyle.Left;
             cmbBoxBoyut2.FormattingEnabled = true;
-            cmbBoxBoyut2.Location = new Point(124, 198);
-            cmbBoxBoyut2.Margin = new Padding(3, 2, 3, 2);
+            cmbBoxBoyut2.Location = new Point(142, 262);
             cmbBoxBoyut2.Name = "cmbBoxBoyut2";
-            cmbBoxBoyut2.Size = new Size(140, 23);
+            cmbBoxBoyut2.Size = new Size(159, 28);
             cmbBoxBoyut2.TabIndex = 20;
             // 
             // cmbBoxMensei2
             // 
             cmbBoxMensei2.Dock = DockStyle.Left;
             cmbBoxMensei2.FormattingEnabled = true;
-            cmbBoxMensei2.Location = new Point(124, 226);
-            cmbBoxMensei2.Margin = new Padding(3, 2, 3, 2);
+            cmbBoxMensei2.Location = new Point(142, 299);
             cmbBoxMensei2.Name = "cmbBoxMensei2";
-            cmbBoxMensei2.Size = new Size(140, 23);
+            cmbBoxMensei2.Size = new Size(159, 28);
             cmbBoxMensei2.TabIndex = 21;
             // 
-            // txtBoxAlisFiyati
+            // txtBoxAlisFiyati2
             // 
-            txtBoxAlisFiyati.Dock = DockStyle.Left;
-            txtBoxAlisFiyati.Location = new Point(124, 254);
-            txtBoxAlisFiyati.Margin = new Padding(3, 2, 3, 2);
-            txtBoxAlisFiyati.Name = "txtBoxAlisFiyati";
-            txtBoxAlisFiyati.Size = new Size(140, 23);
-            txtBoxAlisFiyati.TabIndex = 22;
+            txtBoxAlisFiyati2.Dock = DockStyle.Left;
+            txtBoxAlisFiyati2.Location = new Point(142, 336);
+            txtBoxAlisFiyati2.Name = "txtBoxAlisFiyati2";
+            txtBoxAlisFiyati2.Size = new Size(159, 27);
+            txtBoxAlisFiyati2.TabIndex = 22;
             // 
-            // txtBoxSatisFiyati
+            // txtBoxSatisFiyati2
             // 
-            txtBoxSatisFiyati.Dock = DockStyle.Left;
-            txtBoxSatisFiyati.Location = new Point(124, 282);
-            txtBoxSatisFiyati.Margin = new Padding(3, 2, 3, 2);
-            txtBoxSatisFiyati.Name = "txtBoxSatisFiyati";
-            txtBoxSatisFiyati.Size = new Size(140, 23);
-            txtBoxSatisFiyati.TabIndex = 23;
+            txtBoxSatisFiyati2.Dock = DockStyle.Left;
+            txtBoxSatisFiyati2.Location = new Point(142, 373);
+            txtBoxSatisFiyati2.Name = "txtBoxSatisFiyati2";
+            txtBoxSatisFiyati2.Size = new Size(159, 27);
+            txtBoxSatisFiyati2.TabIndex = 23;
             // 
             // txtBoxStok2
             // 
             txtBoxStok2.Dock = DockStyle.Left;
-            txtBoxStok2.Location = new Point(124, 310);
-            txtBoxStok2.Margin = new Padding(3, 2, 3, 2);
+            txtBoxStok2.Location = new Point(142, 410);
             txtBoxStok2.Name = "txtBoxStok2";
-            txtBoxStok2.Size = new Size(140, 23);
+            txtBoxStok2.Size = new Size(159, 27);
             txtBoxStok2.TabIndex = 24;
             // 
             // txtBoxMarka2
             // 
             txtBoxMarka2.Dock = DockStyle.Left;
-            txtBoxMarka2.Location = new Point(124, 338);
-            txtBoxMarka2.Margin = new Padding(3, 2, 3, 2);
+            txtBoxMarka2.Location = new Point(142, 447);
             txtBoxMarka2.Name = "txtBoxMarka2";
-            txtBoxMarka2.Size = new Size(140, 23);
+            txtBoxMarka2.Size = new Size(159, 27);
             txtBoxMarka2.TabIndex = 27;
             // 
             // tLayoutPUrunBilgi
@@ -334,8 +322,8 @@
             tLayoutPUrunBilgi.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 56.69782F));
             tLayoutPUrunBilgi.Controls.Add(txtBoxMarka2, 1, 12);
             tLayoutPUrunBilgi.Controls.Add(txtBoxStok2, 1, 11);
-            tLayoutPUrunBilgi.Controls.Add(txtBoxSatisFiyati, 1, 10);
-            tLayoutPUrunBilgi.Controls.Add(txtBoxAlisFiyati, 1, 9);
+            tLayoutPUrunBilgi.Controls.Add(txtBoxSatisFiyati2, 1, 10);
+            tLayoutPUrunBilgi.Controls.Add(txtBoxAlisFiyati2, 1, 9);
             tLayoutPUrunBilgi.Controls.Add(cmbBoxMensei2, 1, 8);
             tLayoutPUrunBilgi.Controls.Add(cmbBoxBoyut2, 1, 7);
             tLayoutPUrunBilgi.Controls.Add(cmbBoxUrunModeli2, 1, 6);
@@ -358,8 +346,7 @@
             tLayoutPUrunBilgi.Controls.Add(txtBoxUAdi2, 1, 1);
             tLayoutPUrunBilgi.Controls.Add(cmbBoxGenelK2, 1, 2);
             tLayoutPUrunBilgi.Controls.Add(lblMarka, 0, 12);
-            tLayoutPUrunBilgi.Location = new Point(153, 56);
-            tLayoutPUrunBilgi.Margin = new Padding(3, 2, 3, 2);
+            tLayoutPUrunBilgi.Location = new Point(175, 75);
             tLayoutPUrunBilgi.Name = "tLayoutPUrunBilgi";
             tLayoutPUrunBilgi.RowCount = 13;
             tLayoutPUrunBilgi.RowStyles.Add(new RowStyle(SizeType.Percent, 7.69230747F));
@@ -375,17 +362,16 @@
             tLayoutPUrunBilgi.RowStyles.Add(new RowStyle(SizeType.Percent, 7.69230747F));
             tLayoutPUrunBilgi.RowStyles.Add(new RowStyle(SizeType.Percent, 7.69230747F));
             tLayoutPUrunBilgi.RowStyles.Add(new RowStyle(SizeType.Percent, 7.69230747F));
-            tLayoutPUrunBilgi.Size = new Size(281, 364);
+            tLayoutPUrunBilgi.Size = new Size(321, 485);
             tLayoutPUrunBilgi.TabIndex = 2;
             // 
             // Guncelle
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(587, 528);
+            ClientSize = new Size(671, 704);
             Controls.Add(btnGuncelleEkrani);
             Controls.Add(tLayoutPUrunBilgi);
-            Margin = new Padding(3, 2, 3, 2);
             Name = "Guncelle";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Guncelle";
@@ -419,8 +405,8 @@
         private ComboBox cmbBoxUrunModeli2;
         private ComboBox cmbBoxBoyut2;
         private ComboBox cmbBoxMensei2;
-        private TextBox txtBoxAlisFiyati;
-        private TextBox txtBoxSatisFiyati;
+        private TextBox txtBoxAlisFiyati2;
+        private TextBox txtBoxSatisFiyati2;
         private TextBox txtBoxStok2;
         private TextBox txtBoxMarka2;
         private TableLayoutPanel tLayoutPUrunBilgi;
