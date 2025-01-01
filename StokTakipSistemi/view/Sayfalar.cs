@@ -218,12 +218,92 @@ namespace StokTakipSistemi
 
         private void setMonthlyChart()
         {
-           // TODO
+            chartUrunBazindaSatis.Series.Clear();
+
+            DateTime today = DateTime.Now;
+            List<DateTime> columnLabels = new List<DateTime>();
+
+            for (int i = 0; i < 12; i++)
+            {
+                columnLabels.Add(today.AddDays(-i));
+            }
+
+            for (int i = 0; i < 12; i++)
+            {
+                var date = columnLabels[i];
+                var series = new Series
+                {
+                    Name = date.Day + " / " + date.Month + " / " + date.Year,
+                    ChartType = SeriesChartType.Column
+                };
+
+                chartUrunBazindaSatis.Series.Add(series);
+            }
+            String selectedCategory = products.GetItemText(products.SelectedItem);
+            String selectedOption = grafikOpsiyon.GetItemText(grafikOpsiyon.SelectedItem);
+
+            if (selectedOption == "Aylýk Ciro")
+            {
+                for (int i = 0; i < 12; i++)
+                {
+                    double sum = new StatisticController().getMonthSalesData(-i, selectedCategory).getSumOfSalesPrices();
+                    chartUrunBazindaSatis.Series[i].Points.AddXY(i.ToString(), sum);
+                }
+            }
+            else
+            {
+                for (int i = 0; i < 12; i++)
+                {
+                    double sum = new StatisticController().getMonthSalesData(-i, selectedCategory).getSumOfSalesQuantity();
+                    chartUrunBazindaSatis.Series[i].Points.AddXY(i.ToString(), sum);
+                }
+            }
         }
 
         private void setWeeklyChart()
         {
-           // TODO
+            chartUrunBazindaSatis.Series.Clear();
+
+            DateTime today = DateTime.Now;
+            List<DateTime> columnLabels = new List<DateTime>();
+
+            for (int i = 0; i < 7; i++)
+            {
+                columnLabels.Add(today.AddDays(-i));
+            }
+
+            for (int i = 0; i < 7; i++)
+            {
+                var date = columnLabels[i];
+                var series = new Series
+                {
+                    Name = date.Day + " / " + date.Month + " / " + date.Year,
+                    ChartType = SeriesChartType.Column
+                };
+
+                chartUrunBazindaSatis.Series.Add(series);
+            }
+
+            String selectedCategory = products.GetItemText(products.SelectedItem);
+            String selectedOption = grafikOpsiyon.GetItemText(grafikOpsiyon.SelectedItem);
+
+            if (selectedOption == "Haftalýk Ciro")
+            {
+
+                for (int i = 0; i < 7; i++)
+                {
+                    double sum = new StatisticController().getDaySalesData(-i, selectedCategory).getSumOfSalesPrices();
+                    chartUrunBazindaSatis.Series[i].Points.AddXY(i.ToString(), sum);
+                }
+            }
+            else
+            {
+                for (int i = 0; i < 7; i++)
+                {
+                    double sum = new StatisticController().getDaySalesData(-i, selectedCategory).getSumOfSalesQuantity();
+                    chartUrunBazindaSatis.Series[i].Points.AddXY(i.ToString(), sum);
+                }
+            }
         }
 
         // Panel kenarlarýný kývýrmak için kullanýlacak metod
