@@ -913,5 +913,116 @@ namespace StokTakipSistemi
             return true;
         }
 
+
+
+        public bool UrunGuncelle(
+            int urunID, string urunBarkodu, string urunAd, string urunGKategori, string urunKategori,
+            string urunUreticiFirma, string urunTip, string urunModel, decimal urunBoyut,
+            string urunMensei, decimal urunFiyatAlis, decimal urunFiyatSatis, int stokMiktar,
+            string urunMarka)
+        {
+            string baglanti = sqlIslemleri.GetBaglanti();
+
+            if (urunBarkodu.Length != 13)
+            {
+                MessageBox.Show("Ürün barkodu 13 haneli olmalıdır.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+            }
+
+            string kontrolSorgusu = @"
+        SELECT COUNT(*) 
+        FROM Urun 
+        WHERE UrunBarkod = @UrunBarkod AND UrunID != @UrunID";
+
+            string guncellemeSorgusu = @"
+        BEGIN TRY
+            BEGIN TRANSACTION;
+
+            UPDATE Urun
+            SET UrunBarkod = @UrunBarkod,
+                UrunAd = @UrunAd,
+                UrunGKategori = @UrunGKategori,
+                UrunKategori = @UrunKategori,
+                UrunUreticiFirma = @UrunUreticiFirma,
+                UrunTip = @UrunTip,
+                UrunModel = @UrunModel,
+                UrunBoyut = @UrunBoyut,
+                UrunMensei = @UrunMensei,
+                UrunFiyatAlis = @UrunFiyatAlis,
+                UrunFiyatSatis = @UrunFiyatSatis,
+                UrunMarka = @UrunMarka
+            WHERE UrunID = @UrunID;
+
+            UPDATE Stok
+            SET StokMiktar = @StokMiktar,
+                StokDurum = CASE 
+                    WHEN @StokMiktar > 0 THEN 'Mevcut'
+                    ELSE 'Mevcut Değil'
+                END
+            WHERE UrunID = @UrunID;
+
+            COMMIT TRANSACTION;
+        END TRY
+        BEGIN CATCH
+            ROLLBACK TRANSACTION;
+            THROW;
+        END CATCH";
+
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(baglanti))
+                {
+                    conn.Open();
+
+                    using (SqlCommand kontrolCmd = new SqlCommand(kontrolSorgusu, conn))
+                    {
+                        kontrolCmd.Parameters.AddWithValue("@UrunBarkod", urunBarkodu);
+                        kontrolCmd.Parameters.AddWithValue("@UrunID", urunID);
+
+                        int count = (int)kontrolCmd.ExecuteScalar();
+
+                        if (count > 0)
+                        {
+                            MessageBox.Show("Girilen barkod başka bir ürün tarafından kullanılmakta. Lütfen benzersiz bir barkod girin.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            return false;
+                        }
+                    }
+
+                    using (SqlCommand cmd = new SqlCommand(guncellemeSorgusu, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@UrunID", urunID);
+                        cmd.Parameters.AddWithValue("@UrunBarkod", urunBarkodu);
+                        cmd.Parameters.AddWithValue("@UrunAd", urunAd ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@UrunGKategori", urunGKategori ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@UrunKategori", urunKategori ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@UrunUreticiFirma", urunUreticiFirma ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@UrunTip", urunTip ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@UrunModel", urunModel ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@UrunBoyut", urunBoyut);
+                        cmd.Parameters.AddWithValue("@UrunMensei", urunMensei ?? (object)DBNull.Value);
+                        cmd.Parameters.AddWithValue("@UrunFiyatAlis", urunFiyatAlis);
+                        cmd.Parameters.AddWithValue("@UrunFiyatSatis", urunFiyatSatis);
+                        cmd.Parameters.AddWithValue("@StokMiktar", stokMiktar);
+                        cmd.Parameters.AddWithValue("@UrunMarka", urunMarka ?? (object)DBNull.Value);
+
+                        int etkilenenSatir = cmd.ExecuteNonQuery();
+
+                        return etkilenenSatir > 0;
+                    }
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show($"Veritabanı hatası: {ex.Message}");
+                return false;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Bir hata oluştu: {ex.Message}");
+                return false;
+            }
+        }
+
+
     }
 }
