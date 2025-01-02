@@ -1,26 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\hentc\\OneDrive\\Masa\u00FCst\u00FC\\temiz\\sonundabitti\\StokTakipSistemi\\",
+  "WorkspaceRootPath": "C:\\Users\\srkan\\Desktop\\StokTakipSistemi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|c:\\users\\hentc\\onedrive\\masa\u00FCst\u00FC\\temiz\\sonundabitti\\stoktakipsistemi\\stoktakipsistemi\\view\\sayfalar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|c:\\users\\srkan\\desktop\\stoktakipsistemi\\stoktakipsistemi\\view\\sayfalar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|solutionrelative:stoktakipsistemi\\view\\sayfalar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|C:\\Users\\hentc\\OneDrive\\Masa\u00FCst\u00FC\\temiz\\sonundabitti\\StokTakipSistemi\\stoktakipsistemi\\view\\sayfalar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|C:\\Users\\srkan\\Desktop\\StokTakipSistemi\\stoktakipsistemi\\view\\sayfalar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|solutionrelative:stoktakipsistemi\\view\\sayfalar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|c:\\users\\hentc\\onedrive\\masa\u00FCst\u00FC\\temiz\\sonundabitti\\stoktakipsistemi\\stoktakipsistemi\\view\\guncelle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|solutionrelative:stoktakipsistemi\\view\\guncelle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|c:\\users\\hentc\\onedrive\\masa\u00FCst\u00FC\\temiz\\sonundabitti\\stoktakipsistemi\\stoktakipsistemi\\urunislemleri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|solutionrelative:stoktakipsistemi\\urunislemleri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|c:\\users\\hentc\\onedrive\\masa\u00FCst\u00FC\\temiz\\sonundabitti\\stoktakipsistemi\\stoktakipsistemi\\sqlislemleri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|solutionrelative:stoktakipsistemi\\sqlislemleri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,68 +18,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Sayfalar.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\hentc\\OneDrive\\Masa\u00FCst\u00FC\\temiz\\sonundabitti\\StokTakipSistemi\\StokTakipSistemi\\view\\Sayfalar.cs",
-              "RelativeDocumentMoniker": "StokTakipSistemi\\view\\Sayfalar.cs",
-              "ToolTip": "C:\\Users\\hentc\\OneDrive\\Masa\u00FCst\u00FC\\temiz\\sonundabitti\\StokTakipSistemi\\StokTakipSistemi\\view\\Sayfalar.cs [Design]",
-              "RelativeToolTip": "StokTakipSistemi\\view\\Sayfalar.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-01T23:00:27.731Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SQLIslemleri.cs",
-              "DocumentMoniker": "C:\\Users\\hentc\\OneDrive\\Masa\u00FCst\u00FC\\temiz\\sonundabitti\\StokTakipSistemi\\StokTakipSistemi\\SQLIslemleri.cs",
-              "RelativeDocumentMoniker": "StokTakipSistemi\\SQLIslemleri.cs",
-              "ToolTip": "C:\\Users\\hentc\\OneDrive\\Masa\u00FCst\u00FC\\temiz\\sonundabitti\\StokTakipSistemi\\StokTakipSistemi\\SQLIslemleri.cs",
-              "RelativeToolTip": "StokTakipSistemi\\SQLIslemleri.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-01T22:36:31.981Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Guncelle.cs",
-              "DocumentMoniker": "C:\\Users\\hentc\\OneDrive\\Masa\u00FCst\u00FC\\temiz\\sonundabitti\\StokTakipSistemi\\StokTakipSistemi\\view\\Guncelle.cs",
-              "RelativeDocumentMoniker": "StokTakipSistemi\\view\\Guncelle.cs",
-              "ToolTip": "C:\\Users\\hentc\\OneDrive\\Masa\u00FCst\u00FC\\temiz\\sonundabitti\\StokTakipSistemi\\StokTakipSistemi\\view\\Guncelle.cs",
-              "RelativeToolTip": "StokTakipSistemi\\view\\Guncelle.cs",
-              "ViewState": "AgIAAKIAAAAAAAAAAAAiwMUAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-01T22:34:11.536Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UrunIslemleri.cs",
-              "DocumentMoniker": "C:\\Users\\hentc\\OneDrive\\Masa\u00FCst\u00FC\\temiz\\sonundabitti\\StokTakipSistemi\\StokTakipSistemi\\UrunIslemleri.cs",
-              "RelativeDocumentMoniker": "StokTakipSistemi\\UrunIslemleri.cs",
-              "ToolTip": "C:\\Users\\hentc\\OneDrive\\Masa\u00FCst\u00FC\\temiz\\sonundabitti\\StokTakipSistemi\\StokTakipSistemi\\UrunIslemleri.cs",
-              "RelativeToolTip": "StokTakipSistemi\\UrunIslemleri.cs",
-              "ViewState": "AgIAAI8DAAAAAAAAAAAUwP8DAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-01T22:33:30.507Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Sayfalar.cs",
-              "DocumentMoniker": "C:\\Users\\hentc\\OneDrive\\Masa\u00FCst\u00FC\\temiz\\sonundabitti\\StokTakipSistemi\\StokTakipSistemi\\view\\Sayfalar.cs",
+              "DocumentMoniker": "C:\\Users\\srkan\\Desktop\\StokTakipSistemi\\StokTakipSistemi\\view\\Sayfalar.cs",
               "RelativeDocumentMoniker": "StokTakipSistemi\\view\\Sayfalar.cs",
-              "ToolTip": "C:\\Users\\hentc\\OneDrive\\Masa\u00FCst\u00FC\\temiz\\sonundabitti\\StokTakipSistemi\\StokTakipSistemi\\view\\Sayfalar.cs",
+              "ToolTip": "C:\\Users\\srkan\\Desktop\\StokTakipSistemi\\StokTakipSistemi\\view\\Sayfalar.cs",
               "RelativeToolTip": "StokTakipSistemi\\view\\Sayfalar.cs",
-              "ViewState": "AgIAAHQBAAAAAAAAAAAAAIEBAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAALoAAAAAAAAAAAAYwMkAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-31T20:30:21.861Z",
+              "WhenOpened": "2025-01-02T07:08:32.772Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Sayfalar.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\srkan\\Desktop\\StokTakipSistemi\\StokTakipSistemi\\view\\Sayfalar.cs",
+              "RelativeDocumentMoniker": "StokTakipSistemi\\view\\Sayfalar.cs",
+              "ToolTip": "C:\\Users\\srkan\\Desktop\\StokTakipSistemi\\StokTakipSistemi\\view\\Sayfalar.cs [Design]",
+              "RelativeToolTip": "StokTakipSistemi\\view\\Sayfalar.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-02T07:08:22.978Z"
             }
           ]
         }
