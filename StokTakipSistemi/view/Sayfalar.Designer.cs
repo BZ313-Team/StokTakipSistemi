@@ -234,17 +234,16 @@
             // tLayoutPButtonSayfa
             // 
             tLayoutPButtonSayfa.ColumnCount = 2;
-            tLayoutPButtonSayfa.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 168F));
+            tLayoutPButtonSayfa.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 192F));
             tLayoutPButtonSayfa.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tLayoutPButtonSayfa.Controls.Add(panelButtons, 0, 0);
             tLayoutPButtonSayfa.Controls.Add(tabControl1, 1, 0);
             tLayoutPButtonSayfa.Dock = DockStyle.Fill;
             tLayoutPButtonSayfa.Location = new Point(0, 0);
-            tLayoutPButtonSayfa.Margin = new Padding(3, 2, 3, 2);
             tLayoutPButtonSayfa.Name = "tLayoutPButtonSayfa";
             tLayoutPButtonSayfa.RowCount = 1;
             tLayoutPButtonSayfa.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tLayoutPButtonSayfa.Size = new Size(1096, 500);
+            tLayoutPButtonSayfa.Size = new Size(1253, 667);
             tLayoutPButtonSayfa.TabIndex = 0;
             tLayoutPButtonSayfa.Paint += tLayoutPButtonSayfa_Paint;
             // 
@@ -253,10 +252,9 @@
             panelButtons.BackColor = SystemColors.Control;
             panelButtons.Controls.Add(tLayoutPButtons);
             panelButtons.Dock = DockStyle.Fill;
-            panelButtons.Location = new Point(3, 2);
-            panelButtons.Margin = new Padding(3, 2, 3, 2);
+            panelButtons.Location = new Point(3, 3);
             panelButtons.Name = "panelButtons";
-            panelButtons.Size = new Size(162, 496);
+            panelButtons.Size = new Size(186, 661);
             panelButtons.TabIndex = 0;
             panelButtons.Paint += panelButtons_Paint;
             // 
@@ -271,7 +269,6 @@
             tLayoutPButtons.Controls.Add(pnlIstatistikbtn, 0, 4);
             tLayoutPButtons.Dock = DockStyle.Top;
             tLayoutPButtons.Location = new Point(0, 0);
-            tLayoutPButtons.Margin = new Padding(3, 2, 3, 2);
             tLayoutPButtons.Name = "tLayoutPButtons";
             tLayoutPButtons.RowCount = 5;
             tLayoutPButtons.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
@@ -279,7 +276,7 @@
             tLayoutPButtons.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
             tLayoutPButtons.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
             tLayoutPButtons.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tLayoutPButtons.Size = new Size(162, 220);
+            tLayoutPButtons.Size = new Size(186, 293);
             tLayoutPButtons.TabIndex = 0;
             // 
             // pnlSatisbtn
@@ -289,18 +286,20 @@
             pnlSatisbtn.Controls.Add(btnSatis);
             pnlSatisbtn.Controls.Add(pBoxSecilmemisSatis);
             pnlSatisbtn.Dock = DockStyle.Fill;
-            pnlSatisbtn.Location = new Point(3, 3);
+            pnlSatisbtn.Location = new Point(3, 4);
+            pnlSatisbtn.Margin = new Padding(3, 4, 3, 4);
             pnlSatisbtn.Name = "pnlSatisbtn";
-            pnlSatisbtn.Size = new Size(156, 38);
+            pnlSatisbtn.Size = new Size(180, 50);
             pnlSatisbtn.TabIndex = 0;
             // 
             // pBoxSecilmisSatis
             // 
             pBoxSecilmisSatis.Anchor = AnchorStyles.None;
             pBoxSecilmisSatis.Image = (Image)resources.GetObject("pBoxSecilmisSatis.Image");
-            pBoxSecilmisSatis.Location = new Point(6, 6);
+            pBoxSecilmisSatis.Location = new Point(8, 8);
+            pBoxSecilmisSatis.Margin = new Padding(3, 4, 3, 4);
             pBoxSecilmisSatis.Name = "pBoxSecilmisSatis";
-            pBoxSecilmisSatis.Size = new Size(26, 26);
+            pBoxSecilmisSatis.Size = new Size(30, 35);
             pBoxSecilmisSatis.SizeMode = PictureBoxSizeMode.Zoom;
             pBoxSecilmisSatis.TabIndex = 1;
             pBoxSecilmisSatis.TabStop = false;
@@ -310,10 +309,9 @@
             btnSatis.Dock = DockStyle.Right;
             btnSatis.FlatAppearance.BorderSize = 0;
             btnSatis.FlatStyle = FlatStyle.Flat;
-            btnSatis.Location = new Point(43, 0);
-            btnSatis.Margin = new Padding(3, 2, 3, 2);
+            btnSatis.Location = new Point(51, 0);
             btnSatis.Name = "btnSatis";
-            btnSatis.Size = new Size(113, 38);
+            btnSatis.Size = new Size(129, 50);
             btnSatis.TabIndex = 0;
             btnSatis.Text = "Satış";
             btnSatis.TextAlign = ContentAlignment.MiddleLeft;
@@ -324,9 +322,10 @@
             // 
             pBoxSecilmemisSatis.Anchor = AnchorStyles.None;
             pBoxSecilmemisSatis.Image = (Image)resources.GetObject("pBoxSecilmemisSatis.Image");
-            pBoxSecilmemisSatis.Location = new Point(6, 7);
+            pBoxSecilmemisSatis.Location = new Point(8, 9);
+            pBoxSecilmemisSatis.Margin = new Padding(3, 4, 3, 4);
             pBoxSecilmemisSatis.Name = "pBoxSecilmemisSatis";
-            pBoxSecilmemisSatis.Size = new Size(25, 25);
+            pBoxSecilmemisSatis.Size = new Size(29, 33);
             pBoxSecilmemisSatis.SizeMode = PictureBoxSizeMode.Zoom;
             pBoxSecilmemisSatis.TabIndex = 2;
             pBoxSecilmemisSatis.TabStop = false;
@@ -338,18 +337,20 @@
             pnlUrunlerbtn.Controls.Add(pBoxSecilmemisUrun);
             pnlUrunlerbtn.Controls.Add(btnUrunler);
             pnlUrunlerbtn.Dock = DockStyle.Fill;
-            pnlUrunlerbtn.Location = new Point(3, 47);
+            pnlUrunlerbtn.Location = new Point(3, 62);
+            pnlUrunlerbtn.Margin = new Padding(3, 4, 3, 4);
             pnlUrunlerbtn.Name = "pnlUrunlerbtn";
-            pnlUrunlerbtn.Size = new Size(156, 38);
+            pnlUrunlerbtn.Size = new Size(180, 50);
             pnlUrunlerbtn.TabIndex = 1;
             // 
             // pBoxSecilmisUrun
             // 
             pBoxSecilmisUrun.Anchor = AnchorStyles.None;
             pBoxSecilmisUrun.Image = (Image)resources.GetObject("pBoxSecilmisUrun.Image");
-            pBoxSecilmisUrun.Location = new Point(6, 6);
+            pBoxSecilmisUrun.Location = new Point(8, 8);
+            pBoxSecilmisUrun.Margin = new Padding(3, 4, 3, 4);
             pBoxSecilmisUrun.Name = "pBoxSecilmisUrun";
-            pBoxSecilmisUrun.Size = new Size(25, 25);
+            pBoxSecilmisUrun.Size = new Size(29, 33);
             pBoxSecilmisUrun.SizeMode = PictureBoxSizeMode.Zoom;
             pBoxSecilmisUrun.TabIndex = 3;
             pBoxSecilmisUrun.TabStop = false;
@@ -359,9 +360,10 @@
             // 
             pBoxSecilmemisUrun.Anchor = AnchorStyles.None;
             pBoxSecilmemisUrun.Image = (Image)resources.GetObject("pBoxSecilmemisUrun.Image");
-            pBoxSecilmemisUrun.Location = new Point(6, 6);
+            pBoxSecilmemisUrun.Location = new Point(8, 8);
+            pBoxSecilmemisUrun.Margin = new Padding(3, 4, 3, 4);
             pBoxSecilmemisUrun.Name = "pBoxSecilmemisUrun";
-            pBoxSecilmemisUrun.Size = new Size(25, 25);
+            pBoxSecilmemisUrun.Size = new Size(29, 33);
             pBoxSecilmemisUrun.SizeMode = PictureBoxSizeMode.Zoom;
             pBoxSecilmemisUrun.TabIndex = 5;
             pBoxSecilmemisUrun.TabStop = false;
@@ -371,10 +373,9 @@
             btnUrunler.Dock = DockStyle.Right;
             btnUrunler.FlatAppearance.BorderSize = 0;
             btnUrunler.FlatStyle = FlatStyle.Flat;
-            btnUrunler.Location = new Point(43, 0);
-            btnUrunler.Margin = new Padding(3, 2, 3, 2);
+            btnUrunler.Location = new Point(51, 0);
             btnUrunler.Name = "btnUrunler";
-            btnUrunler.Size = new Size(113, 38);
+            btnUrunler.Size = new Size(129, 50);
             btnUrunler.TabIndex = 1;
             btnUrunler.Text = "Ürünler";
             btnUrunler.TextAlign = ContentAlignment.MiddleLeft;
@@ -387,18 +388,20 @@
             pnlStokbtn.Controls.Add(btnStok);
             pnlStokbtn.Controls.Add(pBoxSecilmemisStok);
             pnlStokbtn.Dock = DockStyle.Fill;
-            pnlStokbtn.Location = new Point(3, 91);
+            pnlStokbtn.Location = new Point(3, 120);
+            pnlStokbtn.Margin = new Padding(3, 4, 3, 4);
             pnlStokbtn.Name = "pnlStokbtn";
-            pnlStokbtn.Size = new Size(156, 38);
+            pnlStokbtn.Size = new Size(180, 50);
             pnlStokbtn.TabIndex = 2;
             // 
             // pBoxSecilmisStok
             // 
             pBoxSecilmisStok.Anchor = AnchorStyles.None;
             pBoxSecilmisStok.Image = (Image)resources.GetObject("pBoxSecilmisStok.Image");
-            pBoxSecilmisStok.Location = new Point(6, 6);
+            pBoxSecilmisStok.Location = new Point(8, 8);
+            pBoxSecilmisStok.Margin = new Padding(3, 4, 3, 4);
             pBoxSecilmisStok.Name = "pBoxSecilmisStok";
-            pBoxSecilmisStok.Size = new Size(25, 25);
+            pBoxSecilmisStok.Size = new Size(29, 33);
             pBoxSecilmisStok.SizeMode = PictureBoxSizeMode.Zoom;
             pBoxSecilmisStok.TabIndex = 9;
             pBoxSecilmisStok.TabStop = false;
@@ -409,10 +412,9 @@
             btnStok.Dock = DockStyle.Right;
             btnStok.FlatAppearance.BorderSize = 0;
             btnStok.FlatStyle = FlatStyle.Flat;
-            btnStok.Location = new Point(43, 0);
-            btnStok.Margin = new Padding(3, 2, 3, 2);
+            btnStok.Location = new Point(51, 0);
             btnStok.Name = "btnStok";
-            btnStok.Size = new Size(113, 38);
+            btnStok.Size = new Size(129, 50);
             btnStok.TabIndex = 2;
             btnStok.Text = "Stok";
             btnStok.TextAlign = ContentAlignment.MiddleLeft;
@@ -423,9 +425,10 @@
             // 
             pBoxSecilmemisStok.Anchor = AnchorStyles.None;
             pBoxSecilmemisStok.Image = (Image)resources.GetObject("pBoxSecilmemisStok.Image");
-            pBoxSecilmemisStok.Location = new Point(6, 6);
+            pBoxSecilmemisStok.Location = new Point(8, 8);
+            pBoxSecilmemisStok.Margin = new Padding(3, 4, 3, 4);
             pBoxSecilmemisStok.Name = "pBoxSecilmemisStok";
-            pBoxSecilmemisStok.Size = new Size(25, 25);
+            pBoxSecilmemisStok.Size = new Size(29, 33);
             pBoxSecilmemisStok.SizeMode = PictureBoxSizeMode.Zoom;
             pBoxSecilmemisStok.TabIndex = 4;
             pBoxSecilmemisStok.TabStop = false;
@@ -436,18 +439,20 @@
             pnlGecmisbtn.Controls.Add(pBoxSecilmemisGecmis);
             pnlGecmisbtn.Controls.Add(btnGecmis);
             pnlGecmisbtn.Dock = DockStyle.Fill;
-            pnlGecmisbtn.Location = new Point(3, 135);
+            pnlGecmisbtn.Location = new Point(3, 178);
+            pnlGecmisbtn.Margin = new Padding(3, 4, 3, 4);
             pnlGecmisbtn.Name = "pnlGecmisbtn";
-            pnlGecmisbtn.Size = new Size(156, 38);
+            pnlGecmisbtn.Size = new Size(180, 50);
             pnlGecmisbtn.TabIndex = 3;
             // 
             // pBoxSecilmisGecmis
             // 
             pBoxSecilmisGecmis.Anchor = AnchorStyles.None;
             pBoxSecilmisGecmis.Image = (Image)resources.GetObject("pBoxSecilmisGecmis.Image");
-            pBoxSecilmisGecmis.Location = new Point(6, 6);
+            pBoxSecilmisGecmis.Location = new Point(8, 8);
+            pBoxSecilmisGecmis.Margin = new Padding(3, 4, 3, 4);
             pBoxSecilmisGecmis.Name = "pBoxSecilmisGecmis";
-            pBoxSecilmisGecmis.Size = new Size(25, 25);
+            pBoxSecilmisGecmis.Size = new Size(29, 33);
             pBoxSecilmisGecmis.SizeMode = PictureBoxSizeMode.Zoom;
             pBoxSecilmisGecmis.TabIndex = 7;
             pBoxSecilmisGecmis.TabStop = false;
@@ -457,9 +462,10 @@
             // 
             pBoxSecilmemisGecmis.Anchor = AnchorStyles.None;
             pBoxSecilmemisGecmis.Image = (Image)resources.GetObject("pBoxSecilmemisGecmis.Image");
-            pBoxSecilmemisGecmis.Location = new Point(6, 6);
+            pBoxSecilmemisGecmis.Location = new Point(8, 8);
+            pBoxSecilmemisGecmis.Margin = new Padding(3, 4, 3, 4);
             pBoxSecilmemisGecmis.Name = "pBoxSecilmemisGecmis";
-            pBoxSecilmemisGecmis.Size = new Size(25, 25);
+            pBoxSecilmemisGecmis.Size = new Size(29, 33);
             pBoxSecilmemisGecmis.SizeMode = PictureBoxSizeMode.Zoom;
             pBoxSecilmemisGecmis.TabIndex = 8;
             pBoxSecilmemisGecmis.TabStop = false;
@@ -469,10 +475,9 @@
             btnGecmis.Dock = DockStyle.Right;
             btnGecmis.FlatAppearance.BorderSize = 0;
             btnGecmis.FlatStyle = FlatStyle.Flat;
-            btnGecmis.Location = new Point(40, 0);
-            btnGecmis.Margin = new Padding(3, 2, 3, 2);
+            btnGecmis.Location = new Point(47, 0);
             btnGecmis.Name = "btnGecmis";
-            btnGecmis.Size = new Size(116, 38);
+            btnGecmis.Size = new Size(133, 50);
             btnGecmis.TabIndex = 3;
             btnGecmis.Text = "Geçmiş";
             btnGecmis.TextAlign = ContentAlignment.MiddleLeft;
@@ -485,18 +490,20 @@
             pnlIstatistikbtn.Controls.Add(pBoxSecilmemisIstatistik);
             pnlIstatistikbtn.Controls.Add(btnIstatistik);
             pnlIstatistikbtn.Dock = DockStyle.Fill;
-            pnlIstatistikbtn.Location = new Point(3, 179);
+            pnlIstatistikbtn.Location = new Point(3, 236);
+            pnlIstatistikbtn.Margin = new Padding(3, 4, 3, 4);
             pnlIstatistikbtn.Name = "pnlIstatistikbtn";
-            pnlIstatistikbtn.Size = new Size(156, 38);
+            pnlIstatistikbtn.Size = new Size(180, 53);
             pnlIstatistikbtn.TabIndex = 4;
             // 
             // pBoxSecilmisIstatistik
             // 
             pBoxSecilmisIstatistik.Anchor = AnchorStyles.None;
             pBoxSecilmisIstatistik.Image = (Image)resources.GetObject("pBoxSecilmisIstatistik.Image");
-            pBoxSecilmisIstatistik.Location = new Point(6, 6);
+            pBoxSecilmisIstatistik.Location = new Point(8, 9);
+            pBoxSecilmisIstatistik.Margin = new Padding(3, 4, 3, 4);
             pBoxSecilmisIstatistik.Name = "pBoxSecilmisIstatistik";
-            pBoxSecilmisIstatistik.Size = new Size(25, 25);
+            pBoxSecilmisIstatistik.Size = new Size(29, 33);
             pBoxSecilmisIstatistik.SizeMode = PictureBoxSizeMode.Zoom;
             pBoxSecilmisIstatistik.TabIndex = 5;
             pBoxSecilmisIstatistik.TabStop = false;
@@ -506,9 +513,10 @@
             // 
             pBoxSecilmemisIstatistik.Anchor = AnchorStyles.None;
             pBoxSecilmemisIstatistik.Image = (Image)resources.GetObject("pBoxSecilmemisIstatistik.Image");
-            pBoxSecilmemisIstatistik.Location = new Point(6, 6);
+            pBoxSecilmemisIstatistik.Location = new Point(8, 9);
+            pBoxSecilmemisIstatistik.Margin = new Padding(3, 4, 3, 4);
             pBoxSecilmemisIstatistik.Name = "pBoxSecilmemisIstatistik";
-            pBoxSecilmemisIstatistik.Size = new Size(25, 25);
+            pBoxSecilmemisIstatistik.Size = new Size(29, 33);
             pBoxSecilmemisIstatistik.SizeMode = PictureBoxSizeMode.Zoom;
             pBoxSecilmemisIstatistik.TabIndex = 6;
             pBoxSecilmemisIstatistik.TabStop = false;
@@ -518,10 +526,9 @@
             btnIstatistik.Dock = DockStyle.Right;
             btnIstatistik.FlatAppearance.BorderSize = 0;
             btnIstatistik.FlatStyle = FlatStyle.Flat;
-            btnIstatistik.Location = new Point(40, 0);
-            btnIstatistik.Margin = new Padding(3, 2, 3, 2);
+            btnIstatistik.Location = new Point(47, 0);
             btnIstatistik.Name = "btnIstatistik";
-            btnIstatistik.Size = new Size(116, 38);
+            btnIstatistik.Size = new Size(133, 53);
             btnIstatistik.TabIndex = 4;
             btnIstatistik.Text = "İstatistik";
             btnIstatistik.TextAlign = ContentAlignment.MiddleLeft;
@@ -536,11 +543,10 @@
             tabControl1.Controls.Add(tabPageGecmis);
             tabControl1.Controls.Add(tabPageIstatistik);
             tabControl1.Dock = DockStyle.Fill;
-            tabControl1.Location = new Point(171, 2);
-            tabControl1.Margin = new Padding(3, 2, 3, 2);
+            tabControl1.Location = new Point(195, 3);
             tabControl1.Name = "tabControl1";
             tabControl1.SelectedIndex = 0;
-            tabControl1.Size = new Size(922, 496);
+            tabControl1.Size = new Size(1055, 661);
             tabControl1.TabIndex = 1;
             tabControl1.SelectedIndexChanged += tabControl1_SelectedIndexChanged;
             tabControl1.Resize += tabControl1_Resize;
@@ -548,11 +554,10 @@
             // tabPageSatis
             // 
             tabPageSatis.Controls.Add(tLayoutPSatisSayfa);
-            tabPageSatis.Location = new Point(4, 24);
-            tabPageSatis.Margin = new Padding(3, 2, 3, 2);
+            tabPageSatis.Location = new Point(4, 29);
             tabPageSatis.Name = "tabPageSatis";
-            tabPageSatis.Padding = new Padding(3, 2, 3, 2);
-            tabPageSatis.Size = new Size(914, 468);
+            tabPageSatis.Padding = new Padding(3, 3, 3, 3);
+            tabPageSatis.Size = new Size(1047, 628);
             tabPageSatis.TabIndex = 0;
             tabPageSatis.Text = "Satış";
             tabPageSatis.UseVisualStyleBackColor = true;
@@ -565,12 +570,11 @@
             tLayoutPSatisSayfa.Controls.Add(tLayoutPSatisEkrani, 1, 0);
             tLayoutPSatisSayfa.Controls.Add(tLayoutPSatisSayfaSol, 0, 0);
             tLayoutPSatisSayfa.Dock = DockStyle.Fill;
-            tLayoutPSatisSayfa.Location = new Point(3, 2);
-            tLayoutPSatisSayfa.Margin = new Padding(3, 2, 3, 2);
+            tLayoutPSatisSayfa.Location = new Point(3, 3);
             tLayoutPSatisSayfa.Name = "tLayoutPSatisSayfa";
             tLayoutPSatisSayfa.RowCount = 1;
             tLayoutPSatisSayfa.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tLayoutPSatisSayfa.Size = new Size(908, 464);
+            tLayoutPSatisSayfa.Size = new Size(1041, 622);
             tLayoutPSatisSayfa.TabIndex = 2;
             // 
             // tLayoutPSatisEkrani
@@ -584,8 +588,7 @@
             tLayoutPSatisEkrani.Controls.Add(btnSatisYap, 0, 3);
             tLayoutPSatisEkrani.Controls.Add(listViewSatisEkrani, 0, 0);
             tLayoutPSatisEkrani.Dock = DockStyle.Fill;
-            tLayoutPSatisEkrani.Location = new Point(268, 2);
-            tLayoutPSatisEkrani.Margin = new Padding(3, 2, 3, 2);
+            tLayoutPSatisEkrani.Location = new Point(307, 3);
             tLayoutPSatisEkrani.Name = "tLayoutPSatisEkrani";
             tLayoutPSatisEkrani.RowCount = 7;
             tLayoutPSatisEkrani.RowStyles.Add(new RowStyle(SizeType.Percent, 58F));
@@ -595,7 +598,7 @@
             tLayoutPSatisEkrani.RowStyles.Add(new RowStyle(SizeType.Percent, 6F));
             tLayoutPSatisEkrani.RowStyles.Add(new RowStyle(SizeType.Percent, 6F));
             tLayoutPSatisEkrani.RowStyles.Add(new RowStyle(SizeType.Percent, 12F));
-            tLayoutPSatisEkrani.Size = new Size(637, 460);
+            tLayoutPSatisEkrani.Size = new Size(731, 616);
             tLayoutPSatisEkrani.TabIndex = 0;
             tLayoutPSatisEkrani.Paint += tLayoutPSatisEkrani_Paint;
             // 
@@ -604,10 +607,9 @@
             satisiIptalEtButon.Anchor = AnchorStyles.None;
             satisiIptalEtButon.FlatAppearance.BorderSize = 0;
             satisiIptalEtButon.FlatStyle = FlatStyle.Flat;
-            satisiIptalEtButon.Location = new Point(243, 349);
-            satisiIptalEtButon.Margin = new Padding(3, 2, 3, 2);
+            satisiIptalEtButon.Location = new Point(279, 468);
             satisiIptalEtButon.Name = "satisiIptalEtButon";
-            satisiIptalEtButon.Size = new Size(151, 22);
+            satisiIptalEtButon.Size = new Size(173, 29);
             satisiIptalEtButon.TabIndex = 8;
             satisiIptalEtButon.Text = "Satışı İptal Et";
             satisiIptalEtButon.UseVisualStyleBackColor = true;
@@ -622,22 +624,20 @@
             tLayoutPTutar.Controls.Add(txtBoxTutar, 1, 0);
             tLayoutPTutar.Controls.Add(lblTutar, 0, 0);
             tLayoutPTutar.Controls.Add(lblTutarTL, 2, 0);
-            tLayoutPTutar.Location = new Point(3, 268);
-            tLayoutPTutar.Margin = new Padding(3, 2, 3, 2);
+            tLayoutPTutar.Location = new Point(3, 360);
             tLayoutPTutar.Name = "tLayoutPTutar";
             tLayoutPTutar.RowCount = 1;
             tLayoutPTutar.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tLayoutPTutar.Size = new Size(631, 22);
+            tLayoutPTutar.Size = new Size(721, 29);
             tLayoutPTutar.TabIndex = 1;
             // 
             // txtBoxTutar
             // 
             txtBoxTutar.Dock = DockStyle.Left;
-            txtBoxTutar.Location = new Point(255, 2);
-            txtBoxTutar.Margin = new Padding(3, 2, 3, 2);
+            txtBoxTutar.Location = new Point(291, 3);
             txtBoxTutar.Name = "txtBoxTutar";
             txtBoxTutar.ReadOnly = true;
-            txtBoxTutar.Size = new Size(102, 23);
+            txtBoxTutar.Size = new Size(116, 27);
             txtBoxTutar.TabIndex = 1;
             // 
             // lblTutar
@@ -645,10 +645,10 @@
             lblTutar.Anchor = AnchorStyles.Right;
             lblTutar.AutoSize = true;
             lblTutar.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 162);
-            lblTutar.Location = new Point(218, 3);
+            lblTutar.Location = new Point(245, 4);
             lblTutar.Margin = new Padding(0);
             lblTutar.Name = "lblTutar";
-            lblTutar.Size = new Size(34, 15);
+            lblTutar.Size = new Size(43, 20);
             lblTutar.TabIndex = 2;
             lblTutar.Text = "Tutar";
             // 
@@ -656,9 +656,9 @@
             // 
             lblTutarTL.Anchor = AnchorStyles.Left;
             lblTutarTL.AutoSize = true;
-            lblTutarTL.Location = new Point(368, 3);
+            lblTutarTL.Location = new Point(420, 4);
             lblTutarTL.Name = "lblTutarTL";
-            lblTutarTL.Size = new Size(19, 15);
+            lblTutarTL.Size = new Size(24, 20);
             lblTutarTL.TabIndex = 3;
             lblTutarTL.Text = "TL";
             // 
@@ -669,12 +669,11 @@
             tLayoutPBileme.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 18F));
             tLayoutPBileme.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 42F));
             tLayoutPBileme.Dock = DockStyle.Fill;
-            tLayoutPBileme.Location = new Point(3, 376);
-            tLayoutPBileme.Margin = new Padding(3, 2, 3, 2);
+            tLayoutPBileme.Location = new Point(3, 504);
             tLayoutPBileme.Name = "tLayoutPBileme";
             tLayoutPBileme.RowCount = 1;
             tLayoutPBileme.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tLayoutPBileme.Size = new Size(631, 23);
+            tLayoutPBileme.Size = new Size(725, 30);
             tLayoutPBileme.TabIndex = 2;
             // 
             // tLayoutPToplamTutar
@@ -686,41 +685,39 @@
             tLayoutPToplamTutar.Controls.Add(lblToplamTutarTL, 2, 0);
             tLayoutPToplamTutar.Controls.Add(txtBoxToplamTutar, 1, 0);
             tLayoutPToplamTutar.Controls.Add(lblToplamTutar, 0, 0);
-            tLayoutPToplamTutar.Location = new Point(3, 295);
-            tLayoutPToplamTutar.Margin = new Padding(3, 2, 3, 2);
+            tLayoutPToplamTutar.Location = new Point(3, 396);
             tLayoutPToplamTutar.Name = "tLayoutPToplamTutar";
             tLayoutPToplamTutar.RowCount = 1;
             tLayoutPToplamTutar.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tLayoutPToplamTutar.Size = new Size(631, 22);
+            tLayoutPToplamTutar.Size = new Size(721, 29);
             tLayoutPToplamTutar.TabIndex = 5;
             // 
             // lblToplamTutarTL
             // 
             lblToplamTutarTL.Anchor = AnchorStyles.Left;
             lblToplamTutarTL.AutoSize = true;
-            lblToplamTutarTL.Location = new Point(368, 3);
+            lblToplamTutarTL.Location = new Point(420, 4);
             lblToplamTutarTL.Name = "lblToplamTutarTL";
-            lblToplamTutarTL.Size = new Size(19, 15);
+            lblToplamTutarTL.Size = new Size(24, 20);
             lblToplamTutarTL.TabIndex = 4;
             lblToplamTutarTL.Text = "TL";
             // 
             // txtBoxToplamTutar
             // 
             txtBoxToplamTutar.Dock = DockStyle.Left;
-            txtBoxToplamTutar.Location = new Point(255, 2);
-            txtBoxToplamTutar.Margin = new Padding(3, 2, 3, 2);
+            txtBoxToplamTutar.Location = new Point(291, 3);
             txtBoxToplamTutar.Name = "txtBoxToplamTutar";
             txtBoxToplamTutar.ReadOnly = true;
-            txtBoxToplamTutar.Size = new Size(102, 23);
+            txtBoxToplamTutar.Size = new Size(116, 27);
             txtBoxToplamTutar.TabIndex = 2;
             // 
             // lblToplamTutar
             // 
             lblToplamTutar.Anchor = AnchorStyles.Right;
             lblToplamTutar.AutoSize = true;
-            lblToplamTutar.Location = new Point(173, 3);
+            lblToplamTutar.Location = new Point(188, 4);
             lblToplamTutar.Name = "lblToplamTutar";
-            lblToplamTutar.Size = new Size(76, 15);
+            lblToplamTutar.Size = new Size(97, 20);
             lblToplamTutar.TabIndex = 1;
             lblToplamTutar.Text = "Toplam Tutar";
             // 
@@ -729,10 +726,9 @@
             btnSatisYap.Anchor = AnchorStyles.None;
             btnSatisYap.FlatAppearance.BorderSize = 0;
             btnSatisYap.FlatStyle = FlatStyle.Flat;
-            btnSatisYap.Location = new Point(243, 322);
-            btnSatisYap.Margin = new Padding(3, 2, 3, 2);
+            btnSatisYap.Location = new Point(279, 432);
             btnSatisYap.Name = "btnSatisYap";
-            btnSatisYap.Size = new Size(151, 22);
+            btnSatisYap.Size = new Size(173, 29);
             btnSatisYap.TabIndex = 6;
             btnSatisYap.Text = "Satış Yap";
             btnSatisYap.UseVisualStyleBackColor = true;
@@ -742,9 +738,10 @@
             // 
             listViewSatisEkrani.Columns.AddRange(new ColumnHeader[] { UrunBarkod, UrunAd, UrunFiyatSatis, UrunAdet });
             listViewSatisEkrani.Dock = DockStyle.Fill;
-            listViewSatisEkrani.Location = new Point(3, 3);
+            listViewSatisEkrani.Location = new Point(3, 4);
+            listViewSatisEkrani.Margin = new Padding(3, 4, 3, 4);
             listViewSatisEkrani.Name = "listViewSatisEkrani";
-            listViewSatisEkrani.Size = new Size(631, 260);
+            listViewSatisEkrani.Size = new Size(725, 349);
             listViewSatisEkrani.TabIndex = 7;
             listViewSatisEkrani.UseCompatibleStateImageBehavior = false;
             listViewSatisEkrani.View = View.Details;
@@ -776,13 +773,12 @@
             tLayoutPSatisSayfaSol.Controls.Add(tLayoutPHesapMakinesi, 0, 0);
             tLayoutPSatisSayfaSol.Controls.Add(textBoxBarkodGorunmez, 0, 1);
             tLayoutPSatisSayfaSol.Dock = DockStyle.Fill;
-            tLayoutPSatisSayfaSol.Location = new Point(3, 2);
-            tLayoutPSatisSayfaSol.Margin = new Padding(3, 2, 3, 2);
+            tLayoutPSatisSayfaSol.Location = new Point(3, 3);
             tLayoutPSatisSayfaSol.Name = "tLayoutPSatisSayfaSol";
             tLayoutPSatisSayfaSol.RowCount = 2;
             tLayoutPSatisSayfaSol.RowStyles.Add(new RowStyle(SizeType.Percent, 58F));
             tLayoutPSatisSayfaSol.RowStyles.Add(new RowStyle(SizeType.Percent, 42F));
-            tLayoutPSatisSayfaSol.Size = new Size(259, 460);
+            tLayoutPSatisSayfaSol.Size = new Size(298, 616);
             tLayoutPSatisSayfaSol.TabIndex = 1;
             tLayoutPSatisSayfaSol.Paint += tLayoutPSatisSayfaSol_Paint;
             // 
@@ -814,25 +810,23 @@
             tLayoutPHesapMakinesi.Controls.Add(btnCikarma, 4, 2);
             tLayoutPHesapMakinesi.Controls.Add(btnToplama, 3, 2);
             tLayoutPHesapMakinesi.Dock = DockStyle.Fill;
-            tLayoutPHesapMakinesi.Location = new Point(3, 2);
-            tLayoutPHesapMakinesi.Margin = new Padding(3, 2, 3, 2);
+            tLayoutPHesapMakinesi.Location = new Point(3, 3);
             tLayoutPHesapMakinesi.Name = "tLayoutPHesapMakinesi";
             tLayoutPHesapMakinesi.RowCount = 4;
             tLayoutPHesapMakinesi.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             tLayoutPHesapMakinesi.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             tLayoutPHesapMakinesi.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             tLayoutPHesapMakinesi.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
-            tLayoutPHesapMakinesi.RowStyles.Add(new RowStyle(SizeType.Absolute, 15F));
-            tLayoutPHesapMakinesi.Size = new Size(253, 262);
+            tLayoutPHesapMakinesi.RowStyles.Add(new RowStyle(SizeType.Absolute, 20F));
+            tLayoutPHesapMakinesi.Size = new Size(292, 351);
             tLayoutPHesapMakinesi.TabIndex = 1;
             // 
             // btn7
             // 
             btn7.Dock = DockStyle.Fill;
-            btn7.Location = new Point(3, 2);
-            btn7.Margin = new Padding(3, 2, 3, 2);
+            btn7.Location = new Point(3, 3);
             btn7.Name = "btn7";
-            btn7.Size = new Size(44, 61);
+            btn7.Size = new Size(52, 81);
             btn7.TabIndex = 0;
             btn7.Text = "7";
             btn7.UseVisualStyleBackColor = true;
@@ -840,10 +834,9 @@
             // btn8
             // 
             btn8.Dock = DockStyle.Fill;
-            btn8.Location = new Point(53, 2);
-            btn8.Margin = new Padding(3, 2, 3, 2);
+            btn8.Location = new Point(61, 3);
             btn8.Name = "btn8";
-            btn8.Size = new Size(44, 61);
+            btn8.Size = new Size(52, 81);
             btn8.TabIndex = 1;
             btn8.Text = "8";
             btn8.UseVisualStyleBackColor = true;
@@ -851,10 +844,9 @@
             // btn9
             // 
             btn9.Dock = DockStyle.Fill;
-            btn9.Location = new Point(103, 2);
-            btn9.Margin = new Padding(3, 2, 3, 2);
+            btn9.Location = new Point(119, 3);
             btn9.Name = "btn9";
-            btn9.Size = new Size(44, 61);
+            btn9.Size = new Size(52, 81);
             btn9.TabIndex = 2;
             btn9.Text = "9";
             btn9.UseVisualStyleBackColor = true;
@@ -862,10 +854,9 @@
             // btnBolme
             // 
             btnBolme.Dock = DockStyle.Fill;
-            btnBolme.Location = new Point(153, 2);
-            btnBolme.Margin = new Padding(3, 2, 3, 2);
+            btnBolme.Location = new Point(177, 3);
             btnBolme.Name = "btnBolme";
-            btnBolme.Size = new Size(44, 61);
+            btnBolme.Size = new Size(52, 81);
             btnBolme.TabIndex = 3;
             btnBolme.Text = "%";
             btnBolme.UseVisualStyleBackColor = true;
@@ -873,10 +864,9 @@
             // btnAC
             // 
             btnAC.Dock = DockStyle.Fill;
-            btnAC.Location = new Point(203, 2);
-            btnAC.Margin = new Padding(3, 2, 3, 2);
+            btnAC.Location = new Point(235, 3);
             btnAC.Name = "btnAC";
-            btnAC.Size = new Size(47, 61);
+            btnAC.Size = new Size(54, 81);
             btnAC.TabIndex = 16;
             btnAC.Text = "AC";
             btnAC.UseVisualStyleBackColor = true;
@@ -884,10 +874,9 @@
             // btn4
             // 
             btn4.Dock = DockStyle.Fill;
-            btn4.Location = new Point(3, 67);
-            btn4.Margin = new Padding(3, 2, 3, 2);
+            btn4.Location = new Point(3, 90);
             btn4.Name = "btn4";
-            btn4.Size = new Size(44, 61);
+            btn4.Size = new Size(52, 81);
             btn4.TabIndex = 4;
             btn4.Text = "4";
             btn4.UseVisualStyleBackColor = true;
@@ -895,10 +884,9 @@
             // btn5
             // 
             btn5.Dock = DockStyle.Fill;
-            btn5.Location = new Point(53, 67);
-            btn5.Margin = new Padding(3, 2, 3, 2);
+            btn5.Location = new Point(61, 90);
             btn5.Name = "btn5";
-            btn5.Size = new Size(44, 61);
+            btn5.Size = new Size(52, 81);
             btn5.TabIndex = 5;
             btn5.Text = "5";
             btn5.UseVisualStyleBackColor = true;
@@ -906,10 +894,9 @@
             // btn6
             // 
             btn6.Dock = DockStyle.Fill;
-            btn6.Location = new Point(103, 67);
-            btn6.Margin = new Padding(3, 2, 3, 2);
+            btn6.Location = new Point(119, 90);
             btn6.Name = "btn6";
-            btn6.Size = new Size(44, 61);
+            btn6.Size = new Size(52, 81);
             btn6.TabIndex = 6;
             btn6.Text = "6";
             btn6.UseVisualStyleBackColor = true;
@@ -917,10 +904,9 @@
             // btnCarpma
             // 
             btnCarpma.Dock = DockStyle.Fill;
-            btnCarpma.Location = new Point(153, 67);
-            btnCarpma.Margin = new Padding(3, 2, 3, 2);
+            btnCarpma.Location = new Point(177, 90);
             btnCarpma.Name = "btnCarpma";
-            btnCarpma.Size = new Size(44, 61);
+            btnCarpma.Size = new Size(52, 81);
             btnCarpma.TabIndex = 7;
             btnCarpma.Text = "X";
             btnCarpma.UseVisualStyleBackColor = true;
@@ -928,10 +914,9 @@
             // btnDEL
             // 
             btnDEL.Dock = DockStyle.Fill;
-            btnDEL.Location = new Point(203, 67);
-            btnDEL.Margin = new Padding(3, 2, 3, 2);
+            btnDEL.Location = new Point(235, 90);
             btnDEL.Name = "btnDEL";
-            btnDEL.Size = new Size(47, 61);
+            btnDEL.Size = new Size(54, 81);
             btnDEL.TabIndex = 17;
             btnDEL.Text = "DEL";
             btnDEL.UseVisualStyleBackColor = true;
@@ -939,10 +924,9 @@
             // btn1
             // 
             btn1.Dock = DockStyle.Fill;
-            btn1.Location = new Point(3, 132);
-            btn1.Margin = new Padding(3, 2, 3, 2);
+            btn1.Location = new Point(3, 177);
             btn1.Name = "btn1";
-            btn1.Size = new Size(44, 61);
+            btn1.Size = new Size(52, 81);
             btn1.TabIndex = 8;
             btn1.Text = "1";
             btn1.UseVisualStyleBackColor = true;
@@ -950,10 +934,9 @@
             // btn2
             // 
             btn2.Dock = DockStyle.Fill;
-            btn2.Location = new Point(53, 132);
-            btn2.Margin = new Padding(3, 2, 3, 2);
+            btn2.Location = new Point(61, 177);
             btn2.Name = "btn2";
-            btn2.Size = new Size(44, 61);
+            btn2.Size = new Size(52, 81);
             btn2.TabIndex = 9;
             btn2.Text = "2";
             btn2.UseVisualStyleBackColor = true;
@@ -961,10 +944,9 @@
             // btn3
             // 
             btn3.Dock = DockStyle.Fill;
-            btn3.Location = new Point(103, 132);
-            btn3.Margin = new Padding(3, 2, 3, 2);
+            btn3.Location = new Point(119, 177);
             btn3.Name = "btn3";
-            btn3.Size = new Size(44, 61);
+            btn3.Size = new Size(52, 81);
             btn3.TabIndex = 10;
             btn3.Text = "3";
             btn3.UseVisualStyleBackColor = true;
@@ -972,10 +954,9 @@
             // btn0
             // 
             btn0.Dock = DockStyle.Fill;
-            btn0.Location = new Point(3, 197);
-            btn0.Margin = new Padding(3, 2, 3, 2);
+            btn0.Location = new Point(3, 264);
             btn0.Name = "btn0";
-            btn0.Size = new Size(44, 63);
+            btn0.Size = new Size(52, 84);
             btn0.TabIndex = 11;
             btn0.Text = "0";
             btn0.UseVisualStyleBackColor = true;
@@ -983,10 +964,9 @@
             // button00
             // 
             button00.Dock = DockStyle.Fill;
-            button00.Location = new Point(53, 197);
-            button00.Margin = new Padding(3, 2, 3, 2);
+            button00.Location = new Point(61, 264);
             button00.Name = "button00";
-            button00.Size = new Size(44, 63);
+            button00.Size = new Size(52, 84);
             button00.TabIndex = 16;
             button00.Text = "00";
             button00.UseVisualStyleBackColor = true;
@@ -994,10 +974,9 @@
             // btnNokta
             // 
             btnNokta.Dock = DockStyle.Fill;
-            btnNokta.Location = new Point(103, 197);
-            btnNokta.Margin = new Padding(3, 2, 3, 2);
+            btnNokta.Location = new Point(119, 264);
             btnNokta.Name = "btnNokta";
-            btnNokta.Size = new Size(44, 63);
+            btnNokta.Size = new Size(52, 84);
             btnNokta.TabIndex = 12;
             btnNokta.Text = ".";
             btnNokta.UseVisualStyleBackColor = true;
@@ -1005,10 +984,9 @@
             // btnEsittir
             // 
             btnEsittir.Dock = DockStyle.Fill;
-            btnEsittir.Location = new Point(203, 197);
-            btnEsittir.Margin = new Padding(3, 2, 3, 2);
+            btnEsittir.Location = new Point(235, 264);
             btnEsittir.Name = "btnEsittir";
-            btnEsittir.Size = new Size(47, 63);
+            btnEsittir.Size = new Size(54, 84);
             btnEsittir.TabIndex = 13;
             btnEsittir.Text = "=";
             btnEsittir.UseVisualStyleBackColor = true;
@@ -1016,10 +994,9 @@
             // btnCikarma
             // 
             btnCikarma.Dock = DockStyle.Fill;
-            btnCikarma.Location = new Point(203, 132);
-            btnCikarma.Margin = new Padding(3, 2, 3, 2);
+            btnCikarma.Location = new Point(235, 177);
             btnCikarma.Name = "btnCikarma";
-            btnCikarma.Size = new Size(47, 61);
+            btnCikarma.Size = new Size(54, 81);
             btnCikarma.TabIndex = 15;
             btnCikarma.Text = "-";
             btnCikarma.UseVisualStyleBackColor = true;
@@ -1027,11 +1004,10 @@
             // btnToplama
             // 
             btnToplama.Dock = DockStyle.Fill;
-            btnToplama.Location = new Point(153, 132);
-            btnToplama.Margin = new Padding(3, 2, 3, 2);
+            btnToplama.Location = new Point(177, 177);
             btnToplama.Name = "btnToplama";
             tLayoutPHesapMakinesi.SetRowSpan(btnToplama, 2);
-            btnToplama.Size = new Size(44, 128);
+            btnToplama.Size = new Size(52, 171);
             btnToplama.TabIndex = 14;
             btnToplama.Text = "+";
             btnToplama.UseVisualStyleBackColor = true;
@@ -1039,21 +1015,21 @@
             // textBoxBarkodGorunmez
             // 
             textBoxBarkodGorunmez.BackColor = SystemColors.HighlightText;
-            textBoxBarkodGorunmez.Location = new Point(3, 269);
+            textBoxBarkodGorunmez.Location = new Point(3, 361);
+            textBoxBarkodGorunmez.Margin = new Padding(3, 4, 3, 4);
             textBoxBarkodGorunmez.Name = "textBoxBarkodGorunmez";
             textBoxBarkodGorunmez.ReadOnly = true;
-            textBoxBarkodGorunmez.Size = new Size(253, 23);
+            textBoxBarkodGorunmez.Size = new Size(289, 27);
             textBoxBarkodGorunmez.TabIndex = 2;
             textBoxBarkodGorunmez.KeyPress += textBoxBarkodGorunmez_KeyPress;
             // 
             // tabPageUrun
             // 
             tabPageUrun.Controls.Add(tLayoutPUrunSayfa);
-            tabPageUrun.Location = new Point(4, 24);
-            tabPageUrun.Margin = new Padding(3, 2, 3, 2);
+            tabPageUrun.Location = new Point(4, 29);
             tabPageUrun.Name = "tabPageUrun";
-            tabPageUrun.Padding = new Padding(3, 2, 3, 2);
-            tabPageUrun.Size = new Size(914, 468);
+            tabPageUrun.Padding = new Padding(3, 3, 3, 3);
+            tabPageUrun.Size = new Size(1046, 628);
             tabPageUrun.TabIndex = 1;
             tabPageUrun.Text = "Ürün";
             tabPageUrun.UseVisualStyleBackColor = true;
@@ -1064,13 +1040,12 @@
             tLayoutPUrunSayfa.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tLayoutPUrunSayfa.Controls.Add(tLayoutPUrunlerUst, 0, 0);
             tLayoutPUrunSayfa.Dock = DockStyle.Fill;
-            tLayoutPUrunSayfa.Location = new Point(3, 2);
-            tLayoutPUrunSayfa.Margin = new Padding(3, 2, 3, 2);
+            tLayoutPUrunSayfa.Location = new Point(3, 3);
             tLayoutPUrunSayfa.Name = "tLayoutPUrunSayfa";
             tLayoutPUrunSayfa.RowCount = 2;
             tLayoutPUrunSayfa.RowStyles.Add(new RowStyle(SizeType.Percent, 79.27215F));
             tLayoutPUrunSayfa.RowStyles.Add(new RowStyle(SizeType.Percent, 20.7278481F));
-            tLayoutPUrunSayfa.Size = new Size(908, 464);
+            tLayoutPUrunSayfa.Size = new Size(1040, 622);
             tLayoutPUrunSayfa.TabIndex = 0;
             // 
             // tLayoutPUrunlerUst
@@ -1081,27 +1056,25 @@
             tLayoutPUrunlerUst.Controls.Add(tLayoutP5Button, 1, 0);
             tLayoutPUrunlerUst.Controls.Add(tLayoutPUrunBilgi, 0, 0);
             tLayoutPUrunlerUst.Dock = DockStyle.Fill;
-            tLayoutPUrunlerUst.Location = new Point(3, 2);
-            tLayoutPUrunlerUst.Margin = new Padding(3, 2, 3, 2);
+            tLayoutPUrunlerUst.Location = new Point(3, 3);
             tLayoutPUrunlerUst.Name = "tLayoutPUrunlerUst";
             tLayoutPUrunlerUst.RowCount = 1;
             tLayoutPUrunlerUst.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tLayoutPUrunlerUst.Size = new Size(902, 363);
+            tLayoutPUrunlerUst.Size = new Size(1034, 487);
             tLayoutPUrunlerUst.TabIndex = 0;
             // 
             // tLayoutP5Button
             // 
             tLayoutP5Button.ColumnCount = 1;
             tLayoutP5Button.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tLayoutP5Button.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 18F));
-            tLayoutP5Button.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 18F));
+            tLayoutP5Button.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 21F));
+            tLayoutP5Button.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 21F));
             tLayoutP5Button.Controls.Add(pnlUrunSilbtn, 0, 1);
             tLayoutP5Button.Controls.Add(pnlTemizlebtn, 0, 2);
             tLayoutP5Button.Controls.Add(pnlUrunEklebtn, 0, 0);
             tLayoutP5Button.Controls.Add(pnlZamEklebtn, 0, 3);
             tLayoutP5Button.Dock = DockStyle.Fill;
-            tLayoutP5Button.Location = new Point(454, 2);
-            tLayoutP5Button.Margin = new Padding(3, 2, 3, 2);
+            tLayoutP5Button.Location = new Point(520, 3);
             tLayoutP5Button.Name = "tLayoutP5Button";
             tLayoutP5Button.RowCount = 5;
             tLayoutP5Button.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
@@ -1109,16 +1082,17 @@
             tLayoutP5Button.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
             tLayoutP5Button.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
             tLayoutP5Button.RowStyles.Add(new RowStyle(SizeType.Percent, 20F));
-            tLayoutP5Button.Size = new Size(445, 359);
+            tLayoutP5Button.Size = new Size(511, 481);
             tLayoutP5Button.TabIndex = 0;
             // 
             // pnlUrunSilbtn
             // 
             pnlUrunSilbtn.Anchor = AnchorStyles.None;
             pnlUrunSilbtn.Controls.Add(btnUrunSil);
-            pnlUrunSilbtn.Location = new Point(127, 80);
+            pnlUrunSilbtn.Location = new Point(147, 108);
+            pnlUrunSilbtn.Margin = new Padding(3, 4, 3, 4);
             pnlUrunSilbtn.Name = "pnlUrunSilbtn";
-            pnlUrunSilbtn.Size = new Size(190, 53);
+            pnlUrunSilbtn.Size = new Size(217, 71);
             pnlUrunSilbtn.TabIndex = 5;
             // 
             // btnUrunSil
@@ -1127,10 +1101,9 @@
             btnUrunSil.Dock = DockStyle.Right;
             btnUrunSil.FlatAppearance.BorderColor = Color.FromArgb(128, 129, 139);
             btnUrunSil.FlatAppearance.BorderSize = 0;
-            btnUrunSil.Location = new Point(37, 0);
-            btnUrunSil.Margin = new Padding(3, 2, 3, 2);
+            btnUrunSil.Location = new Point(42, 0);
             btnUrunSil.Name = "btnUrunSil";
-            btnUrunSil.Size = new Size(153, 53);
+            btnUrunSil.Size = new Size(175, 71);
             btnUrunSil.TabIndex = 4;
             btnUrunSil.Text = "Ürün Sil";
             btnUrunSil.UseVisualStyleBackColor = false;
@@ -1140,9 +1113,10 @@
             // 
             pnlTemizlebtn.Anchor = AnchorStyles.None;
             pnlTemizlebtn.Controls.Add(btnTemizle);
-            pnlTemizlebtn.Location = new Point(127, 151);
+            pnlTemizlebtn.Location = new Point(147, 204);
+            pnlTemizlebtn.Margin = new Padding(3, 4, 3, 4);
             pnlTemizlebtn.Name = "pnlTemizlebtn";
-            pnlTemizlebtn.Size = new Size(190, 53);
+            pnlTemizlebtn.Size = new Size(217, 71);
             pnlTemizlebtn.TabIndex = 6;
             // 
             // btnTemizle
@@ -1151,10 +1125,9 @@
             btnTemizle.Dock = DockStyle.Right;
             btnTemizle.FlatAppearance.BorderColor = Color.FromArgb(128, 129, 139);
             btnTemizle.FlatAppearance.BorderSize = 0;
-            btnTemizle.Location = new Point(37, 0);
-            btnTemizle.Margin = new Padding(3, 2, 3, 2);
+            btnTemizle.Location = new Point(42, 0);
             btnTemizle.Name = "btnTemizle";
-            btnTemizle.Size = new Size(153, 53);
+            btnTemizle.Size = new Size(175, 71);
             btnTemizle.TabIndex = 3;
             btnTemizle.Text = "Temizle";
             btnTemizle.UseVisualStyleBackColor = false;
@@ -1164,9 +1137,10 @@
             // 
             pnlUrunEklebtn.Anchor = AnchorStyles.None;
             pnlUrunEklebtn.Controls.Add(btnUrunEkle);
-            pnlUrunEklebtn.Location = new Point(127, 9);
+            pnlUrunEklebtn.Location = new Point(147, 12);
+            pnlUrunEklebtn.Margin = new Padding(3, 4, 3, 4);
             pnlUrunEklebtn.Name = "pnlUrunEklebtn";
-            pnlUrunEklebtn.Size = new Size(190, 53);
+            pnlUrunEklebtn.Size = new Size(217, 71);
             pnlUrunEklebtn.TabIndex = 4;
             // 
             // btnUrunEkle
@@ -1175,10 +1149,9 @@
             btnUrunEkle.Dock = DockStyle.Right;
             btnUrunEkle.FlatAppearance.BorderColor = Color.FromArgb(128, 129, 139);
             btnUrunEkle.FlatAppearance.BorderSize = 0;
-            btnUrunEkle.Location = new Point(37, 0);
-            btnUrunEkle.Margin = new Padding(3, 2, 3, 2);
+            btnUrunEkle.Location = new Point(42, 0);
             btnUrunEkle.Name = "btnUrunEkle";
-            btnUrunEkle.Size = new Size(153, 53);
+            btnUrunEkle.Size = new Size(175, 71);
             btnUrunEkle.TabIndex = 0;
             btnUrunEkle.Text = "Ürün Ekle";
             btnUrunEkle.UseVisualStyleBackColor = false;
@@ -1188,9 +1161,10 @@
             // 
             pnlZamEklebtn.Anchor = AnchorStyles.None;
             pnlZamEklebtn.Controls.Add(btnZamEkle);
-            pnlZamEklebtn.Location = new Point(127, 222);
+            pnlZamEklebtn.Location = new Point(147, 300);
+            pnlZamEklebtn.Margin = new Padding(3, 4, 3, 4);
             pnlZamEklebtn.Name = "pnlZamEklebtn";
-            pnlZamEklebtn.Size = new Size(190, 53);
+            pnlZamEklebtn.Size = new Size(217, 71);
             pnlZamEklebtn.TabIndex = 8;
             // 
             // btnZamEkle
@@ -1199,10 +1173,9 @@
             btnZamEkle.Dock = DockStyle.Right;
             btnZamEkle.FlatAppearance.BorderColor = Color.FromArgb(128, 129, 139);
             btnZamEkle.FlatAppearance.BorderSize = 0;
-            btnZamEkle.Location = new Point(37, 0);
-            btnZamEkle.Margin = new Padding(3, 2, 3, 2);
+            btnZamEkle.Location = new Point(42, 0);
             btnZamEkle.Name = "btnZamEkle";
-            btnZamEkle.Size = new Size(153, 53);
+            btnZamEkle.Size = new Size(175, 71);
             btnZamEkle.TabIndex = 2;
             btnZamEkle.Text = "Zam Ekle";
             btnZamEkle.UseVisualStyleBackColor = false;
@@ -1242,8 +1215,7 @@
             tLayoutPUrunBilgi.Controls.Add(mtxtBoxGTarihi, 1, 13);
             tLayoutPUrunBilgi.Controls.Add(lblMarka, 0, 12);
             tLayoutPUrunBilgi.Dock = DockStyle.Fill;
-            tLayoutPUrunBilgi.Location = new Point(3, 2);
-            tLayoutPUrunBilgi.Margin = new Padding(3, 2, 3, 2);
+            tLayoutPUrunBilgi.Location = new Point(3, 3);
             tLayoutPUrunBilgi.Name = "tLayoutPUrunBilgi";
             tLayoutPUrunBilgi.RowCount = 14;
             tLayoutPUrunBilgi.RowStyles.Add(new RowStyle(SizeType.Percent, 7.142857F));
@@ -1260,112 +1232,102 @@
             tLayoutPUrunBilgi.RowStyles.Add(new RowStyle(SizeType.Percent, 7.142857F));
             tLayoutPUrunBilgi.RowStyles.Add(new RowStyle(SizeType.Percent, 7.142857F));
             tLayoutPUrunBilgi.RowStyles.Add(new RowStyle(SizeType.Percent, 7.142857F));
-            tLayoutPUrunBilgi.Size = new Size(445, 359);
+            tLayoutPUrunBilgi.Size = new Size(511, 481);
             tLayoutPUrunBilgi.TabIndex = 1;
             // 
             // txtBoxMarka
             // 
             txtBoxMarka.Dock = DockStyle.Fill;
-            txtBoxMarka.Location = new Point(189, 302);
-            txtBoxMarka.Margin = new Padding(3, 2, 3, 2);
+            txtBoxMarka.Location = new Point(217, 411);
             txtBoxMarka.Name = "txtBoxMarka";
-            txtBoxMarka.Size = new Size(253, 23);
+            txtBoxMarka.Size = new Size(291, 27);
             txtBoxMarka.TabIndex = 27;
             // 
             // txtBoxStok
             // 
             txtBoxStok.Dock = DockStyle.Fill;
-            txtBoxStok.Location = new Point(189, 277);
-            txtBoxStok.Margin = new Padding(3, 2, 3, 2);
+            txtBoxStok.Location = new Point(217, 377);
             txtBoxStok.Name = "txtBoxStok";
-            txtBoxStok.Size = new Size(253, 23);
+            txtBoxStok.Size = new Size(291, 27);
             txtBoxStok.TabIndex = 24;
             // 
             // cmbBoxSatisFiyati
             // 
             cmbBoxSatisFiyati.Dock = DockStyle.Fill;
-            cmbBoxSatisFiyati.Location = new Point(189, 252);
-            cmbBoxSatisFiyati.Margin = new Padding(3, 2, 3, 2);
+            cmbBoxSatisFiyati.Location = new Point(217, 343);
             cmbBoxSatisFiyati.Name = "cmbBoxSatisFiyati";
-            cmbBoxSatisFiyati.Size = new Size(253, 23);
+            cmbBoxSatisFiyati.Size = new Size(291, 27);
             cmbBoxSatisFiyati.TabIndex = 23;
             // 
             // cmbBoxAlisFiyati
             // 
             cmbBoxAlisFiyati.Dock = DockStyle.Fill;
-            cmbBoxAlisFiyati.Location = new Point(189, 227);
-            cmbBoxAlisFiyati.Margin = new Padding(3, 2, 3, 2);
+            cmbBoxAlisFiyati.Location = new Point(217, 309);
             cmbBoxAlisFiyati.Name = "cmbBoxAlisFiyati";
-            cmbBoxAlisFiyati.Size = new Size(253, 23);
+            cmbBoxAlisFiyati.Size = new Size(291, 27);
             cmbBoxAlisFiyati.TabIndex = 22;
             // 
             // cmbBoxMensei
             // 
             cmbBoxMensei.Dock = DockStyle.Fill;
             cmbBoxMensei.FormattingEnabled = true;
-            cmbBoxMensei.Location = new Point(189, 202);
-            cmbBoxMensei.Margin = new Padding(3, 2, 3, 2);
+            cmbBoxMensei.Location = new Point(217, 275);
             cmbBoxMensei.Name = "cmbBoxMensei";
-            cmbBoxMensei.Size = new Size(253, 23);
+            cmbBoxMensei.Size = new Size(291, 28);
             cmbBoxMensei.TabIndex = 21;
             // 
             // cmbBoxBoyut
             // 
             cmbBoxBoyut.Dock = DockStyle.Fill;
             cmbBoxBoyut.FormattingEnabled = true;
-            cmbBoxBoyut.Location = new Point(189, 177);
-            cmbBoxBoyut.Margin = new Padding(3, 2, 3, 2);
+            cmbBoxBoyut.Location = new Point(217, 241);
             cmbBoxBoyut.Name = "cmbBoxBoyut";
-            cmbBoxBoyut.Size = new Size(253, 23);
+            cmbBoxBoyut.Size = new Size(291, 28);
             cmbBoxBoyut.TabIndex = 20;
             // 
             // cmbBoxUrunModeli
             // 
             cmbBoxUrunModeli.Dock = DockStyle.Fill;
             cmbBoxUrunModeli.FormattingEnabled = true;
-            cmbBoxUrunModeli.Location = new Point(189, 152);
-            cmbBoxUrunModeli.Margin = new Padding(3, 2, 3, 2);
+            cmbBoxUrunModeli.Location = new Point(217, 207);
             cmbBoxUrunModeli.Name = "cmbBoxUrunModeli";
-            cmbBoxUrunModeli.Size = new Size(253, 23);
+            cmbBoxUrunModeli.Size = new Size(291, 28);
             cmbBoxUrunModeli.TabIndex = 19;
             // 
             // cmbBoxUrunTipi
             // 
             cmbBoxUrunTipi.Dock = DockStyle.Fill;
             cmbBoxUrunTipi.FormattingEnabled = true;
-            cmbBoxUrunTipi.Location = new Point(189, 127);
-            cmbBoxUrunTipi.Margin = new Padding(3, 2, 3, 2);
+            cmbBoxUrunTipi.Location = new Point(217, 173);
             cmbBoxUrunTipi.Name = "cmbBoxUrunTipi";
-            cmbBoxUrunTipi.Size = new Size(253, 23);
+            cmbBoxUrunTipi.Size = new Size(291, 28);
             cmbBoxUrunTipi.TabIndex = 18;
             // 
             // cmbBoxFirmaAdi
             // 
             cmbBoxFirmaAdi.Dock = DockStyle.Fill;
             cmbBoxFirmaAdi.FormattingEnabled = true;
-            cmbBoxFirmaAdi.Location = new Point(189, 102);
-            cmbBoxFirmaAdi.Margin = new Padding(3, 2, 3, 2);
+            cmbBoxFirmaAdi.Location = new Point(217, 139);
             cmbBoxFirmaAdi.Name = "cmbBoxFirmaAdi";
-            cmbBoxFirmaAdi.Size = new Size(253, 23);
+            cmbBoxFirmaAdi.Size = new Size(291, 28);
             cmbBoxFirmaAdi.TabIndex = 17;
             // 
             // cmbBoxUrunK
             // 
             cmbBoxUrunK.Dock = DockStyle.Fill;
             cmbBoxUrunK.FormattingEnabled = true;
-            cmbBoxUrunK.Location = new Point(189, 77);
-            cmbBoxUrunK.Margin = new Padding(3, 2, 3, 2);
+            cmbBoxUrunK.Location = new Point(217, 105);
             cmbBoxUrunK.Name = "cmbBoxUrunK";
-            cmbBoxUrunK.Size = new Size(253, 23);
+            cmbBoxUrunK.Size = new Size(291, 28);
             cmbBoxUrunK.TabIndex = 16;
             // 
             // lblGenelK
             // 
             lblGenelK.AutoSize = true;
             lblGenelK.Dock = DockStyle.Right;
-            lblGenelK.Location = new Point(85, 50);
+            lblGenelK.Location = new Point(86, 68);
             lblGenelK.Name = "lblGenelK";
-            lblGenelK.Size = new Size(98, 25);
+            lblGenelK.Size = new Size(125, 34);
             lblGenelK.TabIndex = 4;
             lblGenelK.Text = "Genel Kategorisi :";
             // 
@@ -1373,9 +1335,9 @@
             // 
             lblUrunAdi.AutoSize = true;
             lblUrunAdi.Dock = DockStyle.Right;
-            lblUrunAdi.Location = new Point(123, 25);
+            lblUrunAdi.Location = new Point(137, 34);
             lblUrunAdi.Name = "lblUrunAdi";
-            lblUrunAdi.Size = new Size(60, 25);
+            lblUrunAdi.Size = new Size(74, 34);
             lblUrunAdi.TabIndex = 2;
             lblUrunAdi.Text = "Ürün Adı :";
             // 
@@ -1383,9 +1345,9 @@
             // 
             lblUrunBarkodu.AutoSize = true;
             lblUrunBarkodu.Dock = DockStyle.Right;
-            lblUrunBarkodu.Location = new Point(97, 0);
+            lblUrunBarkodu.Location = new Point(105, 0);
             lblUrunBarkodu.Name = "lblUrunBarkodu";
-            lblUrunBarkodu.Size = new Size(86, 25);
+            lblUrunBarkodu.Size = new Size(106, 34);
             lblUrunBarkodu.TabIndex = 0;
             lblUrunBarkodu.Text = "Ürün Barkodu :";
             // 
@@ -1393,9 +1355,9 @@
             // 
             lblStok.AutoSize = true;
             lblStok.Dock = DockStyle.Right;
-            lblStok.Location = new Point(147, 275);
+            lblStok.Location = new Point(166, 374);
             lblStok.Name = "lblStok";
-            lblStok.Size = new Size(36, 25);
+            lblStok.Size = new Size(45, 34);
             lblStok.TabIndex = 10;
             lblStok.Text = "Stok :";
             // 
@@ -1403,9 +1365,9 @@
             // 
             lblSatisF.AutoSize = true;
             lblSatisF.Dock = DockStyle.Right;
-            lblSatisF.Location = new Point(115, 250);
+            lblSatisF.Location = new Point(125, 340);
             lblSatisF.Name = "lblSatisF";
-            lblSatisF.Size = new Size(68, 25);
+            lblSatisF.Size = new Size(86, 34);
             lblSatisF.TabIndex = 9;
             lblSatisF.Text = "Satış Fiyatı :";
             // 
@@ -1413,9 +1375,9 @@
             // 
             lblBoyut.AutoSize = true;
             lblBoyut.Dock = DockStyle.Right;
-            lblBoyut.Location = new Point(139, 175);
+            lblBoyut.Location = new Point(157, 238);
             lblBoyut.Name = "lblBoyut";
-            lblBoyut.Size = new Size(44, 25);
+            lblBoyut.Size = new Size(54, 34);
             lblBoyut.TabIndex = 5;
             lblBoyut.Text = "Boyut :";
             // 
@@ -1423,9 +1385,9 @@
             // 
             lblMensei.AutoSize = true;
             lblMensei.Dock = DockStyle.Right;
-            lblMensei.Location = new Point(132, 200);
+            lblMensei.Location = new Point(148, 272);
             lblMensei.Name = "lblMensei";
-            lblMensei.Size = new Size(51, 25);
+            lblMensei.Size = new Size(63, 34);
             lblMensei.TabIndex = 7;
             lblMensei.Text = "Menşei :";
             // 
@@ -1433,9 +1395,9 @@
             // 
             lblAlisF.AutoSize = true;
             lblAlisF.Dock = DockStyle.Right;
-            lblAlisF.Location = new Point(120, 225);
+            lblAlisF.Location = new Point(132, 306);
             lblAlisF.Name = "lblAlisF";
-            lblAlisF.Size = new Size(63, 25);
+            lblAlisF.Size = new Size(79, 34);
             lblAlisF.TabIndex = 8;
             lblAlisF.Text = "Alış Fiyatı :";
             // 
@@ -1443,9 +1405,9 @@
             // 
             lblUrunModel.AutoSize = true;
             lblUrunModel.Dock = DockStyle.Right;
-            lblUrunModel.Location = new Point(104, 150);
+            lblUrunModel.Location = new Point(113, 204);
             lblUrunModel.Name = "lblUrunModel";
-            lblUrunModel.Size = new Size(79, 25);
+            lblUrunModel.Size = new Size(98, 34);
             lblUrunModel.TabIndex = 6;
             lblUrunModel.Text = "Ürün Modeli :";
             // 
@@ -1453,9 +1415,9 @@
             // 
             lblUrunTipi.AutoSize = true;
             lblUrunTipi.Dock = DockStyle.Right;
-            lblUrunTipi.Location = new Point(122, 125);
+            lblUrunTipi.Location = new Point(135, 170);
             lblUrunTipi.Name = "lblUrunTipi";
-            lblUrunTipi.Size = new Size(61, 25);
+            lblUrunTipi.Size = new Size(76, 34);
             lblUrunTipi.TabIndex = 3;
             lblUrunTipi.Text = "Ürün Tipi :";
             // 
@@ -1463,9 +1425,9 @@
             // 
             lblFirmaAdi.AutoSize = true;
             lblFirmaAdi.Dock = DockStyle.Right;
-            lblFirmaAdi.Location = new Point(119, 100);
+            lblFirmaAdi.Location = new Point(131, 136);
             lblFirmaAdi.Name = "lblFirmaAdi";
-            lblFirmaAdi.Size = new Size(64, 25);
+            lblFirmaAdi.Size = new Size(80, 34);
             lblFirmaAdi.TabIndex = 1;
             lblFirmaAdi.Text = "Firma Adı :";
             // 
@@ -1473,58 +1435,54 @@
             // 
             lblUrunK.AutoSize = true;
             lblUrunK.Dock = DockStyle.Right;
-            lblUrunK.Location = new Point(89, 75);
+            lblUrunK.Location = new Point(93, 102);
             lblUrunK.Name = "lblUrunK";
-            lblUrunK.Size = new Size(94, 25);
+            lblUrunK.Size = new Size(118, 34);
             lblUrunK.TabIndex = 12;
             lblUrunK.Text = "Ürün Kategorisi :";
             // 
             // txtBoxUBarkodu
             // 
             txtBoxUBarkodu.Dock = DockStyle.Fill;
-            txtBoxUBarkodu.Location = new Point(189, 2);
-            txtBoxUBarkodu.Margin = new Padding(3, 2, 3, 2);
+            txtBoxUBarkodu.Location = new Point(217, 3);
             txtBoxUBarkodu.Name = "txtBoxUBarkodu";
-            txtBoxUBarkodu.Size = new Size(253, 23);
+            txtBoxUBarkodu.Size = new Size(291, 27);
             txtBoxUBarkodu.TabIndex = 13;
             // 
             // txtBoxUAdi
             // 
             txtBoxUAdi.Dock = DockStyle.Fill;
-            txtBoxUAdi.Location = new Point(189, 27);
-            txtBoxUAdi.Margin = new Padding(3, 2, 3, 2);
+            txtBoxUAdi.Location = new Point(217, 37);
             txtBoxUAdi.Name = "txtBoxUAdi";
-            txtBoxUAdi.Size = new Size(253, 23);
+            txtBoxUAdi.Size = new Size(291, 27);
             txtBoxUAdi.TabIndex = 14;
             // 
             // cmbBoxGenelK
             // 
             cmbBoxGenelK.Dock = DockStyle.Fill;
             cmbBoxGenelK.FormattingEnabled = true;
-            cmbBoxGenelK.Location = new Point(189, 52);
-            cmbBoxGenelK.Margin = new Padding(3, 2, 3, 2);
+            cmbBoxGenelK.Location = new Point(217, 71);
             cmbBoxGenelK.Name = "cmbBoxGenelK";
-            cmbBoxGenelK.Size = new Size(253, 23);
+            cmbBoxGenelK.Size = new Size(291, 28);
             cmbBoxGenelK.TabIndex = 15;
             // 
             // lblGelisT
             // 
             lblGelisT.AutoSize = true;
             lblGelisT.Dock = DockStyle.Right;
-            lblGelisT.Location = new Point(114, 325);
+            lblGelisT.Location = new Point(124, 442);
             lblGelisT.Name = "lblGelisT";
-            lblGelisT.Size = new Size(69, 34);
+            lblGelisT.Size = new Size(87, 39);
             lblGelisT.TabIndex = 11;
             lblGelisT.Text = "Geliş Tarihi :";
             // 
             // mtxtBoxGTarihi
             // 
             mtxtBoxGTarihi.Dock = DockStyle.Fill;
-            mtxtBoxGTarihi.Location = new Point(189, 327);
-            mtxtBoxGTarihi.Margin = new Padding(3, 2, 3, 2);
+            mtxtBoxGTarihi.Location = new Point(217, 445);
             mtxtBoxGTarihi.Mask = "00/00/0000";
             mtxtBoxGTarihi.Name = "mtxtBoxGTarihi";
-            mtxtBoxGTarihi.Size = new Size(253, 23);
+            mtxtBoxGTarihi.Size = new Size(291, 27);
             mtxtBoxGTarihi.TabIndex = 25;
             mtxtBoxGTarihi.ValidatingType = typeof(DateTime);
             // 
@@ -1532,20 +1490,19 @@
             // 
             lblMarka.AutoSize = true;
             lblMarka.Dock = DockStyle.Right;
-            lblMarka.Location = new Point(137, 300);
+            lblMarka.Location = new Point(154, 408);
             lblMarka.Name = "lblMarka";
-            lblMarka.Size = new Size(46, 25);
+            lblMarka.Size = new Size(57, 34);
             lblMarka.TabIndex = 26;
             lblMarka.Text = "Marka :";
             // 
             // tabPageStok
             // 
             tabPageStok.Controls.Add(tLayoutPStok);
-            tabPageStok.Location = new Point(4, 24);
-            tabPageStok.Margin = new Padding(3, 2, 3, 2);
+            tabPageStok.Location = new Point(4, 29);
             tabPageStok.Name = "tabPageStok";
-            tabPageStok.Padding = new Padding(3, 2, 3, 2);
-            tabPageStok.Size = new Size(914, 468);
+            tabPageStok.Padding = new Padding(3, 3, 3, 3);
+            tabPageStok.Size = new Size(1046, 628);
             tabPageStok.TabIndex = 2;
             tabPageStok.Text = "Stok";
             tabPageStok.UseVisualStyleBackColor = true;
@@ -1557,13 +1514,12 @@
             tLayoutPStok.Controls.Add(tLayoutPStokUst, 0, 0);
             tLayoutPStok.Controls.Add(dataGViewStok, 0, 1);
             tLayoutPStok.Dock = DockStyle.Fill;
-            tLayoutPStok.Location = new Point(3, 2);
-            tLayoutPStok.Margin = new Padding(3, 2, 3, 2);
+            tLayoutPStok.Location = new Point(3, 3);
             tLayoutPStok.Name = "tLayoutPStok";
             tLayoutPStok.RowCount = 2;
             tLayoutPStok.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
             tLayoutPStok.RowStyles.Add(new RowStyle(SizeType.Percent, 90F));
-            tLayoutPStok.Size = new Size(908, 464);
+            tLayoutPStok.Size = new Size(1040, 622);
             tLayoutPStok.TabIndex = 0;
             // 
             // tLayoutPStokUst
@@ -1572,26 +1528,24 @@
             tLayoutPStokUst.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 6F));
             tLayoutPStokUst.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 30F));
             tLayoutPStokUst.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 64F));
-            tLayoutPStokUst.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 183F));
+            tLayoutPStokUst.ColumnStyles.Add(new ColumnStyle(SizeType.Absolute, 210F));
             tLayoutPStokUst.Controls.Add(txtBoxStokSFiltre, 1, 0);
             tLayoutPStokUst.Controls.Add(lblStokAra, 0, 0);
             tLayoutPStokUst.Controls.Add(btnUrunGuncelle, 3, 0);
             tLayoutPStokUst.Dock = DockStyle.Fill;
-            tLayoutPStokUst.Location = new Point(3, 2);
-            tLayoutPStokUst.Margin = new Padding(3, 2, 3, 2);
+            tLayoutPStokUst.Location = new Point(3, 3);
             tLayoutPStokUst.Name = "tLayoutPStokUst";
             tLayoutPStokUst.RowCount = 1;
             tLayoutPStokUst.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tLayoutPStokUst.Size = new Size(902, 42);
+            tLayoutPStokUst.Size = new Size(1034, 56);
             tLayoutPStokUst.TabIndex = 0;
             // 
             // txtBoxStokSFiltre
             // 
             txtBoxStokSFiltre.Anchor = AnchorStyles.Left;
-            txtBoxStokSFiltre.Location = new Point(46, 9);
-            txtBoxStokSFiltre.Margin = new Padding(3, 2, 3, 2);
+            txtBoxStokSFiltre.Location = new Point(52, 14);
             txtBoxStokSFiltre.Name = "txtBoxStokSFiltre";
-            txtBoxStokSFiltre.Size = new Size(130, 23);
+            txtBoxStokSFiltre.Size = new Size(148, 27);
             txtBoxStokSFiltre.TabIndex = 1;
             txtBoxStokSFiltre.TextChanged += txtBoxStokSFiltre_TextChanged;
             // 
@@ -1599,9 +1553,9 @@
             // 
             lblStokAra.Anchor = AnchorStyles.None;
             lblStokAra.AutoSize = true;
-            lblStokAra.Location = new Point(6, 13);
+            lblStokAra.Location = new Point(5, 18);
             lblStokAra.Name = "lblStokAra";
-            lblStokAra.Size = new Size(31, 15);
+            lblStokAra.Size = new Size(39, 20);
             lblStokAra.TabIndex = 0;
             lblStokAra.Text = "Ara :";
             // 
@@ -1610,10 +1564,9 @@
             btnUrunGuncelle.Anchor = AnchorStyles.Top;
             btnUrunGuncelle.FlatAppearance.BorderSize = 0;
             btnUrunGuncelle.FlatStyle = FlatStyle.Flat;
-            btnUrunGuncelle.Location = new Point(751, 2);
-            btnUrunGuncelle.Margin = new Padding(3, 2, 3, 2);
+            btnUrunGuncelle.Location = new Point(861, 3);
             btnUrunGuncelle.Name = "btnUrunGuncelle";
-            btnUrunGuncelle.Size = new Size(117, 37);
+            btnUrunGuncelle.Size = new Size(134, 49);
             btnUrunGuncelle.TabIndex = 7;
             btnUrunGuncelle.Text = "Güncelle";
             btnUrunGuncelle.UseVisualStyleBackColor = true;
@@ -1624,20 +1577,20 @@
             dataGViewStok.BackgroundColor = SystemColors.HighlightText;
             dataGViewStok.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGViewStok.Dock = DockStyle.Fill;
-            dataGViewStok.Location = new Point(3, 49);
+            dataGViewStok.Location = new Point(3, 66);
+            dataGViewStok.Margin = new Padding(3, 4, 3, 4);
             dataGViewStok.Name = "dataGViewStok";
             dataGViewStok.RowHeadersWidth = 51;
-            dataGViewStok.Size = new Size(902, 412);
+            dataGViewStok.Size = new Size(1034, 552);
             dataGViewStok.TabIndex = 1;
             // 
             // tabPageGecmis
             // 
             tabPageGecmis.Controls.Add(tLayoutPGecmis);
-            tabPageGecmis.Location = new Point(4, 24);
-            tabPageGecmis.Margin = new Padding(3, 2, 3, 2);
+            tabPageGecmis.Location = new Point(4, 29);
             tabPageGecmis.Name = "tabPageGecmis";
-            tabPageGecmis.Padding = new Padding(3, 2, 3, 2);
-            tabPageGecmis.Size = new Size(914, 468);
+            tabPageGecmis.Padding = new Padding(3, 3, 3, 3);
+            tabPageGecmis.Size = new Size(1046, 628);
             tabPageGecmis.TabIndex = 3;
             tabPageGecmis.Text = "Gecmiş";
             tabPageGecmis.UseVisualStyleBackColor = true;
@@ -1649,13 +1602,12 @@
             tLayoutPGecmis.Controls.Add(tLayoutPGecmisUst, 0, 0);
             tLayoutPGecmis.Controls.Add(dataGViewGecmis, 0, 1);
             tLayoutPGecmis.Dock = DockStyle.Fill;
-            tLayoutPGecmis.Location = new Point(3, 2);
-            tLayoutPGecmis.Margin = new Padding(3, 2, 3, 2);
+            tLayoutPGecmis.Location = new Point(3, 3);
             tLayoutPGecmis.Name = "tLayoutPGecmis";
             tLayoutPGecmis.RowCount = 2;
             tLayoutPGecmis.RowStyles.Add(new RowStyle(SizeType.Percent, 10F));
             tLayoutPGecmis.RowStyles.Add(new RowStyle(SizeType.Percent, 90F));
-            tLayoutPGecmis.Size = new Size(908, 464);
+            tLayoutPGecmis.Size = new Size(1040, 622);
             tLayoutPGecmis.TabIndex = 0;
             // 
             // tLayoutPGecmisUst
@@ -1666,21 +1618,20 @@
             tLayoutPGecmisUst.Controls.Add(lblGecmisAra, 0, 0);
             tLayoutPGecmisUst.Controls.Add(cmbBoxGecmisSFiltre, 1, 0);
             tLayoutPGecmisUst.Dock = DockStyle.Fill;
-            tLayoutPGecmisUst.Location = new Point(3, 2);
-            tLayoutPGecmisUst.Margin = new Padding(3, 2, 3, 2);
+            tLayoutPGecmisUst.Location = new Point(3, 3);
             tLayoutPGecmisUst.Name = "tLayoutPGecmisUst";
             tLayoutPGecmisUst.RowCount = 1;
             tLayoutPGecmisUst.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tLayoutPGecmisUst.Size = new Size(902, 42);
+            tLayoutPGecmisUst.Size = new Size(1034, 56);
             tLayoutPGecmisUst.TabIndex = 0;
             // 
             // lblGecmisAra
             // 
             lblGecmisAra.Anchor = AnchorStyles.None;
             lblGecmisAra.AutoSize = true;
-            lblGecmisAra.Location = new Point(11, 13);
+            lblGecmisAra.Location = new Point(11, 18);
             lblGecmisAra.Name = "lblGecmisAra";
-            lblGecmisAra.Size = new Size(31, 15);
+            lblGecmisAra.Size = new Size(39, 20);
             lblGecmisAra.TabIndex = 0;
             lblGecmisAra.Text = "Ara :";
             // 
@@ -1689,21 +1640,19 @@
             cmbBoxGecmisSFiltre.Anchor = AnchorStyles.Left;
             cmbBoxGecmisSFiltre.FormattingEnabled = true;
             cmbBoxGecmisSFiltre.Items.AddRange(new object[] { "Günlük", "Haftalık", "Aylık" });
-            cmbBoxGecmisSFiltre.Location = new Point(57, 9);
-            cmbBoxGecmisSFiltre.Margin = new Padding(3, 2, 3, 2);
+            cmbBoxGecmisSFiltre.Location = new Point(65, 14);
             cmbBoxGecmisSFiltre.Name = "cmbBoxGecmisSFiltre";
-            cmbBoxGecmisSFiltre.Size = new Size(130, 23);
+            cmbBoxGecmisSFiltre.Size = new Size(148, 28);
             cmbBoxGecmisSFiltre.TabIndex = 1;
             // 
             // dataGViewGecmis
             // 
             dataGViewGecmis.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGViewGecmis.Dock = DockStyle.Fill;
-            dataGViewGecmis.Location = new Point(3, 48);
-            dataGViewGecmis.Margin = new Padding(3, 2, 3, 2);
+            dataGViewGecmis.Location = new Point(3, 65);
             dataGViewGecmis.Name = "dataGViewGecmis";
             dataGViewGecmis.RowHeadersWidth = 51;
-            dataGViewGecmis.Size = new Size(902, 414);
+            dataGViewGecmis.Size = new Size(1034, 554);
             dataGViewGecmis.TabIndex = 1;
             // 
             // tabPageIstatistik
@@ -1713,11 +1662,10 @@
             tabPageIstatistik.Controls.Add(panel2);
             tabPageIstatistik.Controls.Add(panelUrunKarOranı);
             tabPageIstatistik.Controls.Add(panelGrafikveButon);
-            tabPageIstatistik.Location = new Point(4, 24);
-            tabPageIstatistik.Margin = new Padding(3, 2, 3, 2);
+            tabPageIstatistik.Location = new Point(4, 29);
             tabPageIstatistik.Name = "tabPageIstatistik";
-            tabPageIstatistik.Padding = new Padding(3, 2, 3, 2);
-            tabPageIstatistik.Size = new Size(914, 468);
+            tabPageIstatistik.Padding = new Padding(3, 3, 3, 3);
+            tabPageIstatistik.Size = new Size(1046, 628);
             tabPageIstatistik.TabIndex = 4;
             tabPageIstatistik.Text = "İstatistik";
             tabPageIstatistik.UseVisualStyleBackColor = true;
@@ -1726,10 +1674,9 @@
             // 
             panelUrunBazindaSatis.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             panelUrunBazindaSatis.Controls.Add(chartUrunBazindaSatis);
-            panelUrunBazindaSatis.Location = new Point(5, 68);
-            panelUrunBazindaSatis.Margin = new Padding(3, 2, 3, 2);
+            panelUrunBazindaSatis.Location = new Point(6, 91);
             panelUrunBazindaSatis.Name = "panelUrunBazindaSatis";
-            panelUrunBazindaSatis.Size = new Size(748, 387);
+            panelUrunBazindaSatis.Size = new Size(855, 516);
             panelUrunBazindaSatis.TabIndex = 1;
             // 
             // chartUrunBazindaSatis
@@ -1740,14 +1687,13 @@
             legend1.Name = "Legend1";
             chartUrunBazindaSatis.Legends.Add(legend1);
             chartUrunBazindaSatis.Location = new Point(0, 0);
-            chartUrunBazindaSatis.Margin = new Padding(3, 2, 3, 2);
             chartUrunBazindaSatis.Name = "chartUrunBazindaSatis";
             series1.ChartArea = "ChartArea1";
             series1.CustomProperties = "PointWidth=0.5";
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             chartUrunBazindaSatis.Series.Add(series1);
-            chartUrunBazindaSatis.Size = new Size(748, 387);
+            chartUrunBazindaSatis.Size = new Size(855, 516);
             chartUrunBazindaSatis.TabIndex = 0;
             chartUrunBazindaSatis.Text = "chart1";
             // 
@@ -1755,10 +1701,9 @@
             // 
             panel1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panel1.Controls.Add(tLayoutIstUstUrunBazıUst);
-            panel1.Location = new Point(8, 10);
-            panel1.Margin = new Padding(3, 2, 3, 2);
+            panel1.Location = new Point(9, 13);
             panel1.Name = "panel1";
-            panel1.Size = new Size(897, 43);
+            panel1.Size = new Size(1025, 57);
             panel1.TabIndex = 1;
             // 
             // tLayoutIstUstUrunBazıUst
@@ -1774,11 +1719,10 @@
             tLayoutIstUstUrunBazıUst.Controls.Add(products, 3, 0);
             tLayoutIstUstUrunBazıUst.Dock = DockStyle.Fill;
             tLayoutIstUstUrunBazıUst.Location = new Point(0, 0);
-            tLayoutIstUstUrunBazıUst.Margin = new Padding(3, 2, 3, 2);
             tLayoutIstUstUrunBazıUst.Name = "tLayoutIstUstUrunBazıUst";
             tLayoutIstUstUrunBazıUst.RowCount = 1;
             tLayoutIstUstUrunBazıUst.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tLayoutIstUstUrunBazıUst.Size = new Size(897, 43);
+            tLayoutIstUstUrunBazıUst.Size = new Size(1025, 57);
             tLayoutIstUstUrunBazıUst.TabIndex = 0;
             // 
             // grafikOpsiyon
@@ -1786,10 +1730,9 @@
             grafikOpsiyon.Anchor = AnchorStyles.None;
             grafikOpsiyon.FormattingEnabled = true;
             grafikOpsiyon.Items.AddRange(new object[] { "Haftalık Ciro", "Haftalık Satılan Urun", "Aylık Ciro", "Aylık Satılan Urun" });
-            grafikOpsiyon.Location = new Point(393, 10);
-            grafikOpsiyon.Margin = new Padding(3, 2, 3, 2);
+            grafikOpsiyon.Location = new Point(451, 14);
             grafikOpsiyon.Name = "grafikOpsiyon";
-            grafikOpsiyon.Size = new Size(174, 23);
+            grafikOpsiyon.Size = new Size(198, 28);
             grafikOpsiyon.TabIndex = 2;
             grafikOpsiyon.SelectedIndexChanged += grafikOpsiyon_SelectedIndexChanged;
             // 
@@ -1797,9 +1740,9 @@
             // 
             lblAra1.Anchor = AnchorStyles.None;
             lblAra1.AutoSize = true;
-            lblAra1.Location = new Point(301, 14);
+            lblAra1.Location = new Point(343, 18);
             lblAra1.Name = "lblAra1";
-            lblAra1.Size = new Size(32, 15);
+            lblAra1.Size = new Size(40, 20);
             lblAra1.TabIndex = 1;
             lblAra1.Text = "Mod";
             // 
@@ -1807,9 +1750,9 @@
             // 
             lblUrunBazindaYuzdeliSatis.Anchor = AnchorStyles.None;
             lblUrunBazindaYuzdeliSatis.AutoSize = true;
-            lblUrunBazindaYuzdeliSatis.Location = new Point(51, 14);
+            lblUrunBazindaYuzdeliSatis.Location = new Point(48, 18);
             lblUrunBazindaYuzdeliSatis.Name = "lblUrunBazindaYuzdeliSatis";
-            lblUrunBazindaYuzdeliSatis.Size = new Size(174, 15);
+            lblUrunBazindaYuzdeliSatis.Size = new Size(220, 20);
             lblUrunBazindaYuzdeliSatis.TabIndex = 0;
             lblUrunBazindaYuzdeliSatis.Text = "Ciro - Satılan Urun Sayısı Grafiği";
             // 
@@ -1817,10 +1760,9 @@
             // 
             products.Anchor = AnchorStyles.None;
             products.FormattingEnabled = true;
-            products.Location = new Point(663, 10);
-            products.Margin = new Padding(3, 2, 3, 2);
+            products.Location = new Point(759, 14);
             products.Name = "products";
-            products.Size = new Size(174, 23);
+            products.Size = new Size(198, 28);
             products.TabIndex = 1;
             products.SelectedIndexChanged += products_SelectedIndexChanged;
             // 
@@ -1828,10 +1770,9 @@
             // 
             panel2.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             panel2.Controls.Add(tableLayoutPanel1);
-            panel2.Location = new Point(8, 10);
-            panel2.Margin = new Padding(3, 2, 3, 2);
+            panel2.Location = new Point(9, 13);
             panel2.Name = "panel2";
-            panel2.Size = new Size(897, 43);
+            panel2.Size = new Size(1025, 57);
             panel2.TabIndex = 2;
             panel2.Visible = false;
             // 
@@ -1848,20 +1789,19 @@
             tableLayoutPanel1.Controls.Add(txtBoxAraFiltre2, 2, 0);
             tableLayoutPanel1.Dock = DockStyle.Fill;
             tableLayoutPanel1.Location = new Point(0, 0);
-            tableLayoutPanel1.Margin = new Padding(3, 2, 3, 2);
             tableLayoutPanel1.Name = "tableLayoutPanel1";
             tableLayoutPanel1.RowCount = 1;
             tableLayoutPanel1.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
-            tableLayoutPanel1.Size = new Size(897, 43);
+            tableLayoutPanel1.Size = new Size(1025, 57);
             tableLayoutPanel1.TabIndex = 0;
             // 
             // lblAra2
             // 
             lblAra2.Anchor = AnchorStyles.None;
             lblAra2.AutoSize = true;
-            lblAra2.Location = new Point(302, 14);
+            lblAra2.Location = new Point(343, 18);
             lblAra2.Name = "lblAra2";
-            lblAra2.Size = new Size(31, 15);
+            lblAra2.Size = new Size(39, 20);
             lblAra2.TabIndex = 1;
             lblAra2.Text = "Ara :";
             // 
@@ -1869,9 +1809,9 @@
             // 
             lblUrunKarOranı.Anchor = AnchorStyles.None;
             lblUrunKarOranı.AutoSize = true;
-            lblUrunKarOranı.Location = new Point(74, 14);
+            lblUrunKarOranı.Location = new Point(77, 18);
             lblUrunKarOranı.Name = "lblUrunKarOranı";
-            lblUrunKarOranı.Size = new Size(129, 15);
+            lblUrunKarOranı.Size = new Size(163, 20);
             lblUrunKarOranı.TabIndex = 0;
             lblUrunKarOranı.Text = "Ürün Bazında Kar Oranı";
             // 
@@ -1880,29 +1820,26 @@
             cmbBoxFiltre2.Anchor = AnchorStyles.None;
             cmbBoxFiltre2.FormattingEnabled = true;
             cmbBoxFiltre2.Items.AddRange(new object[] { "Günlük", "Haftalık", "Aylık" });
-            cmbBoxFiltre2.Location = new Point(652, 10);
-            cmbBoxFiltre2.Margin = new Padding(3, 2, 3, 2);
+            cmbBoxFiltre2.Location = new Point(745, 14);
             cmbBoxFiltre2.Name = "cmbBoxFiltre2";
-            cmbBoxFiltre2.Size = new Size(130, 23);
+            cmbBoxFiltre2.Size = new Size(148, 28);
             cmbBoxFiltre2.TabIndex = 1;
             // 
             // txtBoxAraFiltre2
             // 
             txtBoxAraFiltre2.Anchor = AnchorStyles.Left;
-            txtBoxAraFiltre2.Location = new Point(361, 10);
-            txtBoxAraFiltre2.Margin = new Padding(3, 2, 3, 2);
+            txtBoxAraFiltre2.Location = new Point(412, 15);
             txtBoxAraFiltre2.Name = "txtBoxAraFiltre2";
-            txtBoxAraFiltre2.Size = new Size(130, 23);
+            txtBoxAraFiltre2.Size = new Size(148, 27);
             txtBoxAraFiltre2.TabIndex = 2;
             // 
             // panelUrunKarOranı
             // 
             panelUrunKarOranı.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             panelUrunKarOranı.Controls.Add(chartUrunKarOranı);
-            panelUrunKarOranı.Location = new Point(5, 64);
-            panelUrunKarOranı.Margin = new Padding(3, 2, 3, 2);
+            panelUrunKarOranı.Location = new Point(6, 85);
             panelUrunKarOranı.Name = "panelUrunKarOranı";
-            panelUrunKarOranı.Size = new Size(748, 387);
+            panelUrunKarOranı.Size = new Size(855, 516);
             panelUrunKarOranı.TabIndex = 1;
             // 
             // chartUrunKarOranı
@@ -1913,14 +1850,13 @@
             legend2.Name = "Legend1";
             chartUrunKarOranı.Legends.Add(legend2);
             chartUrunKarOranı.Location = new Point(0, 0);
-            chartUrunKarOranı.Margin = new Padding(3, 2, 3, 2);
             chartUrunKarOranı.Name = "chartUrunKarOranı";
             chartUrunKarOranı.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
             series2.ChartArea = "ChartArea1";
             series2.Legend = "Legend1";
             series2.Name = "Series1";
             chartUrunKarOranı.Series.Add(series2);
-            chartUrunKarOranı.Size = new Size(748, 387);
+            chartUrunKarOranı.Size = new Size(855, 516);
             chartUrunKarOranı.TabIndex = 1;
             chartUrunKarOranı.Text = "chart1";
             // 
@@ -1928,29 +1864,26 @@
             // 
             panelGrafikveButon.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             panelGrafikveButon.Controls.Add(panelSagButon);
-            panelGrafikveButon.Location = new Point(31, 59);
-            panelGrafikveButon.Margin = new Padding(3, 2, 3, 2);
+            panelGrafikveButon.Location = new Point(35, 79);
             panelGrafikveButon.Name = "panelGrafikveButon";
-            panelGrafikveButon.Size = new Size(721, 398);
+            panelGrafikveButon.Size = new Size(824, 531);
             panelGrafikveButon.TabIndex = 3;
             // 
             // panelSagButon
             // 
             panelSagButon.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panelSagButon.Controls.Add(btnSonraki);
-            panelSagButon.Location = new Point(753, 356);
-            panelSagButon.Margin = new Padding(3, 2, 3, 2);
+            panelSagButon.Location = new Point(861, 475);
             panelSagButon.Name = "panelSagButon";
-            panelSagButon.Size = new Size(0, 42);
+            panelSagButon.Size = new Size(0, 56);
             panelSagButon.TabIndex = 0;
             // 
             // btnSonraki
             // 
             btnSonraki.Dock = DockStyle.Fill;
             btnSonraki.Location = new Point(0, 0);
-            btnSonraki.Margin = new Padding(3, 2, 3, 2);
             btnSonraki.Name = "btnSonraki";
-            btnSonraki.Size = new Size(0, 42);
+            btnSonraki.Size = new Size(0, 56);
             btnSonraki.TabIndex = 0;
             btnSonraki.Text = "Sonraki";
             btnSonraki.UseVisualStyleBackColor = true;
@@ -1963,12 +1896,11 @@
             // 
             // Sayfalar
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1096, 500);
+            ClientSize = new Size(1253, 667);
             Controls.Add(tLayoutPButtonSayfa);
-            Margin = new Padding(3, 2, 3, 2);
-            MinimumSize = new Size(984, 442);
+            MinimumSize = new Size(1122, 574);
             Name = "Sayfalar";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Sayfalar";

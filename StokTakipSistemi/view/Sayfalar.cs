@@ -196,8 +196,8 @@ namespace StokTakipSistemi
             List<String> distinctCategories = new StatisticController().getDistinctCategories();
             foreach (var item in distinctCategories) products.Items.Add(item);
 
-            products.Tag = "Ürün Seçiniz";
-            grafikOpsiyon.Tag = "Mod Seçiniz";
+            if(products.Items.Count > 0) products.SelectedIndex = 0;
+            grafikOpsiyon.SelectedIndex = 0;
 
             resetChart();
         }
