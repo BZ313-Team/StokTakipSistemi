@@ -1,14 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\srkan\\Desktop\\StokTakipSistemi\\",
+  "WorkspaceRootPath": "C:\\Users\\sasss\\Desktop\\StokTakipSistemi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|c:\\users\\srkan\\desktop\\stoktakipsistemi\\stoktakipsistemi\\view\\sayfalar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|solutionrelative:stoktakipsistemi\\view\\sayfalar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|C:\\Users\\sasss\\Desktop\\StokTakipSistemi\\stoktakipsistemi\\view\\sayfalar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|solutionrelative:stoktakipsistemi\\view\\sayfalar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|C:\\Users\\srkan\\Desktop\\StokTakipSistemi\\stoktakipsistemi\\view\\sayfalar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|solutionrelative:stoktakipsistemi\\view\\sayfalar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|c:\\users\\sasss\\desktop\\stoktakipsistemi\\stoktakipsistemi\\view\\giris.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5EDD19CD-C768-4B0C-9556-013D357B8EE7}|StokTakipSistemi\\StokTakipSistemi.csproj|solutionrelative:stoktakipsistemi\\view\\giris.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,27 +26,27 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Sayfalar.cs",
-              "DocumentMoniker": "C:\\Users\\srkan\\Desktop\\StokTakipSistemi\\StokTakipSistemi\\view\\Sayfalar.cs",
-              "RelativeDocumentMoniker": "StokTakipSistemi\\view\\Sayfalar.cs",
-              "ToolTip": "C:\\Users\\srkan\\Desktop\\StokTakipSistemi\\StokTakipSistemi\\view\\Sayfalar.cs",
-              "RelativeToolTip": "StokTakipSistemi\\view\\Sayfalar.cs",
-              "ViewState": "AgIAALoAAAAAAAAAAAAYwMkAAAAZAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Giris.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\sasss\\Desktop\\StokTakipSistemi\\StokTakipSistemi\\view\\Giris.cs",
+              "RelativeDocumentMoniker": "StokTakipSistemi\\view\\Giris.cs",
+              "ToolTip": "C:\\Users\\sasss\\Desktop\\StokTakipSistemi\\StokTakipSistemi\\view\\Giris.cs [Design]",
+              "RelativeToolTip": "StokTakipSistemi\\view\\Giris.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-02T07:08:32.772Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-10T17:25:10.99Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Sayfalar.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\srkan\\Desktop\\StokTakipSistemi\\StokTakipSistemi\\view\\Sayfalar.cs",
+              "DocumentMoniker": "C:\\Users\\sasss\\Desktop\\StokTakipSistemi\\StokTakipSistemi\\view\\Sayfalar.cs",
               "RelativeDocumentMoniker": "StokTakipSistemi\\view\\Sayfalar.cs",
-              "ToolTip": "C:\\Users\\srkan\\Desktop\\StokTakipSistemi\\StokTakipSistemi\\view\\Sayfalar.cs [Design]",
-              "RelativeToolTip": "StokTakipSistemi\\view\\Sayfalar.cs [Design]",
+              "ToolTip": "C:\\Users\\sasss\\Desktop\\StokTakipSistemi\\StokTakipSistemi\\view\\Sayfalar.cs [Design]*",
+              "RelativeToolTip": "StokTakipSistemi\\view\\Sayfalar.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-02T07:08:22.978Z"
+              "WhenOpened": "2025-01-02T07:08:22.978Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
